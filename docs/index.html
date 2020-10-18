@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>FabArtist - Documentation</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+		<link rel="icon" href="assets/img/logo.png" type="image/png">
+		
+		
+	</head>
+	<body >
+		<div class="page-wrapper">
+			
+			<div class="doc-wrapper">
+				<div class="container">
+					<div class="doc-body row">
+						<div class="doc-content col-md-9 col-12 order-1">
+							
+							<div class="content-inner">
+								
+								<section id="get-started-section" class="doc-section">
+									
+									<h2 class="section-title">Get Started</h2>
+									
+									<div class="section-block">
+										
+										<p>Thanks for purchasing FAB ARTIST</p>
+										<p>Please read the documentation carefully, and if you have any questions, please feel free to contact us. Most pages are accompanied by a video tutorial, it's recommended to check both, the video and the written Documentation.
+											
+											<h4 id="phainc-theme-addons">Must Read this:</h4>
+											After purchase, it is suggested to setup the  <a class="scrollto" href="#API-Configration">Web API</a>first for smooth functioning of the application.
+											<br><br>
+											<a class="scrollto" href="#API-Configration">Web API</a> is in PHP 7.0 and it will work on all hosting packages
+										</p>
+										
+									</div>
+								</section>
+								
+								<section id="Android-Configration" class="doc-section">
+									<h2 class="section-title">Android Configuration</h2>
+									
+									<div class="section-block">
+										
+										<p>In order to start configuration, you need to install Android studio and the 'Java SE Development Kit'. First download the android studio from here  <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> </p>
+										
+										<div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/xWa8Rf9cBps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+										
+									</div>
+								</section>
+								
+								<section id="SDK-Manager" class="doc-section">
+									<h2 class="section-title">SDK Manager</h2>
+									
+									<div class="section-block">
+										
+										<p>The installer, as also shown in the video should automatically download and install all required components. If you want to do manual setup, download at least the following components using the SDK manager</p>
+										
+										
+										<ul>
+											<li>SDK tools </li>
+											<li>SDK platform Tools</li>
+											<li>SDK Build Tools</li>
+											<li>Google Play Services</li>
+											<li>Android Support Library</li>
+											<li>Google Repository</li>
+											<li>Google USB Driver</li>
+										</ul>
+										<p>You can download these SDK, if not installed already, using the SDK manager <a href="https://developer.android.com/studio/intro/update.html#sdk-manager">SDK Manager</a> after this, you can open Android Studio and continue. </p>
+										
+										
+										
+									</div>
+								</section>
+								
+								
+								
+								<section id="Importing-Android-Project" class="doc-section">
+									<h2 class="section-title">Importing Android Project</h2>
+									
+									<div class="section-block">
+										
+										<p>To import the template, simply open Android Studio and import/open the template. Make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step.</p>
+										
+										<div class="embed-responsive embed-responsive-16by9"><iframe width="1280" height="720" src="https://www.youtube.com/embed/asNNuCivI2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+										
+										<br><br>
+										<h4 id="phainc-theme-addons">Addition steps</h4>
+										<p>Additional steps are required sometimes if the Gradle Build fails. In some cases additional components are needed, Android Studio will ask you to do download these additional SDK components in the 'messages' tab, simply follow the instructions provided to install and download the additional components. </p>
+										
+									</div>
+									
+								</section>
+								
+								<section id="Change-Bundle-ID" class="doc-section">
+									<h2 class="section-title">Change Bundle ID</h2>
+									
+									<div class="section-block">
+										
+										<div class="embed-responsive embed-responsive-16by9"><iframe width="1280" height="720" src="https://www.youtube.com/embed/qc5zKBwGMDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+										
+									</div>
+									
+								</section>
+								
+								<section id="Change-App-Name" class="doc-section">
+									<h2 class="section-title">Change App Name</h2>
+									
+									<div class="section-block">
+										
+										<img src="assets/img/Change%20app%20name.png">
+										<p>Above illustration demonstrates the process to change the name of application. </p>
+										
+									</div>
+									
+								</section>
+								
+								<section id="Change-Color-Scheme" class="doc-section">
+									<h2 class="section-title">Change Color Scheme</h2>
+									<div class="section-block">
+										
+										<img src="assets/img/Change%20color.png">
+										
+										<p>Above illustration demonstrates the process to change the Colors of the application.</p>
+										<p>You can change your apps colors to create a custom look. The primary color is the color of the Toolbar, some buttons and headers. The primary dark color is used for e.g. the status bar. Get more color from here <a href="https://material.io/guidelines/style/color.html" target="_blank">material.io</a></p>
+											
+											
+											
+										</div>
+										
+									</section>
+									
+									
+									
+									
+									<!-- <section id="Change-Theme-of-Application" class="doc-section">
+											<h2 class="section-title"> Change Theme of Application </h2>
+											<div class="section-block">
+												
+													<img src="assets/img/Change%20style.png">
+													
+													<img src="assets/img/Change%20theme.png">
+													
+													<p>Above is illustrated how you can change the Theme of the application.</p>
+													
+												</div>
+										
+									</section> -->
+									<section id="Change-App-icon" class="doc-section">
+										<h2 class="section-title"> Change App icon </h2>
+										<div class="section-block">
+											
+											<p>Now you need to put a png file with your icon named 'ic_launcher.png' in the following folders:</p>
+											
+											<ul>
+												<li>res/drawable-mdpi - with a size of 48px x 48px</li>
+												<li>res/drawable-hdpi - with a size of 72px x 72px</li>
+												<li>res/drawable-xhdpi - with a size of 96px x 96px</li>
+												<li>res/drawable-xxhdpi - with a size of 144px x 144px</li>
+											</ul>
+											
+											<p>this URL will help you resize your images or event create new icon to your app  <a href="https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=clipart&foreground.clipart=android&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=square&effects=none&name=ic_launcher" target="_blank">Launcher Icon Generator</a> </p>
+										</div>
+										
+									</section>
+									
+									
+									<section id="Change-API-Links" class="doc-section">
+										<h2 class="section-title"> Change API Links </h2>
+										<div class="section-block">
+											
+											<img src="assets/img/Change_api_link.png">
+											<p>Above illustration demonstrates the process to change the Rest Api link of the application</p>
+											
+											
+										</div>
+										
+									</section>
+									
+									
+									
+									
+									
+									<section id="Firebase-Configuring" class="doc-section">
+										<h2 class="section-title"> Firebase Configuring </h2>
+										<div class="section-block">
+											
+											<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/tC2tEFEkevw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe></div>
+											
+											<h4 id="phainc-theme-addons">Change Firebase Db Rules</h4>
+											
+											<img src="assets/img/Firebase_change_rule.png">
+											
+										</div>
+										
+									</section>
+									
+									
+									
+									
+									
+									<section id="Debug-and-release-Key" class="doc-section">
+										<h2 class="section-title"> Debug and release Key </h2>
+										<div class="section-block">
+											
+											
+											
+											<p>Before going to the next step, you have to learn about the Sh1 key for both debug and release. If you are in the development mode then you will use the debug sh1 key but when you are going to publish the app on play store, you will have to use the sh1 key of Release key</p>
+											
+											
+											<h4 id="#">Debug Key</h4>
+											
+											<img src="assets/img/debug.png">
+											
+											<h4 id="#">Signed or release key</h4>
+											
+											<p>To get sh1 released, follow below two steps.</p>
+											<p>Step1: You have to generate your own app signing key</p>
+											<p>Step2: Get the Sh1 key of app signing key</p>
+											
+											
+											<h4 id="#">Step 1: Create your own app signing key</h4>
+											<a href="https://developer.android.com/studio/publish/app-signing">Create signing key</a>
+											
+											<h4 id="#">Step 2: Get the Sh1 key. Run the below command on Command Prompt</h4>
+											<xmap>
+											keytool.exe -list -v -alias {alies name you set according to above toturial "key0" is the alies name} -keystore "{file adress of the key}" -storepass {password} -keypass {password}
+											</xmap>
+											
+											<p>Also demonstrated all the steps in video and screen shots</p>
+											<br>
+											<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/P-IbtOeQld4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe></div>
+											
+											<img src="assets/img/Api_key_1.png">
+											<img src="assets/img/Api_key_2.png">
+											<img src="assets/img/Api_key_3.png">
+											
+											
+										</div>
+										
+									</section>
+									
+									
+									<section id="Google-Map-Configration" class="doc-section">
+										<h2 class="section-title"> Google Map Configration </h2>
+										<div class="section-block">
+											
+											
+											<p>First you have to add Firebase account in your application/project and then only you will be able to see your project on Google API Console.</p>
+											
+											<img src="assets/img/google_map_api_key.png">
+											
+											<img src="assets/img/change_api_keys.png">
+											
+										</div>
+										
+									</section>
+									
+									<!-- <section id="Facebook-Login" class="doc-section">
+											<h2 class="section-title"> Facebook Login </h2>
+											<div class="section-block">
+													
+													
+													<h4>You have to follow the steps</h4>
+													
+													<p>
+															Go to "facebook Developer" the link is given
+															<a href="https://developers.facebook.com/docs/facebook-login/android/v2.3" target="_blank">Open Link</a>
+													</p>
+													
+													
+													<h4>Step 1</h4>
+													
+													<p>
+															Go to "facebook Developer" the link is given
+															<a href="https://developers.facebook.com/" target="_blank">developers.facebook.com</a>
+															and Create a new app
+													</p>
+													<img src="assets/img/fb/fb1.png">
+													
+													<h4>Step 2</h4>
+													
+													<p>
+															Go to "facebook Developer" the link is given
+															<a href="https://developers.facebook.com/" target="_blank">developers.facebook.com</a>
+															and Create a new app
+													</p>
+													<img src="assets/img/fb/fb2.png">
+													
+													<h4>Step 3</h4>
+													
+													<p>
+															Then Go in <b>Setting > Basic</b> Fill privacy policy and application nature/cateogry and press save
+												</p>
+													<img src="assets/img/fb/fb3.png">
+													
+													<h4>Step 4</h4>
+													
+													<p>
+															Then Go in <b>Setting > Basic</b> Add development palatform
+												</p>
+													<img src="assets/img/fb/fb4.png">
+													
+													<h4>Step 5</h4>
+													
+													<p>
+															Then Go in <b>Setting > Basic > development palatform</b> Select Android
+												</p>
+													<img src="assets/img/fb/fb5.png">
+													
+													<h4>Step 6</h4>
+													
+													<p>
+														Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb6.png">
+													
+													<img src="assets/img/keyhash.png">
+													
+													<h4>Step 7</h4>
+													
+													<p>
+															Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb7.png">
+													
+													<h4>Step 8</h4>
+													
+													<p>
+															Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb8.png">
+													
+													<h4>Step 9</h4>
+													
+													<p>
+															Copy APP ID Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb9.png">
+													
+													
+													<h4>Step 10</h4>
+													
+													<p>
+															Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb10.png">
+													
+													<h4>Step 11</h4>
+													
+													<p>
+															Copy APP ID & APP Secret Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb11.png">
+													
+													
+											<h4>Step 12</h4>
+													
+													<p>
+															Follow screenshort
+												</p>
+													<img src="assets/img/fb/fb12.png">
+													<img src="assets/img/facebook_change_id.png">
+													
+													<h4>Below related to Step 5 </h4>
+													
+													<p>Package Name is <b>com.dinosoftlabs.Foodies</b></p>
+													<p>Default Activity Class Name <b>com.dinosoftlabs.Foodies.Accounts.Login_A</b></p>
+													<p> Give the App Id and App secret in firebase Authuntication </p>
+													<img src="assets/img/firebase_facebook_auth.png">
+													
+													<p> This video tutorial can help you alot</p>
+													<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/EvV9Vk9iOCQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe></div>
+													
+													
+													<p>You have to submit your application for review to facebook to enable 2 permission <b>Date of birth</b> & <b>Gender</b> by following this link
+															<a href="https://developers.facebook.com/docs/apps/review/">How can i submit?</a>
+													</p>
+													
+													
+													<p>If you Facebook app have dont have permission's of Date of birth and gender then Follow this screeshort to by-pass</p>
+													<img src="assets/img/facebookLogin.png">
+													
+													
+													
+													<h4>Step 13</h4>
+													
+													<p>
+															Generate <b>KeyHash</b> Follow screenshort
+												</p>
+													<img src="assets/img/fb/keyhash.png">
+											<h4>Step 14</h4>
+													
+													<p>
+															Follow screenshort
+												</p>
+													<img src="assets/img/fb/package_class_names.png">
+													
+												</div>
+										
+									</section> -->
+									
+									
+									
+									<!-- <section id="Google-Login-Configration" class="doc-section">
+											<h2 class="section-title"> Google Login Configration </h2>
+											<div class="section-block">
+												<h4> Step 1 </h4>
+												
+													<img src="assets/img/google/G0.png">
+													
+													
+													<h4> Step 2 </h4>
+													
+													<img src="assets/img/google/G1.png">
+													
+													
+													
+													<h4> Step 3 </h4>
+												
+													<img src="assets/img/google/G2.png">
+													
+													
+													<h4> Step 4 </h4>
+												
+													<img src="assets/img/google/G3.png">
+											</div>
+									</section>
+									-->
+									
+									<section id="API-Configration" class="doc-section">
+										<h2 class="section-title"> Web  Configuration </h2>
+										<div class="section-block">
+											
+											
+											
+											<p>Installing FabArtist in PHP </p>
+											<p>Before getting started, please make sure your web server meets all the below pre-requisites: </p>
+											
+											<ul>
+												<li>PHP Version 7.0 + advance</li>
+												<li>CURL Extension (enabled on most hosts by default)</li>
+												<li>MySQL extension (enabled on most hosts by default)</li>
+											</ul>
+											
+											<h2 class="section-title" id="deployment"> Deploying the PHP Application on a Remote Web Server</h2>
+										<div class="section-block">
+											<p>Deploying the PHP Application on a Remote Web Server</p>
+											
+											<ul>
+												<li>Upload Zip file of the project in folder public_html on server and extract it. Now you will be able to see your directory as demonstrated below.</li>
+												<li><img src="assets/img/foldersname.png"></li>
+												<!-- <li>Enter your host address to check the access to the web app eg. http://domain.com/mobileapp_api </li> -->
+											</ul>
+											
+											
+											<h2 class="section-title" id="databse-setup"> Database Setup & Configuration</h2>
+										<div class="section-block">
+
+											<p>Database Installation</p>
+											
+											<ul style="list-style-type: none;">
+												
+												<li>Create Database in mysql databases ( in cPanel )  </li>
+												<li><img src="assets/img/create-database.png"></li>
+												<li>Create user in mysql databases ( in cPanel )  </li>
+												<li><img src="assets/img/create-database-user.png"></li>
+												<li>List of users where you can manage it.</li>
+												<li><img src="assets/img/users-list.png"></li>
+												<li>Import sql file in your database by going into phpmyadmin </li>
+												<li><img src="assets/img/import-file.png"></li>
+												<li>Import sql file successfully! </li>
+												<li><img src="assets/img/success-import.png"></li>
+												
+											</ul>
+											
+											
+											<h2 class="section-title" id="adminpanel-setup"> Admin Panel Setup</h2>
+										<div class="section-block">
+											
+											<p>Final configuration</p>
+											<ul style="list-style-type: none;">
+												<li>•	Change the base URL:- <b>application/config/config.php</b></li>
+												<li><img src="assets/img/base-url.png"></li>
+												<li>•	Setup your database settings:- <b>application/config/database.php</b></li>
+												<li><img src="assets/img/databse-setup.png"></li>
+												<li>'hostname' => 'localhost',<br>
+													'username' => 'root',<br>
+													'password' => '123',<br>
+													'database' => 'FabArtist',</li>
+												<li>Enter your host address to check the access  web admin panel eg. http://domain.com/admin </li>
+												<li><img src="assets/img/adminpanel.png"></li>
+
+											</ul>
+											
+											<h2 class="section-title" id="thirdpartyapi">Change Third Party APIs</h2>
+										<div class="section-block">
+											
+											<p>You need following API keys for third party libraries to work.</p>
+											
+											
+											<ul >
+												
+												<li>Firebase Push Notification- This key will be used to generate Push Notification</li>
+												<p>Setup Firebase Push Notification</p>
+											
+											<p>Follow instructions OR Video:</p>
+											<ul>
+												<li>you need to create your project first <a href="https://console.firebase.google.com/" target="_blank">Console Firebase Google</a> </li>
+												<li>You can find the API KEY in: (gear-next-to-project-name) > Project Settings > Cloud Messaging</li>
+											</ul>
+											<p>Server Key is the API key</p>
+											
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe src="https://www.youtube.com/embed/SWttgcOgGRw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe>
+											</div>
+												<li>Enter your firebase key in<b>adminpanel->settings->app settings</b> as shown below</li>
+												<li><img src="assets/img/firebase-key-change.png"></li>
+												<li>Setup the Paypal Merchant Account by entering the details shown in below image.</li>
+												<li><img src="assets/img/paypal.png"></li>
+												<li>Setup the Stripe Merchant Account by entering the details shown in below image.</li>
+												<li><img src="assets/img/stripe.png"></li>
+												<li>Setup the SMTP Details</li>
+												<li><img src="assets/img/smtp.png"></li>
+												
+
+												
+											</ul>
+												<h2 class="section-title" id="errorlog">Errors & Solutions Log</h2>
+										<div class="section-block">
+											
+											<p>If you're facing 404 error in setup of admin panel, Please check that your server directory have <strong>.htaccess</strong> file in it.</p>
+											
+									</section>
+									
+									
+									<!-- <section id="Setup-Country" class="doc-section">
+										<h2 class="section-title"> Change/Setup Country </h2>
+										<div class="section-block">
+											
+											<p>
+												You have to delete the table "tax" in from database follow the screenshort
+											</p>
+											<img src="assets/img/changecountry.png">
+											
+											<p>
+												After that you have to add tax info from your admin panel where you will see list of countries , you can select in which you want to setup follow the animiated picture you will see look like this
+												<br><br><br>
+												<img src="assets/img/addtaxinfo.gif">
+												
+												
+												<b>Note if you are using our demo database you have to follow this step for avoid app crash</b><br><br><br>
+												after add tax you have to see whats the tax id that you added from tax page and just replace that tax id in resturent table
+											</p>
+											
+											<img src="assets/img/addtaxviadb.png">
+											
+											
+										</div>
+										
+									</section> -->
+									<!-- <section id="Super-Portal-Configration" class="doc-section">
+										<h2 class="section-title"> Super Portal Configration </h2>
+										<div class="section-block">
+											<ul>
+												<li>Edit the file "admin/config.php" and update api link follow screenshort</li>
+												<li><img src="assets/img/adminfolder.png"></li>
+											</ul>
+											
+											
+											<img src="assets/img/super-panel-setup.png">
+											<p>Now open admin panel through your domain  http://domain.com/admin and use login admin@admin.com and password is 123456  </p>
+											
+											<p>put your link and verify your api links are working or not  <a href="http://demo.dinosoftlabs.com/foodies/install/">Test Your API Connection</a> </p>
+											
+										</div>
+										
+									</section>
+									
+									
+									<section id="Rider-Portal-Configration" class="doc-section">
+										<h2 class="section-title"> Rider Portal Configration </h2>
+										<div class="section-block">
+											<ul>
+												<li>Edit the file "rider/config.php" and update api link follow screenshort</li>
+												<li><img src="assets/img/riderfolder.png"></li>
+											</ul>
+											
+											<img src="assets/img/rider-panel-setup.png">
+											<p>Now open rider panel through your domain  http://domain.com/rider and use login rider@dinosoftlabs.com and password is 123456  </p>
+											
+										</div>
+										
+									</section>
+									
+									
+									
+									<section id="Restaurants-Portal-Configration" class="doc-section">
+										<h2 class="section-title"> Restaurants Portal Configration </h2>
+										<div class="section-block">
+											<ul>
+												<li>Edit the file "restaurant/config.php" and update api link follow screenshort</li>
+												<li><img src="assets/img/restaurantfolder.png"></li>
+											</ul>
+											
+											<img src="assets/img/restuarent-panel-setup.png">
+											<p>Now open restaurant panel through your domain  http://domain.com/restaurant and use login its scoma@gmail.com 123456 and password is 123456  </p>
+											
+											<p><b style="color:#fc5a55;">Note: Dont change the folder names</b></p>
+											
+											<h4 id="#">Thank you & Support</h4>
+											
+											<p> I'd like to thank you again for your purchase and I hope you where able to successfully install the app and using it in your future business . If you need support or have some questions. You can visit our support resources here at <b style="color:#fc5a55;">hello@dinosoftlabs.com</b> </p>
+											
+											<strong>What support does include</strong>
+											<ul>
+												<li>Answers to (technical) questions about the item's features</li>
+												<li>Assistance with reported bugs and issues</li>
+												<li>Answers to questions about importing and setting up the item as is described in the docs.</li>
+											</ul>
+											<strong>Please note that support does not include:</strong>
+											<ul>
+												<li>Customization &amp; adding new features</li>
+												<li>Installation Services</li>
+												<li>Support for 3rd party software and/or plugins</li>
+												<li>Content related rejections and violations from Google</li>
+											</ul>
+										</div>
+										
+									</section>
+									
+									
+									
+									<section id="faq" class="doc-section">
+										<h2 class="section-title"> FAQ </h2>
+										
+										<div class="section-block">
+											<h4 id="#">App Develope in native or not?</h4>
+											<p>Yes app is in native coding</p>
+											
+											<h4 id="#">Which PHP version?</h4>
+											<p>it will work on PHP 7.0  </p>
+											
+											<h4 id="#">Which Database You are using?</h4>
+											<p>We are using mysql database</p>
+											
+											<h4 id="#">Does Demo Data included (Demo data like on our app)?</h4>
+											<p>Yes Test/Demo Data are inlucded in the package</p>
+											
+											<h4 id="#">Does it have 3rd party services?</h4>
+											<p>
+												
+												Yes We are using these Thrid party services listed below
+												<ul>
+													<li>Google maps</li>
+													<li>Twillio</li>
+													<li>PostMark (email server)</li>
+													<li>Stripe Payment Gatway</li>
+													<li>Firebase It has Firebase Thrid party for real time chat and send push notifications, Which is free but limited  ,
+														after lot of users and usages you have to buy their packages  there are have 3 packages Free , $25 monthly , Pay As you go
+														<a href="https://firebase.google.com/pricing/?authuser=0">See Firebase packages</a></li>
+													</ul>
+												</p>
+												
+												<h4 id="#">Does it have Admin panel </h4>
+												<p>Yes It has Three (Super portal , Rider , Restaurants) as well which is in HTML/CSS and connected with datbase via PHP API</p>
+												
+												<h4 id="#">Does it have Documentation  </h4>
+												<p>Yes it has Documentaion about android , web api setup , admin panel setup , firebase push notification setup</p>
+												
+												<h4 id="#">Which framework we are using for API</h4>
+												<p>We are using cakePHP 2.7.8</p>
+												
+												<h4 id="#">Does it support other languages (RTL)</h4>
+												<p>No its only support English language </p>
+												
+												<h4 id="#">API/Server/3rd party services setup will be free?</h4>
+												<p>No we will not do any help to setup API/server/3rd party services </p>
+												
+												<h4 id="#">Do you provide customization?</h4>
+												<p>Yes we do but there will be an extra cost , contact us on our email hello@dinosoftlabs.com </p>
+												
+												<h4 id="#">What it means when you see white page by going to this url http://domain.com/mobileapp_api/</h4>
+												<p>If you see white page please make sure that your php version should be 7.0. you can change php version 7.0 by going into your hosting cpanel</p>
+												
+												
+												
+											</div>
+											
+										</section> -->
+										
+										
+									</div>
+								</div>
+								<div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+									<div id="doc-nav" class="doc-nav" style="text-align: center;top: -25px;">
+										<img src="assets/img/logoblue.png" alt="" style="margin-bottom: 10px;">
+										
+										<nav id="doc-menu" class="nav doc-menu flex-column sticky" style="text-align: left;">
+											<a class="nav-link scrollto" href="#get-started-section">Get Started</a>
+											<a class="nav-link scrollto" href="#Android-Configration">Install Android studio</a>
+											<a class="nav-link scrollto" href="#SDK-Manager">SDK Manager</a>
+											<nav class="doc-sub-menu nav flex-column">
+												<a class="nav-link scrollto" href="#Importing-Android-Project">Importing Android Project</a>
+											</nav>
+											
+											<a class="nav-link scrollto" href="#Change-Bundle-ID">Change App Name & Color</a>
+											<nav class="doc-sub-menu nav flex-column">
+												<a class="nav-link scrollto" href="#Change-Bundle-ID">Change Bundle ID</a>
+												<a class="nav-link scrollto" href="#Change-App-Name">Change App Name</a>
+												<a class="nav-link scrollto" href="#Change-Color-Scheme">Change Color Scheme</a>
+												<!--   <a class="nav-link scrollto" href="#Change-Theme-of-Application">Change Theme of Application</a> -->
+												<a class="nav-link scrollto" href="#Change-App-icon">Change App Icon</a>
+												<a class="nav-link scrollto" href="#Change-API-Links">Change API Links</a>
+												
+											</nav>
+											
+											
+											<a class="nav-link scrollto" href="#Firebase-Configuring">Firebase Configuring</a>
+											
+											
+											<a class="nav-link scrollto" href="#Debug-and-release-Key">Debug and release Key</a>
+											<a class="nav-link scrollto" href="#Google-Map-Configration">Google Map Configration</a>
+											
+											<!-- <a class="nav-link scrollto" href="#Facebook-Login">Facebook Login Configration</a>
+											<a class="nav-link scrollto active" href="#Google-Login-Configration">Google Login Configration</a> -->
+											
+											<a class="nav-link scrollto" href="#API-Configration">Web Setup & Database Configuration</a>
+											<nav class="doc-sub-menu nav flex-column">
+												<a class="nav-link scrollto" href="#deployment">Deployment</a>
+												<a class="nav-link scrollto" href="#databse-setup">Database Setup & Configuration</a>
+												<a class="nav-link scrollto" href="#adminpanel-setup">Admin Panel Setup</a> 
+												<a class="nav-link scrollto" href="#thirdpartyapi">Change Third Party API</a>
+												<a class="nav-link scrollto" href="#errorlog">Error Log</a> 
+											</nav>
+											
+											
+											<!-- 
+												<a class="nav-link scrollto" href="#faq">FAQ</a>
+											<a class="nav-link scrollto" href="#Setup-Country">Change/Setup Country</a>
+											<a class="nav-link scrollto" href="#Super-Portal-Configration">Admin Panel Setup</a>
+											<nav class="doc-sub-menu nav flex-column">
+												<a class="nav-link scrollto" href="#Super-Portal-Configration">Super Panel Setup</a>
+												<a class="nav-link scrollto" href="#Rider-Portal-Configration">Rider Panel Setup</a>
+												<a class="nav-link scrollto" href="#Restaurants-Portal-Configration">Restaurent Panel Setup</a> 
+											</nav>-->
+											
+											
+											
+										</nav>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				
+				
+				
+				<script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+				<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+				<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+				<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+				<script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+				<script type="text/javascript" src="assets/js/main.js"></script>
+				
+			</body>
+		</html>
