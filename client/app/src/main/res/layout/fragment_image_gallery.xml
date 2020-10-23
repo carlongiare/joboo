@@ -14,11 +14,11 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/action_bar_menus">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvGallery"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+            android:layout_margin="5dp"></androidx.recyclerview.widget.RecyclerView>
 
         <RelativeLayout
             android:id="@+id/rlZoomImg"
@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:visibility="gone">
 
-            <com.samyotech.fabcustomer.utils.TouchImageView
+            <com.client.brain.utils.TouchImageView
                 android:id="@+id/ivZoom"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -44,7 +44,7 @@
         </RelativeLayout>
     </RelativeLayout>
 
-    <com.samyotech.fabcustomer.utils.CustomTextViewBold
+    <com.client.brain.utils.CustomTextViewBold
         android:id="@+id/tvNotFound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

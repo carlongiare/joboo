@@ -5,9 +5,11 @@ package com.samyotech.fabartists.interfacess;
  */
 
 public interface Consts {
-    String APP_NAME = "FabArtist";
+    String APP_NAME = "Joboo Expert";
     //old 677440
-    String BASE_URL = "http://phpstack-132936-852279.cloudwaysapps.com/Webservice/";
+    String BACKEND = " http://backend.joboo.co.ke";
+    String BASE_URL = BACKEND + "/Webservice/";
+
     String PAYMENT_FAIL = "http://phpstack-132936-852279.cloudwaysapps.com/Stripe/Payment/fail";
     String PAYMENT_SUCCESS = "http://phpstack-132936-852279.cloudwaysapps.com/Stripe/Payment/success";
     String MAKE_PAYMENT = "http://phpstack-132936-852279.cloudwaysapps.com/Stripe/Payment/make_payment/";

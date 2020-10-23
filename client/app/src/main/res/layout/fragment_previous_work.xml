@@ -7,13 +7,13 @@
     android:background="@color/white"
     tools:context=".ui.fragment.ImageGallery">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPreviousWork"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+        android:layout_margin="5dp"></androidx.recyclerview.widget.RecyclerView>
 
-    <com.samyotech.fabcustomer.utils.CustomTextViewBold
+    <com.client.brain.utils.CustomTextViewBold
         android:id="@+id/tvNotFound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

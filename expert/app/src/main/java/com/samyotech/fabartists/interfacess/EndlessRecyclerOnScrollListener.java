@@ -1,7 +1,7 @@
 package com.samyotech.fabartists.interfacess;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 /**
  * Created by VARUN on 01/01/19.
  */

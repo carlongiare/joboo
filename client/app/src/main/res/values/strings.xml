@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">FabCustomer</string>
+    <string name="app_name" translatable="false">Joboo Client</string>
     <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
     <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
     <string name="button_allow">Allow</string>
@@ -9,12 +9,12 @@
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="hindi">Hindi</string>
-    <string name="intro_1">Search your nearby \n Make-up Artist \n and Hair Stylish.</string>
+    <string name="intro_1">Search your nearby \n Expert.</string>
     <string name="intro_2">Make yourself more beautiful more than you think.</string>
     <string name="intro_3">Hire the best Photographer &amp; create your moment.</string>
     <string name="internet_concation">Please enable your internet connection.</string>
     <string name="server_error">Unable to connect server.</string>
-    <string name="closeMsg">Are your sure you want to close FabArtist?</string>
+    <string name="closeMsg">Are your sure you want to close Joboo App?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="jobs_completed">Jobs Completed</string>
@@ -22,11 +22,11 @@
     <string name="hr_add_on">/hr</string>
     <string name="fixed_rate_add_on">fixed rate</string>
     <string name="reviews">REVIEW(</string>
-    <string name="book_artist">Book Artist</string>
+    <string name="book_artist">Book Expert</string>
     <string name="book_msg">Are you sure to book</string>
     <string name="chats">Chats</string>
     <string name="val_comment">Please enter comment</string>
-    <string name="take_image">FabCustomer : Take Image From</string>
+    <string name="take_image">Joboo Client : Take Image From</string>
     <string name="select_picture">Select Picture</string>
     <string name="val_des">Please enter description.</string>
     <string name="val_address">Please select address.</string>
@@ -35,7 +35,7 @@
     <string name="select_category">Select Category</string>
     <string name="val_email">Please enter email id.</string>
     <string name="location_enabled">Couldn\'t get the location. Make sure location is enabled on the device</string>
-    <string name="artist_here">Artist here</string>
+    <string name="artist_here">Expert here</string>
     <string name="my_bookings">My Bookings</string>
     <string name="cash_payment">Cash Payment</string>
     <string name="cash_msg">Are you sure want to do cash payment?</string>
@@ -51,8 +51,8 @@
     <string name="completed">Completed</string>
     <string name="decline">Declined</string>
     <string name="decline_msg">Are you sure you want to decline this appointment?</string>
-    <string name="waiting_artist">Waiting for artist response</string>
-    <string name="request_acc">Request accepted by artist</string>
+    <string name="waiting_artist">Waiting for Expert response</string>
+    <string name="request_acc">Request accepted by Expert</string>
     <string name="invoice_genrate">Invoice Generated</string>
     <string name="invoice_paid">Invoice Paid</string>
     <string name="work_inpro">Your work in progress</string>
@@ -71,7 +71,7 @@
     <string name="km">KM From You</string>
     <string name="job_id">Job Id:</string>
     <string name="open">Open</string>
-    <string name="not_edit_job">You can\'t edit this job because Artist have already applied</string>
+    <string name="not_edit_job">You can\'t edit this job because Expert have already applied</string>
     <string name="delete">Delete</string>
     <string name="delete_job">Are you sure to delete this job?</string>
     <string name="complete_job">Are you sure to complete this job?</string>
@@ -89,7 +89,7 @@
     <string name="opps_share">Opps!! It seems that you have not installed any sharing app.</string>
     <string name="invoice">Invoice</string>
     <string name="ic_wallet">Wallet</string>
-    <string name="fabartist">FabArtist</string>
+    <string name="fabartist">Joboo Expert</string>
     <string name="jobs">Post Jobs</string>
     <string name="notification">Notifications</string>
     <string name="profile_settings">Profile Settings</string>
@@ -103,7 +103,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="sign_in">Sign In</string>
     <string name="applied_job">Applicants</string>
-    <string name="search_by_artist">Search by Artist</string>
+    <string name="search_by_artist">Search by Expert</string>
     <string name="no_application_found">No Application Found</string>
     <string name="book_now">BOOK NOW</string>
     <string name="quick_chat">QUICK CHAT</string>
@@ -177,7 +177,7 @@
     <string name="services_type">Services type:</string>
     <string name="accept">Accept</string>
     <string name="reject1">Reject</string>
-    <string name="artist_will_soon">Artist will soon</string>
+    <string name="artist_will_soon">Expert will soon</string>
     <string name="complete1">Complete</string>
     <string name="edit">Edit</string>
     <string name="decline1">Decline</string>
@@ -201,7 +201,7 @@
     <string name="payment_option">Payment Option</string>
     <string name="select">Select</string>
     <string name="no_appointment_found">No Appointment Found</string>
-    <string name="no_artist_found">No Artist Found</string>
+    <string name="no_artist_found">No Expert Found</string>
     <string name="nearby">Nearby</string>
     <string name="discover">Discover</string>
     <string name="search_by_job">Search by Job Title</string>

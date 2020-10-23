@@ -16,7 +16,7 @@
             android:layout_height="50dp"
             android:src="@drawable/dummyuser_image" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/tvReview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
             android:text="@string/review_by"
             android:textSize="12sp" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextViewBold
+        <com.client.brain.utils.CustomTextViewBold
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:rating="4.5"
             android:theme="@style/RatingBar" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/tvRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:text=""
             android:textColor="@color/colorPrimary" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/tvComment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
             android:textColor="@color/colorPrimary" />
 
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

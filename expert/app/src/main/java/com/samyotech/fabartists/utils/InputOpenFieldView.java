@@ -2,7 +2,7 @@ package com.samyotech.fabartists.utils;
 
 import android.content.Context;
 import android.os.Build.VERSION;
-import android.support.design.widget.TextInputLayout;
+import com.google.android.material.textfield.TextInputLayout;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.TextUtils;

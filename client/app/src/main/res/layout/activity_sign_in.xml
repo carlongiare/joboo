@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.samyotech.fabcustomer.ui.activity.SignUpActivity">
+    tools:context="com.client.brain.ui.activity.SignUpActivity">
 
 
     <ImageView
@@ -28,7 +28,7 @@
         android:padding="30dp">
 
 
-        <com.samyotech.fabcustomer.utils.CustomEditText
+        <com.client.brain.utils.CustomEditText
             android:id="@+id/CETemailadd"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -49,7 +49,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/edittext_background">
 
-            <com.samyotech.fabcustomer.utils.CustomEditText
+            <com.client.brain.utils.CustomEditText
                 android:id="@+id/CETenterpassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -75,7 +75,7 @@
         </RelativeLayout>
 
 
-        <com.samyotech.fabcustomer.utils.CustomButton
+        <com.client.brain.utils.CustomButton
             android:id="@+id/CBsignIn"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -85,7 +85,7 @@
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextViewBold
+        <com.client.brain.utils.CustomTextViewBold
             android:id="@+id/CTVBforgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,13 +105,13 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/didn_t_have_any_account"
             android:textColor="@color/black" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/CTVsignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

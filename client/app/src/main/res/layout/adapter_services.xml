@@ -29,7 +29,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/transparent_backpanel">
 
-        <com.samyotech.fabcustomer.utils.CustomTextViewBold
+        <com.client.brain.utils.CustomTextViewBold
             android:id="@+id/tvProductName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:textColor="@color/white"
             android:textSize="16sp" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextViewBold
+        <com.client.brain.utils.CustomTextViewBold
             android:id="@+id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

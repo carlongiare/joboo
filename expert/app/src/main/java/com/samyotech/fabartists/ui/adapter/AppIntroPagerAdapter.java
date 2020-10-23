@@ -3,7 +3,7 @@ package com.samyotech.fabartists.ui.adapter;
  * Created by VARUN on 01/01/19.
  */
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

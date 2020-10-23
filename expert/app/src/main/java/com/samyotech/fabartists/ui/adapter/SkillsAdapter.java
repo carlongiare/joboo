@@ -4,7 +4,7 @@ package com.samyotech.fabartists.ui.adapter;
  * Created by VARUN on 01/01/19.
  */
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

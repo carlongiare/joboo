@@ -14,11 +14,11 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/action_bar_menus">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvGallery"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+            android:layout_margin="5dp"></androidx.recyclerview.widget.RecyclerView>
 
     </RelativeLayout>
 
