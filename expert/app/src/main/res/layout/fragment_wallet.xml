@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -20,7 +20,7 @@
             android:text="@string/wallet_balance"
             android:textSize="16sp" />
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:id="@+id/tvWallet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                 android:layout_weight="0.33"
                 android:orientation="vertical">
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvAll"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -65,7 +65,7 @@
                     android:text="@string/all"
                     android:textSize="16sp" />
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvAllSelect"
                     android:layout_width="match_parent"
                     android:layout_height="4dp"
@@ -78,7 +78,7 @@
                 android:layout_weight="0.33"
                 android:orientation="vertical">
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvDebit"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -86,7 +86,7 @@
                     android:text="@string/debit"
                     android:textSize="16sp" />
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvDebitSelect"
                     android:layout_width="match_parent"
                     android:layout_height="4dp"
@@ -100,7 +100,7 @@
                 android:layout_weight="0.33"
                 android:orientation="vertical">
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvCredit"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -108,7 +108,7 @@
                     android:text="@string/credit"
                     android:textSize="16sp" />
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvCreditSelect"
                     android:layout_width="match_parent"
                     android:layout_height="4dp"
@@ -131,7 +131,7 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/button_selector2">
 
-        <com.samyotech.fabartists.utils.CustomTextViewBold
+        <com.expert.utils.CustomTextViewBold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -158,7 +158,7 @@
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
-    <com.samyotech.fabartists.utils.CustomTextViewBold
+    <com.expert.utils.CustomTextViewBold
         android:id="@+id/tvNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

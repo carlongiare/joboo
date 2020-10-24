@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.samyotech.fabartists">
+    package="com.expert">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -44,24 +44,24 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.ViewInvoice"
+            android:name="com.expert.fabartists.ui.activity.ViewInvoice"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.Privacy"
+            android:name="com.expert.fabartists.ui.activity.Privacy"
             android:screenOrientation="portrait"
              />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.Terms"
+            android:name="com.expert.fabartists.ui.activity.Terms"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.EditPersnoalInfo"
+            android:name="com.expert.fabartists.ui.activity.EditPersnoalInfo"
             android:screenOrientation="portrait" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.samyotech.fabartists.fileprovider"
+            android:authorities="com.expert.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -82,7 +82,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.samyotech.fabartists.SplashActivity">
+        <activity android:name="com.expert.fabartists.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -90,47 +90,47 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.SignUpActivity"
+            android:name="com.expert.fabartists.ui.activity.SignUpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.AppIntro"
+            android:name="com.expert.fabartists.ui.activity.AppIntro"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.SignInActivity"
+            android:name="com.expert.fabartists.ui.activity.SignInActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.BaseActivity"
+            android:name="com.expert.fabartists.ui.activity.BaseActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.utils.MainFragment"
+            android:name="com.expert.fabartists.utils.MainFragment"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.OneTwoOneChat"
+            android:name="com.expert.fabartists.ui.activity.OneTwoOneChat"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.CommentOneByOne"
+            android:name="com.expert.fabartists.ui.activity.CommentOneByOne"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.ForgotPass"
+            android:name="com.expert.fabartists.ui.activity.ForgotPass"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.AddMoney"
+            android:name="com.expert.fabartists.ui.activity.AddMoney"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.samyotech.fabartists.ui.activity.PaymetWeb"
+            android:name="com.expert.fabartists.ui.activity.PaymetWeb"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.schibstedspain.leku.LocationPickerActivity"
             android:label="@string/leku_title_activity_location_picker"
-            android:parentActivityName="com.samyotech.fabartists.ui.activity.BaseActivity"
+            android:parentActivityName="com.expert.fabartists.ui.activity.BaseActivity"
             android:theme="@style/AppTheme.Map"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -142,9 +142,9 @@
                 android:resource="@xml/leku_searchable" />
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.samyotech.fabartists.ui.activity.BaseActivity" />
+                android:value="com.expert.fabartists.ui.activity.BaseActivity" />
         </activity> <!-- [START firebase_service] -->
-        <service android:name="com.samyotech.fabartists.MyFirebaseMessagingService">
+        <service android:name="com.expert.fabartists.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

@@ -64,7 +64,7 @@
 
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-        <com.samyotech.fabartists.utils.CustomTextViewBold
+        <com.expert.utils.CustomTextViewBold
             android:id="@+id/tvNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

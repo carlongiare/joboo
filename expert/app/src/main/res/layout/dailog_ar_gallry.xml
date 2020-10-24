@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/dialog_back_blue">
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/ctvbTitle"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -38,12 +38,12 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <com.samyotech.fabartists.utils.InputFieldView
+            <com.expert.utils.InputFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etImageGallD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputFieldView>
+            </com.expert.utils.InputFieldView>
 
         </LinearLayout>
 
@@ -70,7 +70,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/tvYesGall"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -86,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimaryDark" />
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/tvNoGall"
                 android:layout_width="0dp"
                 android:layout_height="50dp"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.samyotech.fabartists.ui.fragment.GetDiscount">
+    tools:context="com.expert.fabartists.ui.fragment.GetDiscount">
 
 
     <androidx.cardview.widget.CardView
@@ -22,13 +22,13 @@
             android:layout_height="match_parent"
             android:layout_margin="16dp">
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/CTVBaplycode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/apply_code" />
 
-            <com.samyotech.fabartists.utils.CustomTextView
+            <com.expert.utils.CustomTextView
                 android:id="@+id/CTVdescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,14 +44,14 @@
                 android:background="@color/light_gray"
                 android:layout_marginTop="20dp">
 
-                <com.samyotech.fabartists.utils.CustomTextViewBold
+                <com.expert.utils.CustomTextViewBold
                     android:id="@+id/CTVBcode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="" />
 
-                <com.samyotech.fabartists.utils.CustomTextViewBold
+                <com.expert.utils.CustomTextViewBold
                     android:id="@+id/CTVBcopy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
 
     </androidx.cardview.widget.CardView>
 
-    <com.samyotech.fabartists.utils.CustomButton
+    <com.expert.utils.CustomButton
         android:id="@+id/CBinvitefriend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

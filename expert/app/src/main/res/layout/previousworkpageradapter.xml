@@ -16,7 +16,7 @@
             android:layout_height="50dp"
             android:src="@drawable/dummyuser_image" />
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:id="@+id/CTVjobdonefor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
             android:text="@string/job_done_for"
             android:textSize="12sp" />
 
-        <com.samyotech.fabartists.utils.CustomTextViewBold
+        <com.expert.utils.CustomTextViewBold
             android:id="@+id/CTVBprevioususer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:rating="4.5"
             android:theme="@style/RatingBar" />
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:id="@+id/CTVprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
