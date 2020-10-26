@@ -9,7 +9,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public class SmsReceiver extends BroadcastReceiver {
 

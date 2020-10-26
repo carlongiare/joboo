@@ -10,7 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 
 public class JSONParser {

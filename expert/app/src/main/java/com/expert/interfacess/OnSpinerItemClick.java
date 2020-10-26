@@ -1,6 +1,6 @@
 package com.expert.interfacess;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public interface OnSpinerItemClick {
     public void onClick(String item, String itemId, int position);

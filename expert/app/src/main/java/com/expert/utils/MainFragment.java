@@ -32,7 +32,7 @@ import permissions.dispatcher.OnShowRationale;
 import permissions.dispatcher.PermissionRequest;
 import permissions.dispatcher.RuntimePermissions;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 
 @RuntimePermissions

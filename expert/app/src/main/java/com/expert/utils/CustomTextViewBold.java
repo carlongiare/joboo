@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public class CustomTextViewBold extends TextView
 {

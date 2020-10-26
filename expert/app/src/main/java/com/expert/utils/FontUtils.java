@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 @SuppressWarnings("unused")
 public class FontUtils {

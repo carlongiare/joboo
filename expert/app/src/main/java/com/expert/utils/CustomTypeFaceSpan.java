@@ -7,7 +7,7 @@ import android.text.TextPaint;
 import android.text.style.TypefaceSpan;
 
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 @SuppressLint("ParcelCreator")
 public class CustomTypeFaceSpan extends TypefaceSpan

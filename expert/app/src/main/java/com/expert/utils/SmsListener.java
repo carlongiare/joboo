@@ -1,6 +1,6 @@
 package com.expert.utils;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public interface SmsListener {
             public void messageReceived(String messageText);

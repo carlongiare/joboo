@@ -2,7 +2,7 @@ package com.expert.DTO;
 
 import java.io.Serializable;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public class ProductDTO implements Serializable {
     String id = "";

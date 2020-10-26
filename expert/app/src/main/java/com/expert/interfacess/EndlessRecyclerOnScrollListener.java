@@ -3,7 +3,7 @@ package com.expert.interfacess;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public abstract class EndlessRecyclerOnScrollListener extends RecyclerView.OnScrollListener {
     public static String TAG = EndlessRecyclerOnScrollListener.class.getSimpleName();

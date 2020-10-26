@@ -5,7 +5,7 @@ import android.content.Context;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public class CustomDurationScroller extends Scroller {
 

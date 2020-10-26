@@ -11,7 +11,7 @@ import com.expert.interfacess.Consts;
 
 import java.lang.reflect.Type;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public class SharedPrefrence {
     public static SharedPreferences myPrefs;

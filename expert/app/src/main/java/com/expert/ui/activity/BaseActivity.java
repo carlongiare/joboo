@@ -811,7 +811,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
                         categoryDTOS = new ArrayList<>();
                         Type getpetDTO = new TypeToken<List<CategoryDTO>>() {
                         }.getType();
-                        categoryDTOS = (ArrayList<CategoryDTO>) new Gson().fromJson(response.getJSONArray("data").toString(), getpetDTO);
+                        categoryDTOS = new Gson().fromJson(response.getJSONArray("data").toString(), getpetDTO);
                         clickProfile();
 
                     } catch (Exception e) {

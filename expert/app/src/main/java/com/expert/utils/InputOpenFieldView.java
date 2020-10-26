@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 public class InputOpenFieldView extends TextInputLayout implements OnClickListener {
     private OnClickListener clickListener;

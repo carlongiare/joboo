@@ -1,6 +1,6 @@
 package com.expert.ui.adapter;
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 import android.content.Context;
 import androidx.viewpager.widget.PagerAdapter;

@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 
 public class AdapterServices extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

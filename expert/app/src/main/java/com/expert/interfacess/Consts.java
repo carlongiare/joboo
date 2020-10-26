@@ -1,7 +1,7 @@
 package com.expert.interfacess;
 
 /**
- * Created by VARUN on 01/01/19.
+ * Created by Austine Gwa.
  */
 
 public interface Consts {
@@ -18,7 +18,7 @@ public interface Consts {
     String PAYMENT_SUCCESS_paypal = "http://phpstack-132936-852279.cloudwaysapps.com/Webservice/payusuccess";
     String MAKE_PAYMENT_paypal = "http://phpstack-132936-852279.cloudwaysapps.com/Webservice/paypalWallent?";
     String PRIVACY_URL = "http://phpstack-132936-852279.cloudwaysapps.com/Webservice/privacy";
-    String TERMS_URL = "http://phpstack-132936-852279.cloudwaysapps.com/Webservice/term";
+    String TERMS_URL = BACKEND +"/term";
 
 
     /*Api Details*/

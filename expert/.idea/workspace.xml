@@ -16,223 +16,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50956590-3cab-4167-a90c-569b5268e126" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/app/src/main/res/drawable-mdpi/mpesa_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/drawable-nodpi/logo_fab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/drawable-nodpi/splashfab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/appintropager_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/appintropager_adapter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/dailog_payment_option.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/dailog_payment_option.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/AllJobsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/AppliedJobDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/AppointmentDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/ArtistBooking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/ArtistBookingDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/ArtistDetailsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/CategoryDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/ChatListDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/DiscountDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/EarningDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/GalleryDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/GetCommentDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/HistoryDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/NotificationDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/ProductDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/QualificationsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/ReviewsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/SkillsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/TicketCommentDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/TicketDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/DTO/WalletHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/MyFirebaseMessagingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/SplashActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/https/HttpsRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/interfacess/Consts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/interfacess/EndlessRecyclerOnScrollListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/interfacess/Helper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/interfacess/OnSpinerItemClick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/jsonparser/JSONParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/network/NetworkManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/preferences/SharedPrefrence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/service/GPSTracker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/AddMoney.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/AppIntro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/BaseActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/CommentOneByOne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/EditPersnoalInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/ForgotPass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/OneTwoOneChat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/PaymetWeb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/Privacy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/SignInActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/SignUpActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/Terms.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/activity/ViewInvoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterAllBookings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterAppointmnet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterGallery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterViewComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterViewCommentTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AdapterWalletHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AllJobsAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AppIntroPagerAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/AppliedJobAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/ChatListAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/NotificationAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/PaidAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/PreviousworkPagerAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/QualificationAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/ReviewAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/SkillsAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/TicketAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/adapter/UnPaidAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/AllJobsFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/AppliedJobsFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/AppointmentFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/ArtistProfile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/ChatList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/CustomerBooking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/GetDiscount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/HistoryFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/ImageGallery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/JobsCateFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/JobsFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/MyEarning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/NewBookings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/Notification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/PaidFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/PersnoalInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/PreviousWork.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/ProfileSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/Reviews.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/Services.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/Tickets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/UnPaidFrag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/ui/fragment/Wallet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/AutoScrollViewPager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/CustomButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/CustomDurationScroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/CustomEditText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/CustomTextView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/CustomTextViewBold.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/CustomTypeFaceSpan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/Fab.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/FontCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/FontUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/ImageCompression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/InputFieldView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/InputOpenFieldView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/MainFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/ProgressDialogFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/ProjectUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/RoundRectCornerImageView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/SmsListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/SmsReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/SpinnerDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/samyotech/fabartists/utils/TouchImageView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/actionbar_header_nav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/actionbar_header_nav.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_app_intro2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_app_intro2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_comment_one_by_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_comment_one_by_one.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_persnoal_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_persnoal_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_pass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_pass.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_discount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_get_discount.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notification.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_one_two_one_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_one_two_one_chat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_paymet_web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_paymet_web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_privacy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_privacy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile_setting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_terms.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_terms.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_invoice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_invoice.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_all_bookings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_all_bookings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_all_jobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_all_jobs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_applied_job.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_applied_job.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_appointment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_chat_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_chat_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_paid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_paid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_review.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_review.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_ticket.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_ticket.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_unpaid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_unpaid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_view_comment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_view_comment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_view_comment_my.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_view_comment_my.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_wallet_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_wallet_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapternotification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapternotification.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapterqualification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapterqualification.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapterskills.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapterskills.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/appintropager_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appintropager_adapter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_add_ticket.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_add_ticket.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_address.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_address.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_apply_job.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_apply_job.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_about.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_about.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_gallry.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_gallry.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_personal_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_personal_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_product.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_qualification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_qualification.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_skills.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_ar_skills.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_image_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_image_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_payment_option.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_payment_option.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_personal_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_personal_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_jobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_jobs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_applied_jobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_applied_jobs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_appointment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_appointment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_artist_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_artist_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_customer_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_customer_booking.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_image_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_image_gallery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_jobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_jobs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_jobs_cate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_jobs_cate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_earning.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_earning.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_bookings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_bookings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_paid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_paid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_persnoal_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_persnoal_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_previous_work.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_previous_work.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_reviews.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_reviews.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ticket.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_ticket.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_unpaid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_unpaid.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_section.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_section.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/previousworkpageradapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/previousworkpageradapter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/spinner_view_checkbox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_view_checkbox.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/spinner_view_radio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_view_radio.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AllJobsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AllJobsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppliedJobDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppliedJobDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppointmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBooking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBookingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistDetailsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ChatListDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ChatListDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/DiscountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/DiscountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/EarningDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/EarningDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GalleryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GalleryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GetCommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GetCommentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/HistoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/HistoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/NotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/NotificationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/QualificationsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/QualificationsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ReviewsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ReviewsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/SkillsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/SkillsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketCommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketCommentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/WalletHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/WalletHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/MyFirebaseMessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/MyFirebaseMessagingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/https/HttpsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/https/HttpsRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/EndlessRecyclerOnScrollListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/EndlessRecyclerOnScrollListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/OnSpinerItemClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/OnSpinerItemClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/jsonparser/JSONParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/jsonparser/JSONParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/network/NetworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/preferences/SharedPrefrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/preferences/SharedPrefrence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/service/GPSTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/service/GPSTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterAppointmnet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterAppointmnet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterGallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterGallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewCommentTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewCommentTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterWalletHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterWalletHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AllJobsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AllJobsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppIntroPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppIntroPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppliedJobAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppliedJobAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/NotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/NotificationAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PaidAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PaidAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PreviousworkPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PreviousworkPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/QualificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/QualificationAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/ReviewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/ReviewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/SkillsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/SkillsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/TicketAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/TicketAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/UnPaidAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/UnPaidAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/AutoScrollViewPager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/AutoScrollViewPager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomDurationScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomDurationScroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomEditText.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomEditText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextViewBold.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextViewBold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTypeFaceSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTypeFaceSpan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ImageCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ImageCompression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputFieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputFieldView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputOpenFieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputOpenFieldView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/MainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/MainFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProgressDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProgressDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/RoundRectCornerImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/RoundRectCornerImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SpinnerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SpinnerDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/TouchImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/TouchImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[05199339BB003397]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -317,6 +194,7 @@
   <component name="ProjectId" id="1jHhZNkbJJ1jTQR4XXM3wQj5N2J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -332,7 +210,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="device.picker.selection" value="00d099ee0fd530d1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.3.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -490,7 +368,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603468230349</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="morning builds">
+      <created>1603681693240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603681693240</updated>
+    </task>
+    <task id="LOCAL-00003" summary="morning builds">
+      <created>1603681994801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603681994801</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -498,21 +390,30 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="update expert app" />
-    <option name="LAST_COMMIT_MESSAGE" value="update expert app" />
+    <MESSAGE value="morning builds" />
+    <option name="LAST_COMMIT_MESSAGE" value="morning builds" />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1603468409794">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1603468409794" />
-    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1603468204635">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603683847926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603468204635" />
-    <state x="463" y="90" key="FileChooserDialogImpl" timestamp="1603467312108">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603683847926" />
+    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1603681985195">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="90" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603467312108" />
+    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603681985195" />
+    <state x="463" y="90" key="FileChooserDialogImpl" timestamp="1603682227801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="90" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603682227801" />
+    <state x="358" y="37" width="650" height="654" key="find.popup" timestamp="1603683720785">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="358" y="37" width="650" height="654" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603683720785" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
