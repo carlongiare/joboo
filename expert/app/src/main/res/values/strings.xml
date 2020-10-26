@@ -289,4 +289,6 @@
     <string name="upload_image_first">You have not added any image for delete.</string>
     <string name="no_reviews_found">No Reviews Found</string>
     <string name="no_privious_found">No Privious work Found</string>
+
+    <string name="places_api_key" translatable="false">AIzaSyCI21U0RCgVtp4GRjQem6btIizuI1J-cKs</string>
 </resources>

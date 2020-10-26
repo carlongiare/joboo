@@ -16,93 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50956590-3cab-4167-a90c-569b5268e126" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AllJobsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AllJobsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppliedJobDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppliedJobDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/AppointmentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistBookingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ArtistDetailsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/CategoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ChatListDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ChatListDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/DiscountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/DiscountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/EarningDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/EarningDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GalleryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GalleryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GetCommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/GetCommentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/HistoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/HistoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/NotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/NotificationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/QualificationsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/QualificationsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ReviewsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/ReviewsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/SkillsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/SkillsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketCommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketCommentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/TicketDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/WalletHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/DTO/WalletHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/MyFirebaseMessagingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/MyFirebaseMessagingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/https/HttpsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/https/HttpsRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/EndlessRecyclerOnScrollListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/EndlessRecyclerOnScrollListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/OnSpinerItemClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/OnSpinerItemClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/jsonparser/JSONParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/jsonparser/JSONParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/network/NetworkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/preferences/SharedPrefrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/preferences/SharedPrefrence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/service/GPSTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/service/GPSTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterAppointmnet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterAppointmnet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterGallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterGallery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewCommentTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterViewCommentTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterWalletHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AdapterWalletHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AllJobsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AllJobsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppIntroPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppIntroPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppliedJobAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/AppliedJobAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/NotificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/NotificationAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PaidAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PaidAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PreviousworkPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/PreviousworkPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/QualificationAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/QualificationAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/ReviewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/ReviewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/SkillsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/SkillsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/TicketAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/TicketAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/UnPaidAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/adapter/UnPaidAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/AutoScrollViewPager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/AutoScrollViewPager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomDurationScroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomDurationScroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomEditText.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomEditText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextViewBold.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTextViewBold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTypeFaceSpan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/CustomTypeFaceSpan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/FontUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ImageCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ImageCompression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputFieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputFieldView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputOpenFieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/InputOpenFieldView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/MainFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/MainFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProgressDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProgressDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/ProjectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/RoundRectCornerImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/RoundRectCornerImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SmsReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SpinnerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/SpinnerDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/TouchImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/utils/TouchImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,9 +132,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\mipmap-xxxhdpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-nodpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/getthatdone/provider/ui/fragment" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com" />
@@ -233,11 +152,9 @@
       <recent name="com.getthatdone.provider.ui.fragment" />
       <recent name="com.getthatdone.provider.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-nodpi" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/getthatdone/provider/ui/fragment" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -382,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603681994801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update color branding">
+      <created>1603684051425</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603684051425</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -391,7 +315,8 @@
     </ignored-roots>
     <MESSAGE value="update expert app" />
     <MESSAGE value="morning builds" />
-    <option name="LAST_COMMIT_MESSAGE" value="morning builds" />
+    <MESSAGE value="update color branding" />
+    <option name="LAST_COMMIT_MESSAGE" value="update color branding" />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1603468409794">
@@ -402,18 +327,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603683847926" />
-    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1603681985195">
+    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1603684017593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603681985195" />
+    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603684017593" />
     <state x="463" y="90" key="FileChooserDialogImpl" timestamp="1603682227801">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="90" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603682227801" />
-    <state x="358" y="37" width="650" height="654" key="find.popup" timestamp="1603683720785">
+    <state x="358" y="37" width="650" height="654" key="find.popup" timestamp="1603685750269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="358" y="37" width="650" height="654" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603683720785" />
+    <state x="358" y="37" width="650" height="654" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603685750269" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
