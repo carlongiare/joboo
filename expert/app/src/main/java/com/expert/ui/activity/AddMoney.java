@@ -1,6 +1,7 @@
 package com.expert.ui.activity;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,14 +10,19 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.expert.DTO.UserDTO;
 import com.expert.R;
 import com.expert.https.HttpsRequest;
 import com.expert.interfacess.Consts;
 import com.expert.interfacess.Helper;
+import com.expert.mpesa.API;
+import com.expert.mpesa.ApiInstance;
+import com.expert.mpesa.LNMResult;
 import com.expert.network.NetworkManager;
 import com.expert.preferences.SharedPrefrence;
 import com.expert.utils.CustomButton;
@@ -27,6 +33,10 @@ import com.expert.utils.ProjectUtils;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class AddMoney extends AppCompatActivity implements View.OnClickListener {
     private String TAG = AddMoney.class.getSimpleName();
@@ -195,6 +205,10 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
         llCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String amountPay = ProjectUtils.getEditTextValue((EditText) findViewById(R.id.etAddMoney));
+                String phone = ProjectUtils.getEditTextValue((EditText) findViewById(R.id.edmpesanumber));
+                String userId = userDTO.getUser_id();
+                stkpush(amountPay,phone, userId);
                 dialog.dismiss();
             }
         });
@@ -221,6 +235,46 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
             }
         });
 
+    }
+
+    private void stkpush(String amountPay,String phone, String userId) {
+
+        final ProgressDialog progressDialog = new ProgressDialog(AddMoney.this);
+        progressDialog.setMessage("initiating mpesa...");
+        progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.show();
+
+        API mpesaApi  = ApiInstance.getRetrofitInstance().create(API.class);
+        mpesaApi.payWithMpesa("UtbDlxrON1gLZr3",phone,amountPay,userId).enqueue(new Callback<LNMResult>() {
+            @Override
+            public void onResponse(Call<LNMResult> call, Response<LNMResult> response) {
+
+                if(response.body() != null){
+
+                    if(response.body().getResponseCode().equals("0")){
+                        progressDialog.dismiss();
+
+                    }else{
+                        progressDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), "There was an error initiating your request", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+                }else{
+                    Toast.makeText(getApplicationContext(), "There was an error proccessing your request Please try again", Toast.LENGTH_LONG).show();
+                }
+
+
+            }
+
+            @Override
+            public void onFailure(Call<LNMResult> call, Throwable t) {
+
+                progressDialog.dismiss();
+                Toast.makeText(getApplicationContext(), "Error : "+t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 }

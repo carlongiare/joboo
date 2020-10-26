@@ -16,8 +16,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50956590-3cab-4167-a90c-569b5268e126" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/mpesa/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/mpesa/ApiInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/mpesa/LNMResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/AddMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/AddMoney.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dailog_payment_option.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dailog_payment_option.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,18 +132,18 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="device.picker.selection" value="00d099ee0fd530d1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/expert" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.3.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\java\com\expert" />
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app" />
       <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\mipmap-xxxhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-nodpi" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/getthatdone/provider/ui/fragment" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com" />
@@ -306,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603684051425</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add project to firebase">
+      <created>1603686173673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603686173673</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -316,7 +329,8 @@
     <MESSAGE value="update expert app" />
     <MESSAGE value="morning builds" />
     <MESSAGE value="update color branding" />
-    <option name="LAST_COMMIT_MESSAGE" value="update color branding" />
+    <MESSAGE value="add project to firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project to firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="479" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1603468409794">
@@ -327,14 +341,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603683847926" />
-    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1603684017593">
+    <state x="528" y="171" key="AndroidCreateXmlResourceDialog" timestamp="1603688434890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603684017593" />
+    <state x="528" y="171" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1603688434890" />
+    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1603686172189">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603686172189" />
     <state x="463" y="90" key="FileChooserDialogImpl" timestamp="1603682227801">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="90" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603682227801" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603686200551">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603686200551" />
     <state x="358" y="37" width="650" height="654" key="find.popup" timestamp="1603685750269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

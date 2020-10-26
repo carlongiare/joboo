@@ -148,7 +148,7 @@
             <com.expert.utils.CustomButton
                 android:id="@+id/cbAdd"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/button_selector3"
                 android:text="@string/add_money"
