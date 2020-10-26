@@ -6,7 +6,7 @@ android {
     }
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.samyotech.fabartists"
+        applicationId "com.expert"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 5
@@ -59,11 +59,6 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.0.0'
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation 'com.amitshekhar.android:android-networking:1.0.0'
-
-    //http
-    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
-    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
-
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'org.jsoup:jsoup:1.8.1'
     implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
