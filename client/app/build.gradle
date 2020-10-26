@@ -35,6 +35,10 @@ android {
             keyPassword "android"
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 ext {
     permissionsDispatcherVersion = '2.2.0'
@@ -60,6 +64,10 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
     implementation 'com.google.android.gms:play-services-location:16.0.0'
     implementation("com.google.android.libraries.places:places-compat:1.0.0")
+
+    //http
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
 
 
     //3rd party dependency

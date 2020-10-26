@@ -10,8 +10,8 @@
     <string name="cancel">Cancel</string>
     <string name="hindi">Hindi</string>
     <string name="intro_1">Search your nearby \n Expert.</string>
-    <string name="intro_2">Make yourself more beautiful more than you think.</string>
-    <string name="intro_3">Hire the best Photographer &amp; create your moment.</string>
+    <string name="intro_2">Pay instantly from the app</string>
+    <string name="intro_3">Hire the best from our large pool of experts</string>
     <string name="internet_concation">Please enable your internet connection.</string>
     <string name="server_error">Unable to connect server.</string>
     <string name="closeMsg">Are your sure you want to close Joboo App?</string>
@@ -276,4 +276,5 @@
     <string name="trms_acc">Please accept Terms of Use and Privacy Policy</string>
     <string name="please_select">Please select</string>
     <string name="upload_image_first">You have not added any image for delete.</string>
+    <string name="mpesa_pay">Mpesa Pay</string>
 </resources>
