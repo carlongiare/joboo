@@ -7,6 +7,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -55,6 +57,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+import afu.org.checkerframework.checker.nullness.qual.NonNull;
 import hani.momanii.supernova_emoji_library.Actions.EmojIconActions;
 import hani.momanii.supernova_emoji_library.Helper.EmojiconEditText;
 
@@ -188,13 +191,6 @@ public class OneTwoOneChat extends AppCompatActivity implements View.OnClickList
         });
 
 
-
-   /*     if (pathOfImage != null && pathOfImage.length() > 0)
-        {
-            mPreviewImg.setImageURI(Uri.fromFile(new File(pathOfImage)));
-            showImageContainer();
-        }
-*/
         mDeleteImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -440,7 +436,12 @@ public class OneTwoOneChat extends AppCompatActivity implements View.OnClickList
 
 
     public boolean validateMessage() {
-        if (edittextMessage.getText().toString().trim().length() <= 0) {
+
+        if(hasImage(mPreviewImg)){
+            edittextMessage.setError(null);
+            edittextMessage.clearFocus();
+            return true;
+        }else  if (edittextMessage.getText().toString().trim().length() <= 0 ) {
             edittextMessage.setError(getResources().getString(R.string.val_comment));
             edittextMessage.requestFocus();
             return false;
@@ -451,13 +452,23 @@ public class OneTwoOneChat extends AppCompatActivity implements View.OnClickList
         }
     }
 
+    private boolean hasImage(@NonNull ImageView view) {
+        Drawable drawable = view.getDrawable();
+        boolean hasImage = (drawable != null);
+
+        if (hasImage && (drawable instanceof BitmapDrawable)) {
+            hasImage = ((BitmapDrawable)drawable).getBitmap() != null;
+        }
+
+        return hasImage;
+    }
+
     public void submit() {
         if (!validateMessage()) {
             return;
         } else {
             try {
-                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
-                        InputMethodManager.HIDE_NOT_ALWAYS);
+                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
             } catch (Exception e) {
 
             }
@@ -533,6 +544,7 @@ public class OneTwoOneChat extends AppCompatActivity implements View.OnClickList
 
 
     public void doComment() {
+        buttonSendMessage.setVisibility(View.INVISIBLE);
         values.put(Consts.ARTIST_ID, ar_id);
         values.put(Consts.USER_ID, userDTO.getUser_id());
         values.put(Consts.MESSAGE, ProjectUtils.getEditTextValue(edittextMessage));
@@ -555,6 +567,7 @@ public class OneTwoOneChat extends AppCompatActivity implements View.OnClickList
                     getComment();
                     file = null;
                     pathOfImage = "";
+                    buttonSendMessage.setVisibility(View.VISIBLE);
                 } else {
                 }
             }

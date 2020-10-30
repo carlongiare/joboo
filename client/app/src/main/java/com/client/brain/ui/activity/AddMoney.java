@@ -217,7 +217,7 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
                 String amountPay = ProjectUtils.getEditTextValue(binding.etAddMoney);
                 String phone = ProjectUtils.getEditTextValue(binding1.edmpesanumber);
                 String userId = userDTO.getUser_id();
-                stkpush(amountPay,phone, userId);
+                //stkpush(amountPay,phone, userId);
                 dialog.dismiss();
             }
         });

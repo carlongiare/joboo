@@ -543,68 +543,60 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
     private void getMyLocation() {
-        if (googleApiClient != null) {
-            if (googleApiClient.isConnected()) {
-                int permissionLocation = ContextCompat.checkSelfPermission(BaseActivity.this,
-                        Manifest.permission.ACCESS_FINE_LOCATION);
-                if (permissionLocation == PackageManager.PERMISSION_GRANTED) {
-                    mylocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-                    LocationRequest locationRequest = new LocationRequest();
-                    locationRequest.setInterval(3000);
-                    locationRequest.setFastestInterval(3000);
-                    locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-                    LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
-                            .addLocationRequest(locationRequest);
-                    builder.setAlwaysShow(true);
-                    LocationServices.FusedLocationApi
-                            .requestLocationUpdates(googleApiClient, locationRequest, this);
-                    PendingResult result =
-                            LocationServices.SettingsApi
-                                    .checkLocationSettings(googleApiClient, builder.build());
-                    result.setResultCallback(new ResultCallback() {
+    if (googleApiClient != null) {
+        if (googleApiClient.isConnected()) {
+            int permissionLocation = ContextCompat.checkSelfPermission(BaseActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
+            if (permissionLocation == PackageManager.PERMISSION_GRANTED) {
+                mylocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
+                LocationRequest locationRequest = new LocationRequest();
+                locationRequest.setInterval(3000);
+                locationRequest.setFastestInterval(3000);
+                locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+                LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
+                builder.setAlwaysShow(true);
+                LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, this);
+                PendingResult result = LocationServices.SettingsApi.checkLocationSettings(googleApiClient, builder.build());
+                result.setResultCallback(new ResultCallback() {
 
-                        @Override
-                        public void onResult(@NonNull Result result) {
-                            final Status status = result.getStatus();
-                            switch (status.getStatusCode()) {
-                                case LocationSettingsStatusCodes.SUCCESS:
-                                    // All location settings are satisfied.
-                                    // You can initialize location requests here.
-                                    int permissionLocation = ContextCompat
-                                            .checkSelfPermission(BaseActivity.this,
-                                                    Manifest.permission.ACCESS_FINE_LOCATION);
-                                    if (permissionLocation == PackageManager.PERMISSION_GRANTED) {
-                                        mylocation = LocationServices.FusedLocationApi
-                                                .getLastLocation(googleApiClient);
+                    @Override
+                    public void onResult(@NonNull Result result) {
+                        final Status status = result.getStatus();
+                        switch (status.getStatusCode()) {
+                            case LocationSettingsStatusCodes.SUCCESS:
+                                // All location settings are satisfied.
+                                // You can initialize location requests here.
+                                int permissionLocation = ContextCompat.checkSelfPermission(BaseActivity.this, Manifest.permission.ACCESS_FINE_LOCATION);
+                                if (permissionLocation == PackageManager.PERMISSION_GRANTED) {
+                                    mylocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
 
-                                    }
-                                    break;
-                                case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
-                                    // Location settings are not satisfied.
-                                    // But could be fixed by showing the fabcustomer a dialog.
-                                    try {
-                                        // Show the dialog by calling startResolutionForResult(),
-                                        // and check the result in onActivityResult().
-                                        // Ask to turn on GPS automatically
-                                        status.startResolutionForResult(BaseActivity.this,
-                                                REQUEST_CHECK_SETTINGS_GPS);
-                                    } catch (IntentSender.SendIntentException e) {
-                                        // Ignore the error.
-                                    }
-                                    break;
-                                case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
-                                    // Location settings are not satisfied. However, we have no way to fix the
-                                    // settings so we won't show the dialog.
-                                    //finish();
-                                    break;
-                            }
+                                }
+                                break;
+                            case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+                                // Location settings are not satisfied.
+                                // But could be fixed by showing the customer  dialog.
+                                try {
+                                    // Show the dialog by calling startResolutionForResult(),
+                                    // and check the result in onActivityResult().
+                                    // Ask to turn on GPS automatically
+                                    status.startResolutionForResult(BaseActivity.this,
+                                            REQUEST_CHECK_SETTINGS_GPS);
+                                } catch (IntentSender.SendIntentException e) {
+                                    // Ignore the error.
+                                }
+                                break;
+                            case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                                // Location settings are not satisfied. However, we have no way to fix the
+                                // settings so we won't show the dialog.
+                                //finish();
+                                break;
                         }
+                    }
 
 
-                    });
-                }
+                });
             }
         }
+    }
     }
 
 

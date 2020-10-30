@@ -7,7 +7,7 @@ package com.expert.interfacess;
 public interface Consts {
     String APP_NAME = "FabArtist";
     //old 677440
-    String BACKEND = " http://backend.joboo.co.ke";
+    String BACKEND = "http://backend.joboo.co.ke";
 
     String BASE_URL = BACKEND + "/Webservice/";
     String PAYMENT_FAIL = "http://phpstack-132936-852279.cloudwaysapps.com/Stripe/Payment/fail";
