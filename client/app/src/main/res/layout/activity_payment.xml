@@ -297,6 +297,7 @@
                     android:id="@+id/llCash"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:visibility="gone"
                     android:layout_below="@+id/rlOr"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_selector3"
@@ -329,6 +330,7 @@
                         android:background="@color/gray" />
 
                     <com.client.brain.utils.CustomTextView
+                        android:visibility="gone"
                         android:id="@+id/tvOR1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

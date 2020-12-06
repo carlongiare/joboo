@@ -276,6 +276,6 @@
     <string name="trms_acc">Please accept Terms of Use and Privacy Policy</string>
     <string name="please_select">Please select</string>
     <string name="upload_image_first">You have not added any image for delete.</string>
-    <string name="mpesa_pay">Mpesa Pay</string>
+    <string name="mpesa_pay">Mpesa Pay Now</string>
     <string name="maps_api_key">AIzaSyAAcmaBd0qLem-xNuTQN1P-xxdvobXkHIg</string>
 </resources>

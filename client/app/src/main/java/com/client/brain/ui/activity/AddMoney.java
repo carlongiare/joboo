@@ -8,7 +8,6 @@ import androidx.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
@@ -21,6 +20,7 @@ import com.client.brain.DTO.UserDTO;
 import com.client.brain.R;
 import com.client.brain.databinding.ActivityAddMoneyBinding;
 import com.client.brain.databinding.DailogPaymentOptionBinding;
+import androidx.appcompat.app.AppCompatActivity;
 import com.client.brain.https.HttpsRequest;
 import com.client.brain.interfacess.Consts;
 import com.client.brain.interfacess.Helper;
@@ -211,15 +211,12 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
 
         dialog.show();
         dialog.setCancelable(false);
-        binding1.llCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String amountPay = ProjectUtils.getEditTextValue(binding.etAddMoney);
-                String phone = ProjectUtils.getEditTextValue(binding1.edmpesanumber);
-                String userId = userDTO.getUser_id();
-                //stkpush(amountPay,phone, userId);
-                dialog.dismiss();
-            }
+        binding1.llCancel.setOnClickListener(v -> {
+            String amountPay = ProjectUtils.getEditTextValue(binding.etAddMoney);
+            String phone = ProjectUtils.getEditTextValue(binding1.edmpesanumber);
+            String userId = userDTO.getUser_id();
+            stkpush(amountPay,phone, userId);
+            dialog.dismiss();
         });
         binding1.llPaypall.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -251,7 +248,7 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
         progressDialog.show();
 
         API mpesaApi  = ApiInstance.getRetrofitInstance().create(API.class);
-        mpesaApi.payWithMpesa("UtbDlxrON1gLZr3",phone,amountPay,userId).enqueue(new Callback<LNMResult>() {
+        mpesaApi.payWithMpesa(phone,amountPay,userId).enqueue(new Callback<LNMResult>() {
             @Override
             public void onResponse(Call<LNMResult> call, Response<LNMResult> response) {
 
@@ -268,6 +265,7 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
 
 
                 }else{
+                    progressDialog.dismiss();
                     Toast.makeText(getApplicationContext(), "There was an error proccessing your request Please try again", Toast.LENGTH_LONG).show();
                 }
 

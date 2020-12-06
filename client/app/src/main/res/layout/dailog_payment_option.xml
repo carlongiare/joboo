@@ -118,7 +118,8 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/mpesa_pay"
-                android:textColor="@color/colorPrimary"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
 
