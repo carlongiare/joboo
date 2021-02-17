@@ -1,8 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.isseiaoki:simplecropview:1.1.4@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8818706bd044e725bdd43a3144dc0361/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8818706bd044e725bdd43a3144dc0361/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7052848d5080fb749bbe1989533e4611/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7052848d5080fb749bbe1989533e4611/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7052848d5080fb749bbe1989533e4611/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29dcd1b181c9876d2cddd9985ab31546/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29dcd1b181c9876d2cddd9985ab31546/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29dcd1b181c9876d2cddd9985ab31546/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

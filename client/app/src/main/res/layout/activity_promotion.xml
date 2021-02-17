@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.samyotech.fabcustomer.ui.activity.PromotionActivity">
+    tools:context="com.client.brain.ui.activity.PromotionActivity">
 
     <RelativeLayout
         android:id="@+id/header"
@@ -22,7 +22,7 @@
             android:padding="10dp"
             android:src="@drawable/back" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextViewBold
+        <com.client.brain.utils.CustomTextViewBold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -38,12 +38,12 @@
         android:layout_margin="16dp"
         android:orientation="vertical">
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/apply_code1" />
 
-        <com.samyotech.fabcustomer.utils.CustomEditText
+        <com.client.brain.utils.CustomEditText
             android:id="@+id/CETcode"
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -55,7 +55,7 @@
 
     </LinearLayout>
 
-    <com.samyotech.fabcustomer.utils.CustomButton
+    <com.client.brain.utils.CustomButton
         android:id="@+id/CBapplycode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

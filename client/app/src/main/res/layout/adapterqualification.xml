@@ -10,14 +10,14 @@
         android:layout_height="wrap_content"
         android:padding="10dp">
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/CTVtitel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
             android:textSize="14sp" />
 
-        <com.samyotech.fabcustomer.utils.CustomTextView
+        <com.client.brain.utils.CustomTextView
             android:id="@+id/CTVdescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

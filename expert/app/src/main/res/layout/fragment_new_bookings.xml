@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        tools:context=".ui.fragment.NewBookings">
+        tools:context="com.expert.ui.fragment.NewBookings">
 
         <RelativeLayout
             android:id="@+id/rlSearch"
@@ -17,7 +17,7 @@
             android:background="@color/white"
             android:visibility="gone">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -27,7 +27,7 @@
                 app:cardCornerRadius="5dp">
 
 
-                <android.support.v7.widget.SearchView
+                <androidx.appcompat.widget.SearchView
                     android:id="@+id/svSearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -39,9 +39,9 @@
                     app:theme="@style/AppSearchView">
 
 
-                </android.support.v7.widget.SearchView>
+                </androidx.appcompat.widget.SearchView>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </RelativeLayout>
@@ -53,19 +53,19 @@
             android:layout_below="@+id/rlSearch">
 
 
-            <android.support.v4.widget.SwipeRefreshLayout
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/swipeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvBooking"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
 
-            </android.support.v4.widget.SwipeRefreshLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/tvNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
 
         </RelativeLayout>
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             android:textColor="@color/black" />
 
         <!-- Your FAB implementation -->
-        <com.samyotech.fabartists.utils.Fab
+        <com.expert.utils.Fab
             android:id="@+id/fab"
             style="@style/Widget.MaterialSheetFab.Fab"
             android:layout_alignParentEnd="true"
@@ -112,7 +112,7 @@
             android:orientation="vertical">
 
             <!-- Sheet that contains your items -->
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/fab_sheet"
                 style="@style/Widget.MaterialSheetFab.Sheet">
 
@@ -123,24 +123,24 @@
                     android:orientation="vertical">
 
                     <!-- Recording -->
-                    <com.samyotech.fabartists.utils.CustomTextView
+                    <com.expert.utils.CustomTextView
                         android:id="@+id/tvPendings"
                         style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
                         android:text="@string/pendings" />
 
                     <!-- Reminder -->
-                    <com.samyotech.fabartists.utils.CustomTextView
+                    <com.expert.utils.CustomTextView
                         android:id="@+id/tvAccepted"
                         style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
                         android:text="@string/accepted" />
 
                     <!-- Photo -->
-                    <com.samyotech.fabartists.utils.CustomTextView
+                    <com.expert.utils.CustomTextView
                         android:id="@+id/tvRejected"
                         style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
                         android:text="@string/rejected" />
 
-                    <com.samyotech.fabartists.utils.CustomTextView
+                    <com.expert.utils.CustomTextView
                         android:id="@+id/tvCompleted"
                         style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
                         android:text="@string/completed" />
@@ -148,7 +148,7 @@
 
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </io.codetail.widget.RevealLinearLayout>
     </RelativeLayout>

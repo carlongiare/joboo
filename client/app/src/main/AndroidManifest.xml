@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.samyotech.fabcustomer">
+    package="com.client.brain">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -35,7 +35,7 @@
 
     <application
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
@@ -47,26 +47,26 @@
             android:required="false" />
 
         <activity
-            android:name=".ui.activity.Booking"
+            android:name="com.client.brain.ui.activity.Booking"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".ui.activity.ServiceSlider" />
+        <activity android:name="com.client.brain.ui.activity.ServiceSlider" />
         <activity
-            android:name=".ui.activity.ViewInvoice"
+            android:name="com.client.brain.ui.activity.ViewInvoice"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.Privacy"
+            android:name="com.client.brain.ui.activity.Privacy"
             android:screenOrientation="portrait"
              />
         <activity
-            android:name=".ui.activity.Terms"
+            android:name="com.client.brain.ui.activity.Terms"
             android:screenOrientation="portrait"
             />
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.samyotech.fabcustomer.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.client.brain.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -76,7 +76,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/places_api_key" />
+            android:value="@string/maps_api_key" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@mipmap/ic_launcher" />
@@ -87,7 +87,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.client.brain.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -95,77 +95,77 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.ArtistProfile"
+            android:name="com.client.brain.ui.activity.ArtistProfile"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.SignUpActivity"
+            android:name="com.client.brain.ui.activity.SignUpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.AppIntro"
+            android:name="com.client.brain.ui.activity.AppIntro"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.SignInActivity"
+            android:name="com.client.brain.ui.activity.SignInActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.BaseActivity"
+            android:name="com.client.brain.ui.activity.BaseActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.PromotionActivity"
+            android:name="com.client.brain.ui.activity.PromotionActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".utils.MainFragment"
+            android:name="com.client.brain.utils.MainFragment"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.OneTwoOneChat"
+            android:name="com.client.brain.ui.activity.OneTwoOneChat"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.CommentOneByOne"
+            android:name="com.client.brain.ui.activity.CommentOneByOne"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.ForgotPass"
+            android:name="com.client.brain.ui.activity.ForgotPass"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.PaymentProActivity"
+            android:name="com.client.brain.ui.activity.PaymentProActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.PostJob"
+            android:name="com.client.brain.ui.activity.PostJob"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.EditJob"
+            android:name="com.client.brain.ui.activity.EditJob"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.AppliedJob"
+            android:name="com.client.brain.ui.activity.AppliedJob"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.MapActivity"
+            android:name="com.client.brain.ui.activity.MapActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.WriteReview"
+            android:name="com.client.brain.ui.activity.WriteReview"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.activity.PaymetWeb"
+            android:name="com.client.brain.ui.activity.PaymetWeb"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.AddMoney"
+            android:name="com.client.brain.ui.activity.AddMoney"
             android:screenOrientation="portrait" />
 
         <!-- [START firebase_service] -->
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="com.client.brain.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -184,11 +184,11 @@
         <!-- <meta-data -->
         <!-- android:name="io.fabric.ApiKey" -->
         <!-- android:value="6956ee260d8a46359094304995f81a6c154130cd" /> -->
-        <activity android:name=".ui.activity.ViewServices" />
+        <activity android:name="com.client.brain.ui.activity.ViewServices" />
         <activity
             android:name="com.schibstedspain.leku.LocationPickerActivity"
             android:label="@string/leku_title_activity_location_picker"
-            android:parentActivityName=".ui.activity.BaseActivity"
+            android:parentActivityName="com.client.brain.ui.activity.BaseActivity"
             android:theme="@style/AppTheme.Map"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -200,7 +200,7 @@
                 android:resource="@xml/leku_searchable" />
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.samyotech.fabcustomer.ui.activity.BaseActivity" />
+                android:value="com.client.brain.ui.activity.BaseActivity" />
         </activity>
     </application>
 

@@ -1,8 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.asyl.animation:arcanimator:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c82b0178b5466c5d950501733fc6e21d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c82b0178b5466c5d950501733fc6e21d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82b96392b15a9413e01ed526c1c895e8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82b96392b15a9413e01ed526c1c895e8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/82b96392b15a9413e01ed526c1c895e8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7d654ec91fa0b394c60cb752d3ff10f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7d654ec91fa0b394c60cb752d3ff10f/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7d654ec91fa0b394c60cb752d3ff10f/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/dialog_back_blue">
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/ctvbTitle"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -46,12 +46,12 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <com.samyotech.fabartists.utils.InputFieldView
+            <com.expert.utils.InputFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etCategoryD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -61,14 +61,14 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputFieldView>
+            </com.expert.utils.InputFieldView>
 
-            <com.samyotech.fabartists.utils.InputOpenFieldView
+            <com.expert.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etNameD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -77,15 +77,15 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputOpenFieldView>
+            </com.expert.utils.InputOpenFieldView>
 
 
-            <com.samyotech.fabartists.utils.InputOpenFieldView
+            <com.expert.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etBioD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -95,14 +95,14 @@
                     android:minLines="3"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputOpenFieldView>
+            </com.expert.utils.InputOpenFieldView>
 
-            <com.samyotech.fabartists.utils.InputOpenFieldView
+            <com.expert.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etCityD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -112,13 +112,13 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputOpenFieldView>
-            <com.samyotech.fabartists.utils.InputOpenFieldView
+            </com.expert.utils.InputOpenFieldView>
+            <com.expert.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etCountryD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -128,13 +128,13 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputOpenFieldView>
-            <com.samyotech.fabartists.utils.InputFieldView
+            </com.expert.utils.InputOpenFieldView>
+            <com.expert.utils.InputFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etLocationD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -144,14 +144,14 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputFieldView>
+            </com.expert.utils.InputFieldView>
 
-            <com.samyotech.fabartists.utils.InputOpenFieldView
+            <com.expert.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabartists.utils.CustomEditText
+                <com.expert.utils.CustomEditText
                     android:id="@+id/etRateD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -162,10 +162,10 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabartists.utils.InputOpenFieldView>
+            </com.expert.utils.InputOpenFieldView>
 
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/tvText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/tvYes"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -202,7 +202,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimaryDark" />
 
-            <com.samyotech.fabartists.utils.CustomTextViewBold
+            <com.expert.utils.CustomTextViewBold
                 android:id="@+id/tvNo"
                 android:layout_width="0dp"
                 android:layout_height="50dp"

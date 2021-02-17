@@ -51,7 +51,7 @@
 
                 android:orientation="vertical">
 
-                <com.samyotech.fabcustomer.utils.CustomTextViewBold
+                <com.client.brain.utils.CustomTextViewBold
                     android:id="@+id/tvName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                     android:textColor="@color/white"
                     android:textSize="14sp" />
 
-                <com.samyotech.fabcustomer.utils.CustomTextView
+                <com.client.brain.utils.CustomTextView
                     android:id="@+id/tvEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                     android:orientation="horizontal"
                     android:visibility="gone">
 
-                    <com.samyotech.fabcustomer.utils.CustomTextView
+                    <com.client.brain.utils.CustomTextView
                         android:id="@+id/tvOther"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
-                    <com.samyotech.fabcustomer.utils.CustomTextView
+                    <com.client.brain.utils.CustomTextView
                         android:id="@+id/tvEnglish"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

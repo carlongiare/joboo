@@ -13,14 +13,14 @@
         android:scaleType="centerCrop"
         android:src="@drawable/intro_1" />
 
-    <ImageView
-        android:id="@+id/iv_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/logo_fab" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_icon"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:src="@drawable/logo_fab" />-->
 
 
     <LinearLayout
@@ -32,7 +32,7 @@
         android:orientation="vertical">
 
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:id="@+id/ctvTextdecrib"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:textSize="18dp" />
 
 
-        <com.samyotech.fabartists.utils.CustomTextView
+        <com.expert.utils.CustomTextView
             android:id="@+id/ctvText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

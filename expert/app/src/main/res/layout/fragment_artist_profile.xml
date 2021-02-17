@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
         xmlns:app="http://schemas.android.com/apk/res-auto"
 
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragment.ArtistProfile">
+        tools:context="com.expert.ui.fragment.ArtistProfile">
         ​
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
             ​
 
-            <android.support.design.widget.CollapsingToolbarLayout
+            <com.google.android.material.appbar.CollapsingToolbarLayout
                 android:id="@+id/collapsing"
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
@@ -45,7 +45,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp">
 
-                        <com.samyotech.fabartists.utils.CustomTextViewBold
+                        <com.expert.utils.CustomTextViewBold
                             android:id="@+id/tvOnOff"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                         android:src="@drawable/ic_edit" />
                 </RelativeLayout>
 
-            </android.support.design.widget.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
             ​​
 
             <RelativeLayout
@@ -104,7 +104,7 @@
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
-                    <com.samyotech.fabartists.utils.CustomButton
+                    <com.expert.utils.CustomButton
                         android:id="@+id/btnDelete"
                         android:layout_width="80dp"
                         android:layout_height="25dp"
@@ -112,7 +112,7 @@
                         android:text="@string/delete"
                         android:textColor="@color/black" />
 
-                    <com.samyotech.fabartists.utils.CustomButton
+                    <com.expert.utils.CustomButton
                         android:id="@+id/btnChange"
                         android:layout_width="80dp"
                         android:layout_height="25dp"
@@ -123,7 +123,7 @@
                 </LinearLayout>
 
 
-                <com.samyotech.fabartists.utils.CustomTextViewBold
+                <com.expert.utils.CustomTextViewBold
                     android:id="@+id/tvName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvWork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
                         android:layout_marginTop="6dp"
                         android:src="@drawable/ic_placeholder" />
 
-                    <com.samyotech.fabartists.utils.CustomTextView
+                    <com.expert.utils.CustomTextView
                         android:id="@+id/tvLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
                         android:textSize="12sp" />
                 </LinearLayout>
 
-                <com.samyotech.fabartists.utils.CustomTextView
+                <com.expert.utils.CustomTextView
                     android:id="@+id/tvBio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -185,7 +185,7 @@
             </LinearLayout>
             ​
 
-            <android.support.design.widget.TabLayout
+            <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -194,10 +194,10 @@
                 app:tabSelectedTextColor="@color/colorPrimaryDark"
                 app:tabTextAppearance="@style/MineCustomTabText"
                 app:tabTextColor="@color/black" />
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
         ​
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -220,5 +220,5 @@
             />
 
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

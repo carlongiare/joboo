@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/dialog_back_blue">
 
-            <com.samyotech.fabcustomer.utils.CustomTextViewBold
+            <com.client.brain.utils.CustomTextViewBold
                 android:id="@+id/ctvbTitle"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -38,11 +38,11 @@
             android:orientation="vertical">
 
 
-            <com.samyotech.fabcustomer.utils.InputOpenFieldView
+            <com.client.brain.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.samyotech.fabcustomer.utils.CustomEditText
+                <com.client.brain.utils.CustomEditText
                     android:id="@+id/etAddressD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -51,14 +51,14 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabcustomer.utils.InputOpenFieldView>
+            </com.client.brain.utils.InputOpenFieldView>
 
-            <com.samyotech.fabcustomer.utils.InputOpenFieldView
+            <com.client.brain.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabcustomer.utils.CustomEditText
+                <com.client.brain.utils.CustomEditText
                     android:id="@+id/etCityD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -67,14 +67,14 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabcustomer.utils.InputOpenFieldView>
+            </com.client.brain.utils.InputOpenFieldView>
 
-            <com.samyotech.fabcustomer.utils.InputOpenFieldView
+            <com.client.brain.utils.InputOpenFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
-                <com.samyotech.fabcustomer.utils.CustomEditText
+                <com.client.brain.utils.CustomEditText
                     android:id="@+id/etCountryD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -83,13 +83,13 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabcustomer.utils.InputOpenFieldView>
+            </com.client.brain.utils.InputOpenFieldView>
 
-            <com.samyotech.fabcustomer.utils.InputFieldView
+            <com.client.brain.utils.InputFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.samyotech.fabcustomer.utils.CustomEditText
+                <com.client.brain.utils.CustomEditText
                     android:id="@+id/etAddressDs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
                     android:singleLine="true"
                     android:text="" />
 
-            </com.samyotech.fabcustomer.utils.InputFieldView>
+            </com.client.brain.utils.InputFieldView>
 
 
         </LinearLayout>
@@ -118,7 +118,7 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <com.samyotech.fabcustomer.utils.CustomTextViewBold
+            <com.client.brain.utils.CustomTextViewBold
                 android:id="@+id/tvYesAddress"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -134,7 +134,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimaryDark" />
 
-            <com.samyotech.fabcustomer.utils.CustomTextViewBold
+            <com.client.brain.utils.CustomTextViewBold
                 android:id="@+id/tvNoAddress"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
