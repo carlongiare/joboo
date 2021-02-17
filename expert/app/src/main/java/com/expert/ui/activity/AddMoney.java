@@ -204,8 +204,9 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
         llCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String amountPay = ProjectUtils.getEditTextValue((EditText) findViewById(R.id.etAddMoney));
-                String phone = ProjectUtils.getEditTextValue((EditText) findViewById(R.id.edmpesanumber));
+
+                String amountPay = ProjectUtils.getEditTextValue(findViewById(R.id.etAddMoney));
+                String phone = ProjectUtils.getEditTextValue(dialog.findViewById(R.id.edmpesanumber));
                 String userId = userDTO.getUser_id();
                 stkpush(amountPay,phone, userId);
                 dialog.dismiss();

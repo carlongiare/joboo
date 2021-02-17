@@ -266,7 +266,7 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
 
                 }else{
                     progressDialog.dismiss();
-                    Toast.makeText(getApplicationContext(), "There was an error proccessing your request Please try again", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "There was an error proccessing your request Please try again later ", Toast.LENGTH_LONG).show();
                 }
 
 
@@ -276,7 +276,7 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
             public void onFailure(Call<LNMResult> call, Throwable t) {
 
                 progressDialog.dismiss();
-                Toast.makeText(getApplicationContext(), "Error : "+t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "There was an error proccessing your request Please try again later ", Toast.LENGTH_SHORT).show();
             }
         });
     }

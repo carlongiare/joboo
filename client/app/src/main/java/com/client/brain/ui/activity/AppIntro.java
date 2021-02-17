@@ -28,7 +28,7 @@ public class AppIntro extends AppCompatActivity implements ViewPager.OnPageChang
     private ImageView[] dots;
     public SharedPrefrence preference;
     private Context mContext;
-    int[] mResources = {R.drawable.intro_1, R.drawable.intro_2, R.drawable.intro_3};
+    int[] mResources = {R.drawable.intro_1, R.drawable.intro_1, R.drawable.intro_1};
     private ActivityAppIntro2Binding binding;
 
     @Override
