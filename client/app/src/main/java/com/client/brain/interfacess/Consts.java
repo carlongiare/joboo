@@ -4,7 +4,7 @@ public interface Consts {
     String APP_NAME = "Joboo";
     //new 677440
 
-    String BACKEND = "http://backend.joboo.co.ke";
+    String BACKEND = "https://backend.joboo.co.ke";
 
     String BASE_URL = BACKEND + "/Webservice/";
     String PAYMENT_FAIL = BACKEND + "/Stripe/Payment/fail";

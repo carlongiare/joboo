@@ -16,6 +16,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e900011ef7f720cc5c9e14e87eb11752/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e900011ef7f720cc5c9e14e87eb11752/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e900011ef7f720cc5c9e14e87eb11752/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/980ab83324dbef1ca02146b70f6ae67b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/980ab83324dbef1ca02146b70f6ae67b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/980ab83324dbef1ca02146b70f6ae67b/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-impl/16.5.0/d541930fc678f1c59aa2c5efc4e2fedc4da62acf/play-services-measurement-impl-16.5.0-javadoc.jar!/" />

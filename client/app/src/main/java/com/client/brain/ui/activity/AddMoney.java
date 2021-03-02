@@ -93,8 +93,8 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
 
         binding.tv2000.setOnClickListener(this);
 
-        binding.tv1000.setText("+ " + currency + " 1000");
-        binding.tv1500.setText("+ " + currency + " 1500");
+        binding.tv1000.setText("+ " + currency + " 500");
+        binding.tv1500.setText("+ " + currency + " 1000");
         binding.tv2000.setText("+ " + currency + " 2000");
 
 
@@ -131,13 +131,13 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
 
         switch (v.getId()) {
             case R.id.tv1000:
-                rs = 1000;
+                rs = 500;
                 final_rs = rs1 + rs;
                 binding.etAddMoney.setText(final_rs + "");
                 binding.etAddMoney.setSelection(binding.etAddMoney.getText().length());
                 break;
             case R.id.tv1500:
-                rs = 1500;
+                rs = 1000;
                 final_rs = rs1 + rs;
                 binding.etAddMoney.setText(final_rs + "");
                 binding.etAddMoney.setSelection(binding.etAddMoney.getText().length());

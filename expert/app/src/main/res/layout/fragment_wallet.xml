@@ -140,7 +140,10 @@
             android:gravity="center"
             android:text="@string/money"
             android:textColor="@color/white"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:drawableStart="@drawable/arrow"
+            android:drawablePadding="3dp"
+            android:drawableTint="@android:color/white"/>
 
     </LinearLayout>
 

@@ -86,26 +86,6 @@
                     android:textColor="@color/colorPrimary" />
 
 
-                <LinearLayout
-                    android:id="@+id/llStatus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/rectangle_red">
-
-                    <com.client.brain.utils.CustomTextView
-                        android:id="@+id/tvStatus"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="@string/pending"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-
-
             </RelativeLayout>
 
 
@@ -183,7 +163,7 @@
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
                     android:layout_toLeftOf="@+id/view1"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.25"
                     android:drawableLeft="@drawable/ic_appo_edit"
                     android:gravity="center"
                     android:text="@string/edit"
@@ -218,17 +198,35 @@
                     android:layout_height="50dp"
                     android:layout_alignParentRight="true"
                     android:layout_toRightOf="@+id/view2"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.35"
                     android:layout_marginLeft="5dp"
                     android:drawableLeft="@drawable/ic_appo_complete"
                     android:gravity="center"
                     android:text="@string/complete"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
 
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlComplete"
+                android:background="@drawable/rectangle_red"
+                android:gravity="center">
 
+                <com.client.brain.utils.CustomTextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/pending"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

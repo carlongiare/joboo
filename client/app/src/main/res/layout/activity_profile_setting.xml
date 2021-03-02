@@ -313,7 +313,7 @@
                             android:hint="@string/country"
                             android:paddingLeft="5dp"
                             android:singleLine="true"
-                            android:text=""
+                            android:text="Kenya"
                             android:textColorHint="@color/black" />
 
                     </com.client.brain.utils.InputFieldView>

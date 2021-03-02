@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/add_money"
+            android:text="Witdraw"
             android:textColor="@color/white"
             android:textSize="18sp" />
     </RelativeLayout>
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/button_selector3"
-                android:text="@string/add_money"
+                android:text="Withdraw "
                 android:textColor="@color/white" />
 
 

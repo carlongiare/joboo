@@ -221,7 +221,7 @@
     <string name="all">All</string>
     <string name="debit">Debit</string>
     <string name="credit">Credit</string>
-    <string name="money">+ Money</string>
+    <string name="money">Withdraw</string>
     <string name="add_money">Add Money</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="val_money">Please enter money to add..</string>
