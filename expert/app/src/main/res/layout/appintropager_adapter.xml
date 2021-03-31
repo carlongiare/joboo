@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="150dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#80000000">
 
 
         <com.expert.utils.CustomTextView
@@ -52,7 +53,7 @@
             android:text="@string/get_your_best_service_from_us"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"/>
 
     </LinearLayout>
 

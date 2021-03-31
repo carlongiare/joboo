@@ -1,7 +1,10 @@
 package com.expert.ui.fragment;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.SystemClock;
 import androidx.fragment.app.Fragment;
@@ -9,9 +12,11 @@ import androidx.cardview.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Chronometer;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -44,6 +49,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
+import androidx.fragment.app.FragmentTransaction;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CustomerBooking extends Fragment implements View.OnClickListener {
@@ -433,15 +439,31 @@ public class CustomerBooking extends Fragment implements View.OnClickListener {
             public void backResponse(boolean flag, String msg, JSONObject response) {
                 ProjectUtils.pauseProgressDialog();
                 if (flag) {
-                    ProjectUtils.showToast(getActivity(), msg);
+                    //ProjectUtils.showToast(getActivity(), msg);
+                    final Dialog dialog = new Dialog(getActivity());
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    dialog.setCancelable(false);
+                    dialog.setContentView(R.layout.custom_dialog_finished);
+
+                    TextView txt = dialog.findViewById(R.id.textmsg);
+                    txt.setText(msg);
+
+                    dialog.findViewById(R.id.tv_getbal_cancel).setOnClickListener(v -> dialog.dismiss());
+                    dialog.findViewById(R.id.tv_getbal_add).setOnClickListener(view -> {
+                        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
+                                android.R.anim.fade_out);
+
+                        fragmentTransaction.replace(R.id.frame, new HistoryFragment());
+                        fragmentTransaction.commitAllowingStateLoss();
+                        dialog.dismiss();
+                    });
+                    dialog.show();
                     getBooking();
-
-
                 } else {
                     ProjectUtils.showToast(getActivity(), msg);
                 }
-
-
             }
         });
     }

@@ -60,7 +60,7 @@
     <string name="val_pass1">Please renter at least six characters password.</string>
     <string name="val_pass3">Password does not match.</string>
     <string name="my_appoin">My Appointments</string>
-    <string name="customer_booking">Current Booking</string>
+    <string name="customer_booking">Ongoing Jobs</string>
     <string name="dec_cpas">Decline</string>
     <string name="decline_msg">Are you sure you want to decline request?</string>
     <string name="get_discount">Get Discount</string>
@@ -79,7 +79,7 @@
     <string name="payment">Payment</string>
     <string name="process_payment">Are you sure want to process your payment?</string>
     <string name="jobs">Find Jobs</string>
-    <string name="bookings">Bookings</string>
+    <string name="bookings">My Jobs</string>
     <string name="job_title">Job Title:</string>
     <string name="date">Date:</string>
     <string name="val_des">Please enter description.</string>
@@ -135,7 +135,7 @@
     <string name="referal">Enter Referal Code</string>
     <string name="do_you_have_an_account_already">Do you have an account already?</string>
     <string name="job_id">Job ID:</string>
-    <string name="services_type">Services type:</string>
+    <string name="services_type">Service type:</string>
     <string name="apply">APPLY</string>
     <string name="reject1">Cancel</string>
     <string name="start_job">Start Job</string>
@@ -178,7 +178,7 @@
     <string name="no_jobs_applied">NO JOBS APPLIED</string>
     <string name="no_appointment_found">NO APPOINTMENT FOUND</string>
     <string name="no_jobs_found">NO JOBS FOUND</string>
-    <string name="no_booking_found">NO BOOKING FOUND</string>
+    <string name="no_booking_found">NO JOBS FOUND</string>
     <string name="no_chat_history_found">NO CHAT HISTORY FOUND</string>
     <string name="no_notification_found">NO NOTIFICATION FOUND</string>
     <string name="new_request_found">NEW REQUEST FOUND</string>
@@ -191,8 +191,8 @@
     <string name="paid1">Paid</string>
     <string name="unpaid1">Unpaid</string>
     <string name="all_jobs">All Jobs</string>
-    <string name="all_booking">All Bookings</string>
-    <string name="accept_booking">Accepted Bookings</string>
+    <string name="all_booking">All Jobs</string>
+    <string name="accept_booking">Accepted Jobs</string>
     <string name="applied_jobs">Applied Jobs</string>
     <string name="fit_image">FIT IMAGE</string>
     <string name="square">SQUARE</string>

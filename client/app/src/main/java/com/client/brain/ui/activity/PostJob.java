@@ -2,10 +2,13 @@ package com.client.brain.ui.activity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -26,7 +29,9 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.cocosw.bottomsheet.BottomSheet;
+import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.github.florent37.singledateandtimepicker.dialog.SingleDateAndTimePickerDialog;
+import com.google.android.gms.location.places.AutocompleteFilter;
 import com.google.android.gms.location.places.Place;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -50,7 +55,9 @@ import com.schibstedspain.leku.LocationPickerActivity;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -88,6 +95,7 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
     private Place place;
     private SpinnerDialog spinnerDialogCate;
     SimpleDateFormat sdf1, timeZone;
+    private String imageFilePath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +135,7 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
         llPost.setOnClickListener(this);
         builder = new BottomSheet.Builder(PostJob.this).sheet(R.menu.menu_cards);
         builder.title(getResources().getString(R.string.take_image));
+
         builder.listener(new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -153,11 +162,10 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                                     } else {
                                         picUri = Uri.fromFile(file); // create
                                     }
-
-
                                     prefrence.setValue(Consts.IMAGE_URI_CAMERA, picUri.toString());
                                     intent.putExtra(MediaStore.EXTRA_OUTPUT, picUri); // set the image file
                                     startActivityForResult(intent, PICK_FROM_CAMERA);
+
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -169,22 +177,27 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                     case R.id.gallery_cards:
                         if (ProjectUtils.hasPermissionInManifest(PostJob.this, PICK_FROM_CAMERA, Manifest.permission.CAMERA)) {
                             if (ProjectUtils.hasPermissionInManifest(PostJob.this, PICK_FROM_GALLERY, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-
-                                File file = getOutputMediaFile(1);
-                                if (!file.exists()) {
-                                    try {
-                                        file.createNewFile();
-                                    } catch (IOException e) {
-                                        e.printStackTrace();
+                                try {
+                                    File file = getOutputMediaFile(1);
+                                    if (!file.exists()) {
+                                        try {
+                                            file.createNewFile();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
                                     }
+                                    picUri = Uri.fromFile(file);
+
+                                    Intent intent = new Intent();
+                                    intent.setType("image/*");
+                                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                                    startActivityForResult(Intent.createChooser(intent, getResources().getString(R.string.select_picture)), PICK_FROM_GALLERY);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
                                 }
-                                picUri = Uri.fromFile(file);
-
-                                Intent intent = new Intent();
-                                intent.setType("image/*");
-                                intent.setAction(Intent.ACTION_GET_CONTENT);
-                                startActivityForResult(Intent.createChooser(intent, getResources().getString(R.string.select_picture)), PICK_FROM_GALLERY);
-
+//                                Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
+//                                photoPickerIntent.setType("image/*");
+//                                startActivityForResult(photoPickerIntent, 500);
                             }
                         }
                         break;
@@ -291,7 +304,6 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                 .display();
     }
 
-
     private File getOutputMediaFile(int type) {
         String root = Environment.getExternalStorageDirectory().toString();
 
@@ -315,7 +327,6 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
 
         return mediaFile;
     }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

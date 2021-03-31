@@ -5,7 +5,7 @@ package com.expert.interfacess;
  */
 
 public interface Consts {
-    String APP_NAME = "FabArtist";
+    String APP_NAME = "Joboo Expert";
     //old 677440
     String BACKEND = "https://backend.joboo.co.ke";
 

@@ -85,6 +85,7 @@ dependencies {
     implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
     implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
     implementation 'com.github.florent37:singledateandtimepicker:1.2.2'
+    implementation 'com.github.dhaval2404:imagepicker:1.8'
     implementation("com.schibstedspain.android:leku:5.0.0") {
         exclude group: 'com.google.android.gms'
         exclude module: "play-services-places"

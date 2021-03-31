@@ -194,6 +194,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
                 drawer.closeDrawers();
             }
         });
+
         tvOther.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

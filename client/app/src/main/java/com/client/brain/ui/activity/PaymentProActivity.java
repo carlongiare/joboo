@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -125,7 +126,21 @@ public class PaymentProActivity extends AppCompatActivity implements View.OnClic
                 if (Float.parseFloat(amt1) >= Float.parseFloat(final_amount)) {
                     cashDialog(getResources().getString(R.string.wallet_payment), getResources().getString(R.string.wallet_msg), "2");
                 } else {
-                    ProjectUtils.showToast(mContext, "Insufficient balance, please add money to wallet first.");
+                    //ProjectUtils.showToast(mContext, "Insufficient balance, please add money to wallet first.");
+                    final Dialog dialog = new Dialog(PaymentProActivity.this);
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    dialog.setCancelable(false);
+                    dialog.setContentView(R.layout.dailog_add_money);
+
+                    dialog.findViewById(R.id.tv_getbal_cancel).setOnClickListener(view -> dialog.dismiss());
+                    dialog.findViewById(R.id.tv_getbal_add).setOnClickListener(view -> {
+                        Intent in = new Intent(this, AddMoney.class);
+                        in.putExtra(Consts.CURRENCY, currency);
+                        startActivity(in);
+                        dialog.dismiss();
+                    });
+                    dialog.show();
                 }
 
                 break;
@@ -279,7 +294,6 @@ public class PaymentProActivity extends AppCompatActivity implements View.OnClic
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dailog_payment_option);
-
 
         ///dialog.getWindow().setBackgroundDrawableResource(R.color.black);
         llPaypall = (LinearLayout) dialog.findViewById(R.id.llPaypall);

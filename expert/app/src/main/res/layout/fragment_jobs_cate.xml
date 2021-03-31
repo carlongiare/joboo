@@ -15,7 +15,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
@@ -24,15 +24,25 @@
             card_view:cardElevation="2dp">
 
             <LinearLayout
-                android:layout_width="240dp"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                android:gravity="center">
+
+<!--                <com.expert.utils.CustomTextView-->
+<!--                    android:id="@+id/tvRequestedJobs"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_weight="0.25"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Reqested" />-->
 
                 <com.expert.utils.CustomTextView
                     android:id="@+id/tvAllJobs"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_weight="0.5"
                     android:background="@color/colorPrimary"
+                    android:layout_weight="0.25"
                     android:gravity="center"
                     android:text="@string/all_jobs"
                     android:textColor="@color/white" />
@@ -41,7 +51,7 @@
                     android:id="@+id/tvAppliedJobs"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.25"
                     android:gravity="center"
                     android:text="@string/applied_jobs" />
 

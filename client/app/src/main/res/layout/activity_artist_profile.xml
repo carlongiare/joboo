@@ -213,7 +213,8 @@
             android:gravity="center"
             android:text="@string/quick_chat"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:visibility="gone"/>
 
         <com.client.brain.utils.CustomTextView
             android:id="@+id/tvBookNow"

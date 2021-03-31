@@ -1,7 +1,7 @@
 package com.client.brain.interfacess;
 
 public interface Consts {
-    String APP_NAME = "Joboo";
+    String APP_NAME = "Joboo Client";
     //new 677440
 
     String BACKEND = "https://backend.joboo.co.ke";

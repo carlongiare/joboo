@@ -131,7 +131,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channelId)
                 .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("FabArtist")
+                .setContentTitle("Joboo Expert")
                 .setSound(defaultSoundUri)
                 /*.setStyle(new NotificationCompat.BigTextStyle().bigText(messageBody))*/
                 .setContentText(messageBody).setAutoCancel(true).setContentIntent(pendingIntent);
