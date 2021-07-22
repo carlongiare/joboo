@@ -1,34 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.hani-momanii:SuperNova-Emoji:1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/91c0298604ace2183bdab1ea4455f730/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/91c0298604ace2183bdab1ea4455f730/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/91c0298604ace2183bdab1ea4455f730/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8100fdccadea5ecf50e9d51c68d21a24/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8100fdccadea5ecf50e9d51c68d21a24/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8100fdccadea5ecf50e9d51c68d21a24/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/428dfb5c4cee5b1f6ef9b4bfdc66a0d6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/428dfb5c4cee5b1f6ef9b4bfdc66a0d6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/428dfb5c4cee5b1f6ef9b4bfdc66a0d6/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f93149b419db71dd08eaa3cd4a16820e/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f93149b419db71dd08eaa3cd4a16820e/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f93149b419db71dd08eaa3cd4a16820e/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eeecd318542b745aa05c144cf84eb77c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eeecd318542b745aa05c144cf84eb77c/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eeecd318542b745aa05c144cf84eb77c/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/769cba8210fb0ce69f8a276511c4a898/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/769cba8210fb0ce69f8a276511c4a898/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/769cba8210fb0ce69f8a276511c4a898/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86eb62a2a4ef19426dca42224073e96e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86eb62a2a4ef19426dca42224073e96e/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/86eb62a2a4ef19426dca42224073e96e/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a66daffc9752dfdb27609fc866716d4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a66daffc9752dfdb27609fc866716d4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a66daffc9752dfdb27609fc866716d4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38a696061d1ff01cf58399294c25cd5c/jetified-SuperNova-Emoji-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38a696061d1ff01cf58399294c25cd5c/jetified-SuperNova-Emoji-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38a696061d1ff01cf58399294c25cd5c/jetified-SuperNova-Emoji-1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hani-momanii/SuperNova-Emoji/1.1/a51ed55a78c8843d70f32d27f6a363213565c96/SuperNova-Emoji-1.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hani-momanii/SuperNova-Emoji/1.1/dd7a251823c0d62e0e266a91c1e654b8ffcdcfb7/SuperNova-Emoji-1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

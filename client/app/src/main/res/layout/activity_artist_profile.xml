@@ -251,7 +251,8 @@
             android:gravity="center"
             android:text="@string/products"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:visibility="gone"/>
 
     </LinearLayout>
 

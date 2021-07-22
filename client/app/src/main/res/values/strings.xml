@@ -43,7 +43,8 @@
     <string name="val_price">Please enter price.</string>
     <string name="val_pass">Password must contain at least six characters.</string>
     <string name="val_pass1">Renter password contain at least six characters.</string>
-    <string name="val_name">Please enter name.</string>
+    <string name="val_name">Please enter first name.</string>
+    <string name="val_lname">Please enter last name.</string>
     <string name="pass_not_match">Password does not match.</string>
     <string name="pending">Pending</string>
     <string name="accepted">Accepted</string>

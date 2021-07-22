@@ -1,32 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/20d61371374b9b82c015c8eaaaedfba8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/20d61371374b9b82c015c8eaaaedfba8/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/20d61371374b9b82c015c8eaaaedfba8/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f83fa738ac49d1d84fd48db0bbab0fca/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f83fa738ac49d1d84fd48db0bbab0fca/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f83fa738ac49d1d84fd48db0bbab0fca/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ba7e571bb04717caf197439bbe30d6a/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ba7e571bb04717caf197439bbe30d6a/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ba7e571bb04717caf197439bbe30d6a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29499efc7fcbe2cbe5c003e5539d81c3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29499efc7fcbe2cbe5c003e5539d81c3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/29499efc7fcbe2cbe5c003e5539d81c3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/947dc8c1870c773d0150939c938a2907/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/947dc8c1870c773d0150939c938a2907/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/947dc8c1870c773d0150939c938a2907/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af11a655c567ba771e6e3cc02616e76c/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af11a655c567ba771e6e3cc02616e76c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af11a655c567ba771e6e3cc02616e76c/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/446f8aeed17d387109e8ada06f138465/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/446f8aeed17d387109e8ada06f138465/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/446f8aeed17d387109e8ada06f138465/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe30dad6673e4c238264ee6335dd9e3b/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe30dad6673e4c238264ee6335dd9e3b/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fe30dad6673e4c238264ee6335dd9e3b/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ddf3593c773229b5f98b21e547c034b/jetified-view-pager-transforms-1.2.32/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ddf3593c773229b5f98b21e547c034b/jetified-view-pager-transforms-1.2.32/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ddf3593c773229b5f98b21e547c034b/jetified-view-pager-transforms-1.2.32/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ToxicBakery.viewpager.transforms/view-pager-transforms/1.2.32/50788cc6dc23c6c591bfd6df4712732a3a44a2/view-pager-transforms-1.2.32-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ToxicBakery.viewpager.transforms/view-pager-transforms/1.2.32/d59a4c11e83fd8646853d59f853508296c3f69da/view-pager-transforms-1.2.32-sources.jar!/" />
     </SOURCES>

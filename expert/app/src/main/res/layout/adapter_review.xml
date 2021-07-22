@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@+id/ivArtist"
-            android:text="@string/review_by"
+            android:text="Rating"
             android:textSize="12sp" />
 
         <com.expert.utils.CustomTextViewBold
@@ -33,6 +33,7 @@
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@+id/ivArtist"
             android:text=""
+            android:visibility="gone"
             android:textColor="@color/black" />
 
         <RatingBar

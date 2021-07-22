@@ -1,32 +1,16 @@
 <component name="libraryTable">
   <library name="Gradle: com.gordonwong:material-sheet-fab:1.2.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0840ca9884a4322bf0d52b454ef86e2c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0840ca9884a4322bf0d52b454ef86e2c/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0840ca9884a4322bf0d52b454ef86e2c/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21e49b0bb50425382e1feb94c618f493/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21e49b0bb50425382e1feb94c618f493/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21e49b0bb50425382e1feb94c618f493/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/963bdbb4b09a26f843b94341102dfb38/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/963bdbb4b09a26f843b94341102dfb38/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/963bdbb4b09a26f843b94341102dfb38/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e25e19b80e6bd6181b9e9a98aabfbaf/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e25e19b80e6bd6181b9e9a98aabfbaf/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e25e19b80e6bd6181b9e9a98aabfbaf/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99235f39e15b3d0ca777e7c8f1f6486d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99235f39e15b3d0ca777e7c8f1f6486d/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99235f39e15b3d0ca777e7c8f1f6486d/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2725168e97bc78cdaed6d499ec88d85f/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2725168e97bc78cdaed6d499ec88d85f/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2725168e97bc78cdaed6d499ec88d85f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/551da7c5e295c7e747f5b83e6d245b72/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/551da7c5e295c7e747f5b83e6d245b72/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/551da7c5e295c7e747f5b83e6d245b72/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/967b6fa33b1da722908ef0aaa6b66252/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/967b6fa33b1da722908ef0aaa6b66252/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/967b6fa33b1da722908ef0aaa6b66252/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e326d5d9960909cc6325f673e01be67/jetified-material-sheet-fab-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e326d5d9960909cc6325f673e01be67/jetified-material-sheet-fab-1.2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7e326d5d9960909cc6325f673e01be67/jetified-material-sheet-fab-1.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4045ef10fda51e7f5a4bb340f359bc0d/jetified-material-sheet-fab-1.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4045ef10fda51e7f5a4bb340f359bc0d/jetified-material-sheet-fab-1.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4045ef10fda51e7f5a4bb340f359bc0d/jetified-material-sheet-fab-1.2.1/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gordonwong/material-sheet-fab/1.2.1/e087f266bfb86aae871202b0d99b02d866cbf5c9/material-sheet-fab-1.2.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gordonwong/material-sheet-fab/1.2.1/a7d5f916943ec4c002bf10931cde9a5251090115/material-sheet-fab-1.2.1-sources.jar!/" />
     </SOURCES>

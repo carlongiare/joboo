@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AlertDialog;
 import androidx.cardview.widget.CardView;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -134,11 +136,11 @@ public class MyEarning extends Fragment {
     }
 
     public void requestPayment() {
-
         ProjectUtils.showProgressDialog(getActivity(), true, getResources().getString(R.string.please_wait));
         new HttpsRequest(Consts.WALLET_REQUEST_API, paramsRequest, getActivity()).stringPost(TAG, new Helper() {
             @Override
             public void backResponse(boolean flag, String msg, JSONObject response) {
+                //Log.e("Request Pay", response.toString());
                 ProjectUtils.pauseProgressDialog();
                 if (flag) {
                     ProjectUtils.showLong(getActivity(), msg);

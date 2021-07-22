@@ -28,18 +28,42 @@
                 android:orientation="vertical"
                 android:padding="30dp">
 
-
-                <com.expert.utils.CustomEditText
-                    android:id="@+id/CETfirstname"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@drawable/edittext_background"
-                    android:hint="@string/first_name"
-                    android:inputType="textCapWords"
-                    android:paddingLeft="20dp"
-                    android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/editketext" />
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+                    <com.expert.utils.CustomEditText
+                        android:id="@+id/CETfirstname"
+                        android:layout_width="0dp"
+                        android:layout_weight="49"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_background"
+                        android:hint="First name"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/editketext" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="2dp"/>
+
+                    <com.expert.utils.CustomEditText
+                        android:id="@+id/CETlastname"
+                        android:layout_width="0dp"
+                        android:layout_weight="49"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_background"
+                        android:hint="Last name"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/editketext" />
+                </LinearLayout>
 
                 <com.expert.utils.CustomEditText
                     android:id="@+id/CETemailadd"

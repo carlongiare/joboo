@@ -145,6 +145,7 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
                 //ProjectUtils.pauseProgressDialog();
                 if (flag) {
                     try {
+
                         allAtristListDTOList = new ArrayList<>();
                         Type getpetDTO = new TypeToken<List<AllAtristListDTO>>() {
                         }.getType();
@@ -155,8 +156,6 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
                         e.printStackTrace();
 
                     }
-
-
                 } else {
                     tvNotFound.setVisibility(View.VISIBLE);
                     rvDiscover.setVisibility(View.GONE);

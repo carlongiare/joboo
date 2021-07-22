@@ -237,6 +237,12 @@
 
 
         </RelativeLayout>
+        <View
+            android:id="@+id/online_status"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/rounded_online"
+            android:layout_margin="5dp"/>
 
     </androidx.cardview.widget.CardView>
 

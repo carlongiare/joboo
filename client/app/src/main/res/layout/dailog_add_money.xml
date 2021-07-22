@@ -110,7 +110,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Balance is low \nInsufficient funds please add cash to your wallet"
+            android:text="Balance is low
+            \nInsufficient funds please add cash to your wallet
+            \nPlease add an amount above KES 50 for you to post a job"
             android:padding="20dp"
             android:textAlignment="center"/>
         <LinearLayout

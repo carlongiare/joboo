@@ -331,48 +331,9 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
                                  }
         );
 
-        getBalance();
 
     }
 
-    public void getBalance() {
-        HashMap<String,String> getHistparam = new HashMap<>();
-        getHistparam.put(Consts.USER_ID, userDTO.getUser_id());
-        new HttpsRequest(Consts.GET_WALLET_API, getHistparam, this).stringPost(TAG, new Helper() {
-            @Override
-            public void backResponse(boolean flag, String msg, JSONObject response) {
-                if(flag) {
-                    try {
-                        String amt = response.getJSONObject("data").getString("amount");
-                        if(amt.equals("0")){
-                            final Dialog dialog = new Dialog(BaseActivity.this);
-                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                            dialog.setCancelable(false);
-                            dialog.setContentView(R.layout.dailog_add_money);
-
-                            dialog.findViewById(R.id.tv_getbal_cancel).setOnClickListener(v -> dialog.dismiss());
-                            dialog.findViewById(R.id.tv_getbal_add).setOnClickListener(view -> {
-                                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                                        android.R.anim.fade_out);
-
-                                ivFilter.setVisibility(View.GONE);
-                                navItemIndex = 8;
-                                CURRENT_TAG = TAG_WALLET;
-                                fragmentTransaction.replace(R.id.frame, new Wallet());
-                                fragmentTransaction.commitAllowingStateLoss();
-                                dialog.dismiss();
-                            });
-                            dialog.show();
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        });
-    }
 
     public void changeColorItem(Menu menu, int id) {
         MenuItem tools = menu.findItem(id);

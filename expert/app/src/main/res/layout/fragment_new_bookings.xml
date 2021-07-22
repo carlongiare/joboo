@@ -27,7 +27,7 @@
                     android:id="@+id/tvPendingJobs"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.5"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
                     android:text="Pending"
@@ -37,7 +37,7 @@
                     android:id="@+id/tvAcceptedJobs"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_weight="0.3"
+                    android:layout_weight="0.5"
                     android:gravity="center"
                     android:text="Accepted"/>
 
@@ -47,7 +47,8 @@
                     android:layout_height="40dp"
                     android:layout_weight="0.3"
                     android:gravity="center"
-                    android:text="Rejected"/>
+                    android:text="Rejected"
+                    android:visibility="gone"/>
 
                 <com.expert.utils.CustomTextView
                     android:id="@+id/tvCompletedJobs"
@@ -55,7 +56,8 @@
                     android:layout_height="40dp"
                     android:layout_weight="0.3"
                     android:gravity="center"
-                    android:text="Completed"/>
+                    android:text="Completed"
+                    android:visibility="gone"/>
 
             </LinearLayout>
 

@@ -1,30 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-iid-interop:16.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f854497810e799bd8ab1552f407ba42/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f854497810e799bd8ab1552f407ba42/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f854497810e799bd8ab1552f407ba42/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/faec819bcd067c7d9cfb6a64f12749d5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/faec819bcd067c7d9cfb6a64f12749d5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/faec819bcd067c7d9cfb6a64f12749d5/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4a7e7895ccf1dfb88b9ba9f3e1af9bf/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4a7e7895ccf1dfb88b9ba9f3e1af9bf/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4a7e7895ccf1dfb88b9ba9f3e1af9bf/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f1068bf70887cf5f78176219ffcdbaba/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f1068bf70887cf5f78176219ffcdbaba/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f1068bf70887cf5f78176219ffcdbaba/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1229c595dac636e7d27c36df4aa884e1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1229c595dac636e7d27c36df4aa884e1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1229c595dac636e7d27c36df4aa884e1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a592dcbdafdcc946eff04de79b0e188/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a592dcbdafdcc946eff04de79b0e188/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1a592dcbdafdcc946eff04de79b0e188/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45efa040feb07ff21286cc5e3876efd3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45efa040feb07ff21286cc5e3876efd3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45efa040feb07ff21286cc5e3876efd3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d89bb2130273913987afb8551576f560/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d89bb2130273913987afb8551576f560/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d89bb2130273913987afb8551576f560/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ef6b232ed31ba0afb7dcf873019631/jetified-firebase-iid-interop-16.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ef6b232ed31ba0afb7dcf873019631/jetified-firebase-iid-interop-16.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ef6b232ed31ba0afb7dcf873019631/jetified-firebase-iid-interop-16.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

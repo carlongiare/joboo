@@ -4,6 +4,8 @@ package com.client.brain.ui.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,6 +57,12 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
 
         holder.CTVartistwork.setText(allAtristListDTOList.get(position).getCategory_name());
         holder.CTVartistname.setText(allAtristListDTOList.get(position).getName());
+
+        if(allAtristListDTOList.get(position).getIs_online().equals("1"))
+            holder.online_status.setBackgroundTintList(ContextCompat.getColorStateList(mContext, R.color.green));
+        else
+            holder.online_status.setBackgroundTintList(ContextCompat.getColorStateList(mContext, R.color.red));
+
         if (allAtristListDTOList.get(position).getArtist_commission_type().equalsIgnoreCase("0")) {
             if (allAtristListDTOList.get(position).getCommission_type().equalsIgnoreCase("0")) {
                 holder.CTVartistchargeprh.setText(allAtristListDTOList.get(position).getCurrency_type() + allAtristListDTOList.get(position).getPrice() + mContext.getResources().getString(R.string.hr_add_on));
@@ -133,6 +141,7 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
         public RatingBar ratingbar;
         public RelativeLayout rlClick;
         public ImageView ivFav, ivfeatured;
+        View online_status;
 
         public MyViewHolder(View view) {
             super(view);
@@ -151,6 +160,7 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
             ratingbar = view.findViewById(R.id.ratingbar);
             ivFav = view.findViewById(R.id.ivFav);
             ivfeatured = view.findViewById(R.id.ivfeatured);
+            online_status = view.findViewById(R.id.online_status);
 
         }
     }

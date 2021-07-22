@@ -30,7 +30,8 @@
                     android:singleLine="true"
                     android:text="@string/new_request_found"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
 
 
                 <de.hdodenhof.circleimageview.CircleImageView

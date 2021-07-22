@@ -295,7 +295,8 @@
 
                 card_view:cardBackgroundColor="@color/white"
                 card_view:cardCornerRadius="5dp"
-                card_view:cardElevation="4dp">
+                card_view:cardElevation="4dp"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"

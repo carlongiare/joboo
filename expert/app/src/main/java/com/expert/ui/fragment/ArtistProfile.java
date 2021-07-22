@@ -66,6 +66,7 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
     private PersnoalInfo persnoalInfo = new PersnoalInfo();
     private ImageGallery imageGallery = new ImageGallery();
     private PreviousWork previousWork = new PreviousWork();
+    private History history = new History();
     private Services services = new Services();
     private Reviews reviews = new Reviews();
     private Bundle bundle;
@@ -308,14 +309,16 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
         previousWork.setArguments(bundle);
         reviews.setArguments(bundle);
         services.setArguments(bundle);
+        history.setArguments(bundle);
 
         adapter = new ViewPagerAdapter(getChildFragmentManager());
 
         adapter.addFragment(persnoalInfo, "Info");
-        adapter.addFragment(services, "Services");
-        adapter.addFragment(imageGallery, "Gallery");
+        //adapter.addFragment(services, "Services");
+        //adapter.addFragment(imageGallery, "Gallery");
         adapter.addFragment(previousWork, "Works");
         adapter.addFragment(reviews, "Reviews");
+        adapter.addFragment(history, "History");
 
         binding.pager.setAdapter(adapter);
         binding.tabLayout.setupWithViewPager(binding.pager);

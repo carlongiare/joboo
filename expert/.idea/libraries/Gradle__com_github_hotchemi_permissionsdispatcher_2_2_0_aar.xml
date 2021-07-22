@@ -1,32 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.hotchemi:permissionsdispatcher:2.2.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b699737fccd5642448ee5d825e22377/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b699737fccd5642448ee5d825e22377/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b699737fccd5642448ee5d825e22377/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9910577bce9e7e562a84d44cb5ff3f1a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9910577bce9e7e562a84d44cb5ff3f1a/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9910577bce9e7e562a84d44cb5ff3f1a/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25d0a4445faa96e2cc45caf968e30380/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25d0a4445faa96e2cc45caf968e30380/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25d0a4445faa96e2cc45caf968e30380/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6feb92cbc21cb6ba4ebfabd4d14e1b1f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6feb92cbc21cb6ba4ebfabd4d14e1b1f/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6feb92cbc21cb6ba4ebfabd4d14e1b1f/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ee3fc6b0b6817bce5efda8cf81af890/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ee3fc6b0b6817bce5efda8cf81af890/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ee3fc6b0b6817bce5efda8cf81af890/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c5845892d5dc41295db78c5fd263a18/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c5845892d5dc41295db78c5fd263a18/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c5845892d5dc41295db78c5fd263a18/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a2ac981d29fc5fe8511a8d04f901dcf/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a2ac981d29fc5fe8511a8d04f901dcf/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a2ac981d29fc5fe8511a8d04f901dcf/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc0f83270d0ddf5585fc188d1cec02b3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc0f83270d0ddf5585fc188d1cec02b3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc0f83270d0ddf5585fc188d1cec02b3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b1357a0028243ce1ce724afaaedd143/jetified-permissionsdispatcher-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b1357a0028243ce1ce724afaaedd143/jetified-permissionsdispatcher-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b1357a0028243ce1ce724afaaedd143/jetified-permissionsdispatcher-2.2.0/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hotchemi/permissionsdispatcher/2.2.0/ee62f8346620e8d5b4b53d81b57bb2d8c67ea28b/permissionsdispatcher-2.2.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hotchemi/permissionsdispatcher/2.2.0/50dbd68351aa8511bc839cf6267d8d444e88dcfa/permissionsdispatcher-2.2.0-sources.jar!/" />
     </SOURCES>
