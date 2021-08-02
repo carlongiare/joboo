@@ -115,7 +115,7 @@ public class WriteReview extends AppCompatActivity implements View.OnClickListen
         if (!validateReview()) {
             return;
         } else {
-            sendReview();
+//            sendReview();
         }
     }
 
@@ -160,21 +160,21 @@ public class WriteReview extends AppCompatActivity implements View.OnClickListen
      *
      */
 
-    public void sendReview() {
-        parms.put(Consts.RATING, String.valueOf(myrating));
-        parms.put(Consts.REVIEW, ProjectUtils.getEditTextValue(yourReviewET));
-        new HttpsRequest(Consts.RATE_CLIENT, parms, mContext).stringPost(TAG, new Helper() {
-            @Override
-            public void backResponse(boolean flag, String msg, JSONObject response) {
-                if (flag) {
-                    ProjectUtils.showLong(mContext, msg);
-                    finish();
-                } else {
-                    ProjectUtils.showLong(mContext, msg);
-                }
-            }
-        });
-    }
+//    public void sendReview() {
+//        parms.put(Consts.RATING, String.valueOf(myrating));
+//        parms.put(Consts.REVIEW, ProjectUtils.getEditTextValue(yourReviewET));
+//        new HttpsRequest(Consts.RATE_CLIENT, parms, mContext).stringPost(TAG, new Helper() {
+//            @Override
+//            public void backResponse(boolean flag, String msg, JSONObject response) {
+//                if (flag) {
+//                    ProjectUtils.showLong(mContext, msg);
+//                    finish();
+//                } else {
+//                    ProjectUtils.showLong(mContext, msg);
+//                }
+//            }
+//        });
+//    }
 
 
     @Override
