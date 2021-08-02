@@ -47,8 +47,11 @@
     <string name="fixed_rate">fixed rate</string>
     <string name="commis_msg">Joboo commission will be added into your hourly rate. It will vary according to category selection. Category rate :</string>
     <string name="select_cate">Select Category</string>
+    <string name="select_sub_cate">Select Sub-Category</string>
     <string name="val_cat_sele">Please select category.</string>
+    <string name="val_sub_cat_sele">Please select Subcategory.</string>
     <string name="val_name">Please enter name.</string>
+    <string name="val_last_name">Please enter last name.</string>
     <string name="val_bio">Please enter bio.</string>
     <string name="val_location">Please enter location.</string>
     <string name="val_rate">Please enter rate.</string>

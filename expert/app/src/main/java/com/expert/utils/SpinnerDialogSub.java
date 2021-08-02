@@ -1,4 +1,4 @@
-package com.client.brain.utils;
+package com.expert.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -15,15 +15,20 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.client.brain.DTO.CategoryDTO;
-import com.client.brain.R;
-import com.client.brain.interfacess.OnSpinerItemClick;
+import com.expert.DTO.CategoryDTO;
+import com.expert.DTO.SkillsDTO;
+import com.expert.DTO.SubCategoryDTO;
+import com.expert.R;
+import com.expert.interfacess.OnSpinerItemClick;
 
 import java.util.ArrayList;
 
-
-public class SpinnerDialog {
-    ArrayList<CategoryDTO> categoryDTOS;
+/**
+ * Created by VARUN on 01/01/19.
+ */
+public class SpinnerDialogSub {
+    ArrayList<SubCategoryDTO> categoryDTOS;
+    ArrayList<SkillsDTO> skillsDTOS;
     Activity context;
     String dTitle;
     String closeTitle = "Close";
@@ -33,10 +38,16 @@ public class SpinnerDialog {
     ListView listView;
     MyAdapterRadio myAdapterRadio;
     int pos;
-    public SpinnerDialog(Activity activity, ArrayList<CategoryDTO> categoryDTOS, String dialogTitle) {
+    public SpinnerDialogSub(Activity activity, ArrayList<SubCategoryDTO> categoryDTOS, String dialogTitle) {
         this.categoryDTOS = categoryDTOS;
         this.context = activity;
         this.dTitle = dialogTitle;
+    }
+   public SpinnerDialogSub(Activity activity, ArrayList<SkillsDTO> skillsDTOS, String dialogTitle, String closeTitle) {
+        this.skillsDTOS = skillsDTOS;
+        this.context = activity;
+        this.dTitle = dialogTitle;
+        this.closeTitle = closeTitle;
     }
 
 
@@ -64,30 +75,39 @@ public class SpinnerDialog {
 
         close.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                SpinnerDialog.this.alertDialog.dismiss();
-            }
-        });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                TextView t = (TextView) view.findViewById(R.id.text1);
-                String selectedID = "";
-                for (int j = 0; j < categoryDTOS.size(); j++) {
-                    if (t.getText().toString().equalsIgnoreCase(categoryDTOS.get(j).toString())) {
-                        pos = j;
-                        selectedID = categoryDTOS.get(j).getId();
-                    }
-                    if (j == i) {
-                        categoryDTOS.get(j).setSelected(true);
-                    } else {
-                        categoryDTOS.get(j).setSelected(false);
-                    }
-                }
-                onSpinerItemClick.onClick(t.getText().toString(), selectedID, pos);
                 alertDialog.dismiss();
             }
         });
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                TextView t = (TextView) view.findViewById(R.id.text1);
+                ArrayList<String> selectedID = new ArrayList<>();
+                StringBuilder selectedName = new StringBuilder();
+                for (int j = 0; j < categoryDTOS.size(); j++) {
+                    if (t.getText().toString().equalsIgnoreCase(categoryDTOS.get(j).toString())) {
+                        pos = j;
+                    }
+
+                    if (j == i ){
+                        if(categoryDTOS.get(j).isSelected())
+                            categoryDTOS.get(j).setSelected(false);
+                        else
+                            categoryDTOS.get(j).setSelected(true);
+                    }
+
+                    if(categoryDTOS.get(j).isSelected()){
+                        selectedID.add(categoryDTOS.get(j).getId());
+                        selectedName.append(categoryDTOS.get(j).getSubcategory()).append(",");
+                    }
+
+                    myAdapterRadio.notifyDataSetChanged();
+                }
+                onSpinerItemClick.onClick(selectedName.toString(), selectedID.toString(), pos);
+                //alertDialog.dismiss();
+            }
+        });
 
         this.alertDialog.show();
     }
@@ -95,11 +115,11 @@ public class SpinnerDialog {
 
     public class MyAdapterRadio extends BaseAdapter {
 
-        ArrayList<CategoryDTO> arrayList;
+        ArrayList<SubCategoryDTO> arrayList;
         LayoutInflater inflater;
 
 
-        public MyAdapterRadio(Context context, ArrayList<CategoryDTO> arrayList) {
+        public MyAdapterRadio(Context context, ArrayList<SubCategoryDTO> arrayList) {
             this.arrayList = arrayList;
             inflater = LayoutInflater.from(context);
         }
@@ -139,7 +159,7 @@ public class SpinnerDialog {
                 holder = (ViewHolder) convertView.getTag();
             }
 
-            holder.text1.setText(arrayList.get(position).getCat_name());
+            holder.text1.setText(arrayList.get(position).getSubcategory());
             holder.text1.setTypeface(null, Typeface.NORMAL);
 
             if (arrayList.get(position).isSelected()) {

@@ -32,6 +32,7 @@ import com.client.brain.utils.CustomTextViewBold;
 import com.client.brain.utils.ProjectUtils;
 import com.client.brain.utils.SpinnerDialog;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.lang.reflect.Type;
@@ -49,6 +50,7 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
     private DiscoverAdapter discoverAdapter;
     private LinearLayoutManager mLayoutManager;
     private ArrayList<AllAtristListDTO> allAtristListDTOList = new ArrayList<>();
+    private JSONArray jsonObj = new JSONArray();
     private SharedPrefrence prefrence;
     private UserDTO userDTO;
     HashMap<String, String> parms = new HashMap<>();
@@ -89,7 +91,7 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
         mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         rvDiscover.setLayoutManager(mLayoutManager);
 
-        discoverAdapter = new DiscoverAdapter(getActivity(), allAtristListDTOList, myInflater);
+        discoverAdapter = new DiscoverAdapter(getActivity(), allAtristListDTOList, myInflater,jsonObj);
         rvDiscover.setAdapter(discoverAdapter);
 
     }
@@ -170,7 +172,7 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
         tvNotFound.setVisibility(View.GONE);
         rvDiscover.setVisibility(View.VISIBLE);
         baseActivity.ivFilter.setVisibility(View.VISIBLE);
-        discoverAdapter = new DiscoverAdapter(getActivity(), allAtristListDTOList, myInflater);
+        discoverAdapter = new DiscoverAdapter(getActivity(), allAtristListDTOList, myInflater,jsonObj);
         rvDiscover.setAdapter(discoverAdapter);
     }
 
@@ -194,6 +196,8 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
                         Type getpetDTO = new TypeToken<List<CategoryDTO>>() {
                         }.getType();
                         categoryDTOS = (ArrayList<CategoryDTO>) new Gson().fromJson(response.getJSONArray("data").toString(), getpetDTO);
+
+                        jsonObj = response.getJSONArray("data");
 
                         spinnerDialogCate = new SpinnerDialog((Activity) getActivity(), categoryDTOS, getResources().getString(R.string.select_category));// With 	Animation
                         spinnerDialogCate.bindOnSpinerListener(new OnSpinerItemClick() {

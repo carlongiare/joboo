@@ -11,6 +11,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+
+import com.expert.DTO.SubCategoryDTO;
 import com.google.android.material.appbar.AppBarLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -42,6 +44,7 @@ import com.expert.utils.ProjectUtils;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -75,6 +78,7 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
     private static final int PERCENTAGE_TO_ANIMATE_AVATAR = 20;
     private boolean mIsAvatarShown = true;
     private ArrayList<CategoryDTO> categoryDTOS = new ArrayList<>();
+    private String subcategoryDTOS = "[]";
     private HashMap<String, String> paramsUpdate;
     private HashMap<String, File> paramsFile;
 
@@ -238,10 +242,10 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
                 if (flag) {
                     try {
                         categoryDTOS = new ArrayList<>();
-                        Type getpetDTO = new TypeToken<List<CategoryDTO>>() {
-                        }.getType();
+                        Type getpetDTO = new TypeToken<List<CategoryDTO>>() {}.getType();
                         categoryDTOS = (ArrayList<CategoryDTO>) new Gson().fromJson(response.getJSONArray("data").toString(), getpetDTO);
 
+                        subcategoryDTOS = response.getJSONArray("data").toString();
 
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -333,6 +337,7 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
                         Intent intent = new Intent(getActivity(), EditPersnoalInfo.class);
                         intent.putExtra(Consts.ARTIST_DTO, artistDetailsDTO);
                         intent.putExtra(Consts.CATEGORY_list, categoryDTOS);
+                        intent.putExtra("subcat", subcategoryDTOS);
                         startActivity(intent);
                         getActivity().overridePendingTransition(R.anim.slide_up, R.anim.stay);
                     } else {

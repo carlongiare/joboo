@@ -24,6 +24,12 @@ import com.client.brain.ui.activity.ArtistProfile;
 import com.client.brain.utils.CustomTextView;
 import com.client.brain.utils.CustomTextViewBold;
 import com.client.brain.utils.ProjectUtils;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -36,11 +42,13 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
     private ArrayList<AllAtristListDTO> allAtristListDTOList;
     private LayoutInflater inflater;
     private SharedPrefrence prefrence;
+    private JSONArray categories;
 
-    public DiscoverAdapter(Context mContext, ArrayList<AllAtristListDTO> allAtristListDTOList, LayoutInflater inflater) {
+    public DiscoverAdapter(Context mContext, ArrayList<AllAtristListDTO> allAtristListDTOList, LayoutInflater inflater, JSONArray categories) {
         this.mContext = mContext;
         this.allAtristListDTOList = allAtristListDTOList;
         this.inflater = inflater;
+        this.categories = categories;
         prefrence = SharedPrefrence.getInstance(mContext);
     }
 
@@ -57,6 +65,33 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
 
         holder.CTVartistwork.setText(allAtristListDTOList.get(position).getCategory_name());
         holder.CTVartistname.setText(allAtristListDTOList.get(position).getName());
+
+        if(allAtristListDTOList.get(position).getSub_categories() != null){
+            StringBuilder sb = new StringBuilder();
+
+            try {
+                for (int i = 0; i < categories.length(); i++) {
+                    JSONObject item = categories.getJSONObject(i);
+                    if (item.getString("id").equals(allAtristListDTOList.get(position).getCategory_id())) {
+                        JSONArray subcat = item.getJSONArray("subcategories");
+                        JSONArray dbsubcat = new JSONArray(allAtristListDTOList.get(position).getSub_categories());
+                        for (int a = 0; a < dbsubcat.length(); a++) {
+                            for (int b = 0; b < subcat.length(); b++) {
+                                if(dbsubcat.getString(a).equals(subcat.getJSONObject(b).getString("id")))
+                                    sb.append(subcat.getJSONObject(b).getString("name")).append(",");
+                            }
+                        }
+                        break;
+                    }
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            holder.CTVartistsubcategories.setText("Tags: " + sb.toString());
+        }
+        else
+            holder.CTVartistsubcategories.setVisibility(View.GONE);
 
         if(allAtristListDTOList.get(position).getIs_online().equals("1"))
             holder.online_status.setBackgroundTintList(ContextCompat.getColorStateList(mContext, R.color.green));
@@ -136,7 +171,7 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         public CustomTextViewBold CTVartistname, CTVartistchargeprh;
-        public CustomTextView CTVartistwork, CTVjobdone, CTVpersuccess, CTVlocation, CTVdistance, CTVtime, tvRating;
+        public CustomTextView CTVartistwork, CTVjobdone, CTVpersuccess, CTVlocation, CTVdistance, CTVtime, tvRating,CTVartistsubcategories;
         public CircleImageView IVartist;
         public RatingBar ratingbar;
         public RelativeLayout rlClick;
@@ -148,6 +183,7 @@ public class DiscoverAdapter extends RecyclerView.Adapter<DiscoverAdapter.MyView
 
             rlClick = view.findViewById(R.id.rlClick);
             CTVartistname = view.findViewById(R.id.CTVartistname);
+            CTVartistsubcategories = view.findViewById(R.id.CTVartistsubcategories);
             CTVartistwork = view.findViewById(R.id.CTVartistwork);
             CTVjobdone = view.findViewById(R.id.CTVjobdone);
             CTVpersuccess = view.findViewById(R.id.CTVpersuccess);

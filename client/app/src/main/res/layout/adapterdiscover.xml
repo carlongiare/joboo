@@ -35,38 +35,56 @@
                 android:textSize="11sp" />
 
             <LinearLayout
-                android:id="@+id/llName"
-                android:layout_width="wrap_content"
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/CTVartistwork"
-                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/IVartist"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
 
-                <com.client.brain.utils.CustomTextViewBold
-                    android:id="@+id/CTVartistname"
+                <LinearLayout
+                    android:id="@+id/llName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.client.brain.utils.CustomTextViewBold
+                        android:id="@+id/CTVartistname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/ivFav"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/ic_fav_blank" />
+
+                </LinearLayout>
+
+                <com.client.brain.utils.CustomTextView
+                    android:id="@+id/CTVartistsubcategories"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
                     android:text=""
+                    android:textSize="11sp"
                     android:textColor="@color/black" />
 
-                <ImageView
-                    android:id="@+id/ivFav"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="3dp"
-                    android:src="@drawable/ic_fav_blank" />
-
             </LinearLayout>
+
 
             <ImageView
                 android:id="@+id/ivfeatured"
                 android:layout_width="85dp"
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/llName"
+                android:layout_below="@+id/ll_info"
                 android:visibility="gone"
                 android:src="@drawable/ic_featured" />
 

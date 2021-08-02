@@ -12,6 +12,7 @@ public class CategoryDTO implements Serializable{
     String updated_at = "";
     String status = "";
     String currency_type = "";
+    String subCategories = "";
     boolean isSelected;
 
 
@@ -81,5 +82,13 @@ public class CategoryDTO implements Serializable{
 
     public void setCurrency_type(String currency_type) {
         this.currency_type = currency_type;
+    }
+
+    public String getSubCategories() {
+        return subCategories;
+    }
+
+    public void setSubCategories(String subCategories) {
+        this.subCategories = subCategories;
     }
 }
