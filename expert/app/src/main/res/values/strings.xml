@@ -290,4 +290,6 @@
     <string name="no_reviews_found">No Reviews Found</string>
     <string name="no_privious_found">No Privious work Found</string>
     <string name="mpesa_pay">Mpesa Pay Now</string>
+    <string name="write_review">Write Review</string>
+    <string name="your_review">Your Review*</string>
 </resources>

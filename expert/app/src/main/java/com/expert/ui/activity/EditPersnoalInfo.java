@@ -67,7 +67,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     private Context mContext;
     private CustomEditText etCategoryD, etNameD, etBioD, etAboutD, etCityD, etCountryD, etLocationD, etRateD;
     private CustomTextViewBold tvText;
-    private CustomButton btnSubmit;
+    private CustomButton btnSubmit, btSendReview;
     private LinearLayout llBack;
     private CustomTextView bioLength, aboutLength;
 
@@ -501,6 +501,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     private void findPlace() {
         Intent locationPickerIntent = new LocationPickerActivity.Builder()
                 .withGooglePlacesEnabled()
+                .withSearchZone("es_KE")
                 //.withLocation(41.4036299, 2.1743558)
                 .build(mContext);
 

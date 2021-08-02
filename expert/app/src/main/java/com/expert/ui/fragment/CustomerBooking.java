@@ -2,6 +2,7 @@ package com.expert.ui.fragment;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import androidx.fragment.app.Fragment;
@@ -15,6 +16,7 @@ import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.expert.ui.activity.WriteReview;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -435,8 +437,7 @@ public class CustomerBooking extends Fragment implements View.OnClickListener {
                 if (flag) {
                     ProjectUtils.showToast(getActivity(), msg);
                     getBooking();
-
-
+                    rateClient();
                 } else {
                     ProjectUtils.showToast(getActivity(), msg);
                 }
@@ -474,5 +475,16 @@ public class CustomerBooking extends Fragment implements View.OnClickListener {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         baseActivity = (BaseActivity) activity;
+    }
+
+    public void rateClient() {
+        Bundle extras = new Bundle();
+        extras.putString(Consts.EXPERT_ID, artistBooking.getArtist_id());
+        extras.putString(Consts.CLIENT_ID, artistBooking.getUser_id());
+        extras.putString(Consts.BOOKING_ID, artistBooking.getId());
+
+        Intent intent = new Intent(getContext(), WriteReview.class);
+        intent.putExtras(extras);
+        startActivity(intent);
     }
 }

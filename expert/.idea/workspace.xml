@@ -16,18 +16,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50956590-3cab-4167-a90c-569b5268e126" name="Default Changelist" comment="add mpesa pay on expert">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_circle_down_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_downward_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/images.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/interfacess/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/interfacess/Consts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/ui/activity/AddMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/ui/activity/AddMoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/drawable-nodpi/banner_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/drawable-nodpi/banner_img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_profile_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/activity_profile_setting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/adapter_jobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/adapter_jobs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/layout/dailog_address.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/layout/dailog_address.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_4_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_4_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/WriteReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_write_review.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/ui/activity/PostJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/ui/activity/PostJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/ui/fragment/ProfileSettingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/app/src/main/java/com/client/brain/ui/fragment/ProfileSettingActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -37,8 +43,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
@@ -114,15 +119,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_isseiaoki_simplecropview_1_1_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_isseiaoki_simplecropview_1_1_4_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kyleduo_switchbutton_library_1_4_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kyleduo_switchbutton_library_1_4_5_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_schibstedspain_android_leku_5_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_schibstedspain_android_leku_5_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_7_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/expert.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/expert.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/expert.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/expert.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/AddMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/AddMoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/banner_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-nodpi/banner_img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_money.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wallet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/EditPersnoalInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/activity/EditPersnoalInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/fragment/CustomerBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/expert/ui/fragment/CustomerBooking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +143,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[4T89626AA1950701112]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -171,6 +184,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1jHhZNkbJJ1jTQR4XXM3wQj5N2J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -193,7 +214,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="device.picker.selection" value="00d099ee0fd530d1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../client" />
     <property name="multi-representation-previewD:/programming/Brainverse/Android/new joboo 2/brainverse-projects-joboo-apps/expert/app/src/main/java/com/expert/test/utils/CustomTextView.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
@@ -207,6 +228,17 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.samyotech.fabartist.ui.activity" />
+      <recent name="com.getthatdone.provider.ui.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\StudioProjects\brainverse-projects-joboo-apps\expert\app\src\main\res\drawable" />
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\drawable-mdpi" />
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\drawable-nodpi" />
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\java\com\expert" />
+      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\mipmap-xxhdpi" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app" />
       <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src" />
@@ -218,22 +250,14 @@
       <recent name="com.expert" />
       <recent name="com" />
     </key>
-    <key name="android.template.packageName">
-      <recent name="com.samyotech.fabartist.ui.activity" />
-      <recent name="com.getthatdone.provider.ui.activity" />
+    <key name="android.template.144033821">
+      <recent name="com.expert.ui.activity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.samyotech.fabartist.ui.adapter" />
       <recent name="com.getthatdone.provider.ui.adapter" />
       <recent name="com.getthatdone.provider.ui.fragment" />
       <recent name="com.getthatdone.provider.utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\StudioProjects\brainverse-projects-joboo-apps\expert\app\src\main\res\drawable" />
-      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\drawable-mdpi" />
-      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\drawable-nodpi" />
-      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\java\com\expert" />
-      <recent name="D:\programming\Brainverse\Android\new joboo 2\brainverse-projects-joboo-apps\expert\app\src\main\res\mipmap-xxhdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -252,6 +276,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -317,7 +342,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <configuration name="FabArtist:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -336,7 +363,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -346,6 +375,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -444,6 +474,18 @@
     <option name="localTasksCounter" value="13" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
@@ -460,49 +502,6 @@
     <MESSAGE value="add mpesa pay on expert" />
     <option name="LAST_COMMIT_MESSAGE" value="add mpesa pay on expert" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610646467028">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1610646467028" />
-    <state x="58" y="0" key="CommitChangelistDialog2" timestamp="1610647538568">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="58" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1610647538568" />
-    <state x="463" y="90" key="FileChooserDialogImpl" timestamp="1611027798420">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="90" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611027798420" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1614243083480">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607239261448" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1614243083480" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1614243083480">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607239261448" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1614243083480" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1614243083479">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607239261448" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1614243083479" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1614243083480">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607239261448" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1614243083480" />
-    <state x="358" y="39" width="650" height="690" key="find.popup" timestamp="1614338146854">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="358" y="37" width="650" height="654" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1607237802055" />
-    <state x="358" y="39" width="650" height="690" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1614338146854" />
-    <state width="429" height="169" key="javadoc.popup.new" timestamp="1614337108236">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="429" height="169" key="javadoc.popup.new/0.0.1366.768@0.0.1366.768" timestamp="1614337108236" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -514,7 +513,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-field">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/expert/interfacess/Consts.java</url>
-          <line>233</line>
+          <line>248</line>
           <properties field="JOB_APPLY_NOTIFICATION" class="com.expert.interfacess.Consts" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
