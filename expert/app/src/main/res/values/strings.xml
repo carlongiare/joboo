@@ -10,7 +10,7 @@
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="hindi">Hindi</string>
-    <string name="intro_1">Search your nearby Experts.</string>
+    <string name="intro_1">Search nearby Employers.</string>
     <string name="intro_2">Make yourself more beautiful more than you think.</string>
     <string name="intro_3">Hire the best Photographer &amp; create your moment.</string>
     <string name="internet_concation">Please enable your internet connection.</string>
@@ -47,8 +47,11 @@
     <string name="fixed_rate">fixed rate</string>
     <string name="commis_msg">Joboo commission will be added into your hourly rate. It will vary according to category selection. Category rate :</string>
     <string name="select_cate">Select Category</string>
+    <string name="select_sub_cate">Select Sub-Category</string>
     <string name="val_cat_sele">Please select category.</string>
+    <string name="val_sub_cat_sele">Please select Subcategory.</string>
     <string name="val_name">Please enter name.</string>
+    <string name="val_last_name">Please enter last name.</string>
     <string name="val_bio">Please enter bio.</string>
     <string name="val_location">Please enter location.</string>
     <string name="val_rate">Please enter rate.</string>
@@ -60,7 +63,7 @@
     <string name="val_pass1">Please renter at least six characters password.</string>
     <string name="val_pass3">Password does not match.</string>
     <string name="my_appoin">My Appointments</string>
-    <string name="customer_booking">Current Booking</string>
+    <string name="customer_booking">Ongoing Jobs</string>
     <string name="dec_cpas">Decline</string>
     <string name="decline_msg">Are you sure you want to decline request?</string>
     <string name="get_discount">Get Discount</string>
@@ -79,7 +82,7 @@
     <string name="payment">Payment</string>
     <string name="process_payment">Are you sure want to process your payment?</string>
     <string name="jobs">Find Jobs</string>
-    <string name="bookings">Bookings</string>
+    <string name="bookings">My Jobs</string>
     <string name="job_title">Job Title:</string>
     <string name="date">Date:</string>
     <string name="val_des">Please enter description.</string>
@@ -135,7 +138,7 @@
     <string name="referal">Enter Referal Code</string>
     <string name="do_you_have_an_account_already">Do you have an account already?</string>
     <string name="job_id">Job ID:</string>
-    <string name="services_type">Services type:</string>
+    <string name="services_type">Service type:</string>
     <string name="apply">APPLY</string>
     <string name="reject1">Cancel</string>
     <string name="start_job">Start Job</string>
@@ -178,7 +181,7 @@
     <string name="no_jobs_applied">NO JOBS APPLIED</string>
     <string name="no_appointment_found">NO APPOINTMENT FOUND</string>
     <string name="no_jobs_found">NO JOBS FOUND</string>
-    <string name="no_booking_found">NO BOOKING FOUND</string>
+    <string name="no_booking_found">NO JOBS FOUND</string>
     <string name="no_chat_history_found">NO CHAT HISTORY FOUND</string>
     <string name="no_notification_found">NO NOTIFICATION FOUND</string>
     <string name="new_request_found">NEW REQUEST FOUND</string>
@@ -191,8 +194,8 @@
     <string name="paid1">Paid</string>
     <string name="unpaid1">Unpaid</string>
     <string name="all_jobs">All Jobs</string>
-    <string name="all_booking">All Bookings</string>
-    <string name="accept_booking">Accepted Bookings</string>
+    <string name="all_booking">All Jobs</string>
+    <string name="accept_booking">Accepted Jobs</string>
     <string name="applied_jobs">Applied Jobs</string>
     <string name="fit_image">FIT IMAGE</string>
     <string name="square">SQUARE</string>
@@ -290,4 +293,6 @@
     <string name="no_reviews_found">No Reviews Found</string>
     <string name="no_privious_found">No Privious work Found</string>
     <string name="mpesa_pay">Mpesa Pay Now</string>
+    <string name="write_review">Write Review</string>
+    <string name="your_review">Your Review*</string>
 </resources>

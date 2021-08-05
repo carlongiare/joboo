@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:orientation="vertical"
         tools:context="com.expert.ui.fragment.NewBookings">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.expert.utils.CustomTextView
+                    android:id="@+id/tvPendingJobs"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Pending"
+                    android:textColor="@color/white"/>
+
+                <com.expert.utils.CustomTextView
+                    android:id="@+id/tvAcceptedJobs"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Accepted"/>
+
+                <com.expert.utils.CustomTextView
+                    android:id="@+id/tvRejectedJobs"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="Rejected"
+                    android:visibility="gone"/>
+
+                <com.expert.utils.CustomTextView
+                    android:id="@+id/tvCompletedJobs"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="Completed"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <RelativeLayout
             android:id="@+id/rlSearch"
@@ -87,7 +146,8 @@
             android:layout_marginBottom="25dp"
             android:layout_toLeftOf="@+id/fab"
             android:text=""
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:visibility="gone"/>
 
         <!-- Your FAB implementation -->
         <com.expert.utils.Fab
@@ -96,20 +156,23 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:visibility="gone" />
 
         <!-- Overlay that dims the screen -->
         <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
             android:id="@+id/overlay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:visibility="gone" />
 
         <!-- Circular reveal container for the sheet -->
         <io.codetail.widget.RevealLinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="end|bottom"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <!-- Sheet that contains your items -->
             <androidx.cardview.widget.CardView
@@ -152,4 +215,5 @@
 
         </io.codetail.widget.RevealLinearLayout>
     </RelativeLayout>
+    </LinearLayout>
 </layout>

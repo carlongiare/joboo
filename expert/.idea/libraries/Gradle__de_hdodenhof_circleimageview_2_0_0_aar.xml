@@ -1,27 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: de.hdodenhof:circleimageview:2.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcc0c6abd840da667d9303feac85b378/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcc0c6abd840da667d9303feac85b378/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fcc0c6abd840da667d9303feac85b378/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daeb53a1f218ac339180110d347a8796/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daeb53a1f218ac339180110d347a8796/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/daeb53a1f218ac339180110d347a8796/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/feb5e688c8bea564f968268d4e2b8a26/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/feb5e688c8bea564f968268d4e2b8a26/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/feb5e688c8bea564f968268d4e2b8a26/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/673fcd660a9f7c52ec2f46cee2fd556a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/673fcd660a9f7c52ec2f46cee2fd556a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/673fcd660a9f7c52ec2f46cee2fd556a/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a36fe278868b63a6c43e73430dd13bd4/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a36fe278868b63a6c43e73430dd13bd4/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a36fe278868b63a6c43e73430dd13bd4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a163c3e82df927b646f30abb38a5357/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a163c3e82df927b646f30abb38a5357/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a163c3e82df927b646f30abb38a5357/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd5ac71b9bbf138f13952a7fceec2ab9/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd5ac71b9bbf138f13952a7fceec2ab9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd5ac71b9bbf138f13952a7fceec2ab9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a7043be75cd8b34e8773bf0288034ac/jetified-circleimageview-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a7043be75cd8b34e8773bf0288034ac/jetified-circleimageview-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0a7043be75cd8b34e8773bf0288034ac/jetified-circleimageview-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.hdodenhof/circleimageview/2.0.0/ed4cfbaa6ceeea5a1df9e194dabaf7e6e5b89965/circleimageview-2.0.0-javadoc.jar!/" />

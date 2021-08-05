@@ -80,21 +80,64 @@
 
             </com.expert.utils.InputFieldView>
 
-            <com.expert.utils.InputOpenFieldView
+            <com.expert.utils.InputFieldView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
                 <com.expert.utils.CustomEditText
-                    android:id="@+id/etNameD"
+                    android:id="@+id/etSubCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/your_name"
-                    android:inputType="textCapWords"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:editable="false"
+                    android:hint="Select your sub-categories"
                     android:singleLine="true"
-                    android:text="" />
+                    android:text=""
+                    android:ellipsize="end"/>
 
-            </com.expert.utils.InputOpenFieldView>
+            </com.expert.utils.InputFieldView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="100">
+                <com.expert.utils.InputOpenFieldView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.expert.utils.CustomEditText
+                        android:id="@+id/etNameD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </com.expert.utils.InputOpenFieldView>
+
+                <com.expert.utils.InputOpenFieldView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.expert.utils.CustomEditText
+                        android:id="@+id/etLastNameD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last nmae"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </com.expert.utils.InputOpenFieldView>
+            </LinearLayout>
+
 
 
             <com.expert.utils.InputOpenFieldView

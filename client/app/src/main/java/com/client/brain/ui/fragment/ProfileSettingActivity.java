@@ -76,7 +76,7 @@ public class ProfileSettingActivity extends Fragment implements View.OnClickList
     public RadioButton rb_gender_female, rb_gender_male;
     private Dialog dialog_profile, dialog_pass, dialog_address;
     private CustomTextViewBold tvYes, tvNo, tvYesPass, tvNoPass, tvYesAddress, tvNoAddress;
-    private CustomEditText etNameD, etEmailD, etMobileD, etOldPassD, etNewPassD, etConfrimPassD, etAddressD, etCityD, etCountryD, etAddressDs;
+    private CustomEditText etNameD,etLastName, etEmailD, etMobileD, etOldPassD, etNewPassD, etConfrimPassD, etAddressD, etCityD, etCountryD, etAddressDs;
     private HashMap<String, String> params;
     private RelativeLayout RRsncbar;
     private SharedPrefrence prefrence;
@@ -437,10 +437,13 @@ public class ProfileSettingActivity extends Fragment implements View.OnClickList
         rb_gender_female = dialog_profile.findViewById(R.id.rb_gender_female);
 
         etNameD = (CustomEditText) dialog_profile.findViewById(R.id.etNameD);
+        etLastName = (CustomEditText) dialog_profile.findViewById(R.id.etLastName);
         etEmailD = (CustomEditText) dialog_profile.findViewById(R.id.etEmailD);
         etMobileD = (CustomEditText) dialog_profile.findViewById(R.id.etMobileD);
 
-        etNameD.setText(userDTO.getName());
+        String[] parts = userDTO.getName().split(" ");
+        etNameD.setText(parts[0]);
+        etLastName.setText(parts[1]);
         etEmailD.setText(userDTO.getEmail_id());
         etMobileD.setText(userDTO.getMobile());
 
@@ -473,7 +476,7 @@ public class ProfileSettingActivity extends Fragment implements View.OnClickList
                     public void onClick(View v) {
                         params = new HashMap<>();
                         params.put(Consts.USER_ID, userDTO.getUser_id());
-                        params.put(Consts.NAME, ProjectUtils.getEditTextValue(etNameD));
+                        params.put(Consts.NAME, ProjectUtils.getEditTextValue(etNameD) + " " + ProjectUtils.getEditTextValue(etLastName));
                         params.put(Consts.MOBILE, ProjectUtils.getEditTextValue(etMobileD));
                         if (rb_gender_female.isChecked()) {
                             params.put(Consts.GENDER, "0");

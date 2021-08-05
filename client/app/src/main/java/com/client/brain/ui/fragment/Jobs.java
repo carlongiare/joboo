@@ -90,6 +90,7 @@ public class Jobs extends Fragment implements SwipeRefreshLayout.OnRefreshListen
                 }
             }
         });
+
         svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6aeb0d9d7dd12e14884d72bdde474e6e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6aeb0d9d7dd12e14884d72bdde474e6e/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6aeb0d9d7dd12e14884d72bdde474e6e/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15c21df97ea478257dd4b3ad98a5c7fb/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15c21df97ea478257dd4b3ad98a5c7fb/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15c21df97ea478257dd4b3ad98a5c7fb/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7fcd4662ff4a23cf4e69bcf754b85821/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7fcd4662ff4a23cf4e69bcf754b85821/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7fcd4662ff4a23cf4e69bcf754b85821/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0832f0be898a4495029422da0276c08/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0832f0be898a4495029422da0276c08/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0832f0be898a4495029422da0276c08/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ecdb1708c3103c423c31bd3d0f463326/slidingpanelayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ecdb1708c3103c423c31bd3d0f463326/slidingpanelayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ecdb1708c3103c423c31bd3d0f463326/slidingpanelayout-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

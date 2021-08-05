@@ -5,7 +5,7 @@ package com.expert.interfacess;
  */
 
 public interface Consts {
-    String APP_NAME = "FabArtist";
+    String APP_NAME = "Joboo Expert";
     //old 677440
     String BACKEND = "https://backend.joboo.co.ke";
 
@@ -70,6 +70,21 @@ public interface Consts {
     String DELETE_QUALIFICATION_API = "deleteQualification";
     String GET_ALL_BOOKING_ARTIST_API = "getAllBookingArtist";
     String GET_APPROVAL_STATUS_API = "getApprovalStatus";
+
+    //Rate and review client
+    String RATING = "rating";
+    String REVIEW = "comment";
+    String RATE_CLIENT = "rateClient";
+    String EXPERT_ID = "artist_id";
+    String CLIENT_ID = "client_id";
+
+
+//    curl --location --request POST 'http://localhost/brainverse-projects-joboo-backend/Webservice/rateClient' \
+//            --form 'client_id="3"' \
+//            --form 'booking_id="1"' \
+//            --form 'artist_id="2"' \
+//            --form 'rating="5"' \
+//            --form 'comment="API test"'
 
     /*app data*/
     String CAMERA_ACCEPTED = "camera_accepted";

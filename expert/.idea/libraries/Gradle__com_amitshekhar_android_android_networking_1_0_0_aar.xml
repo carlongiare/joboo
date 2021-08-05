@@ -1,29 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.amitshekhar.android:android-networking:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c7b0a6a35467cb4d9e4a1749e26eb0c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c7b0a6a35467cb4d9e4a1749e26eb0c/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c7b0a6a35467cb4d9e4a1749e26eb0c/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb52d7c13577761e324faf7fcc4c2d7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb52d7c13577761e324faf7fcc4c2d7/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dfb52d7c13577761e324faf7fcc4c2d7/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/724108bb2b222849ca649e249c2466df/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/724108bb2b222849ca649e249c2466df/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/724108bb2b222849ca649e249c2466df/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/742b1b66078c7461c2189911c039446d/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/742b1b66078c7461c2189911c039446d/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/742b1b66078c7461c2189911c039446d/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f219f402b6f537de72ea063e3942e36e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f219f402b6f537de72ea063e3942e36e/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f219f402b6f537de72ea063e3942e36e/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8b13bec6ad89cc1ed623beedb22a281/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8b13bec6ad89cc1ed623beedb22a281/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b8b13bec6ad89cc1ed623beedb22a281/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa087e936bef318eba37c1783dc4706a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa087e936bef318eba37c1783dc4706a/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa087e936bef318eba37c1783dc4706a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fabfb5c3a7192ca8177e2f54dd2f17be/jetified-android-networking-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fabfb5c3a7192ca8177e2f54dd2f17be/jetified-android-networking-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fabfb5c3a7192ca8177e2f54dd2f17be/jetified-android-networking-1.0.0/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/android-networking/1.0.0/959dfbd68aba5cc899fbc3351d5735dc9fd382/android-networking-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/android-networking/1.0.0/1e4c6c0a265c81df48759a5bba19914f790f119d/android-networking-1.0.0-sources.jar!/" />
     </SOURCES>

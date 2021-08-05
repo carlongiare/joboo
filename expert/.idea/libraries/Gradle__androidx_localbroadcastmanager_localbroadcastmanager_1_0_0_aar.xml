@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbfe91099131ccf0af5b213a75dd026a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbfe91099131ccf0af5b213a75dd026a/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbfe91099131ccf0af5b213a75dd026a/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03fff06532cef8f8974d15475ff2ca27/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03fff06532cef8f8974d15475ff2ca27/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03fff06532cef8f8974d15475ff2ca27/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/630f66eef21b5e96936934e404e0f4b7/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/630f66eef21b5e96936934e404e0f4b7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/630f66eef21b5e96936934e404e0f4b7/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8bc4d20aed456ec61c891d3b7e9e51c/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8bc4d20aed456ec61c891d3b7e9e51c/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f8bc4d20aed456ec61c891d3b7e9e51c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d8f009dc0f29f52971637ca0f15c6ab/localbroadcastmanager-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d8f009dc0f29f52971637ca0f15c6ab/localbroadcastmanager-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d8f009dc0f29f52971637ca0f15c6ab/localbroadcastmanager-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

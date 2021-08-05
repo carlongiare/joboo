@@ -22,10 +22,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.cocosw.bottomsheet.BottomSheet;
+import com.expert.DTO.SubCategoryDTO;
+import com.expert.utils.SpinnerDialogSub;
 import com.google.android.gms.location.places.Place;
 import com.google.gson.Gson;
 import com.expert.DTO.ArtistDetailsDTO;
@@ -48,6 +51,8 @@ import com.expert.utils.ProjectUtils;
 import com.expert.utils.SpinnerDialog;
 import com.schibstedspain.leku.LocationPickerActivity;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -65,14 +70,17 @@ import static com.schibstedspain.leku.LocationPickerActivityKt.LONGITUDE;
 public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickListener {
     private String TAG = EditPersnoalInfo.class.getSimpleName();
     private Context mContext;
-    private CustomEditText etCategoryD, etNameD, etBioD, etAboutD, etCityD, etCountryD, etLocationD, etRateD;
+    private CustomEditText etCategoryD, etNameD,etLastNameD, etBioD, etAboutD, etCityD, etCountryD, etLocationD, etRateD,etSubCategory;
     private CustomTextViewBold tvText;
-    private CustomButton btnSubmit;
+    private CustomButton btnSubmit, btSendReview;
     private LinearLayout llBack;
     private CustomTextView bioLength, aboutLength;
 
     private ArrayList<CategoryDTO> categoryDTOS = new ArrayList<>();
+    private ArrayList<SubCategoryDTO> subCategoryDTO = new ArrayList<>();
+    private String subCategory = "[]";
     private SpinnerDialog spinnerDialogCate;
+    private SpinnerDialogSub spinnerDialogSub;
     private ArtistDetailsDTO artistDetailsDTO;
     private Place place;
     private double lats = 0;
@@ -105,14 +113,33 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
 
         if (getIntent().hasExtra(Consts.CATEGORY_list)) {
             categoryDTOS = (ArrayList<CategoryDTO>) getIntent().getSerializableExtra(Consts.CATEGORY_list);
+            subCategory = getIntent().getStringExtra("subcat");
             artistDetailsDTO = (ArtistDetailsDTO) getIntent().getSerializableExtra(Consts.ARTIST_DTO);
         }
+
+        try {
+            JSONArray data = new JSONArray(subCategory);
+            JSONArray subcat = data.getJSONObject(0).getJSONArray("subcategories");
+            for (int i = 0; i < subcat.length(); i++) {
+                JSONObject item = subcat.getJSONObject(i);
+                subCategoryDTO.add(new SubCategoryDTO(
+                        item.getString("id"),
+                        item.getString("category_id"),
+                        item.getString("name"),
+                        false));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
         setUiAction();
     }
 
     public void setUiAction() {
         etCategoryD = (CustomEditText) findViewById(R.id.etCategoryD);
+        etSubCategory = (CustomEditText) findViewById(R.id.etSubCategory);
         etNameD = (CustomEditText) findViewById(R.id.etNameD);
+        etLastNameD = (CustomEditText) findViewById(R.id.etLastNameD);
         etBioD = (CustomEditText) findViewById(R.id.etBioD);
         etAboutD = (CustomEditText) findViewById(R.id.etAboutD);
         etCityD = (CustomEditText) findViewById(R.id.etCityD);
@@ -128,6 +155,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
 
         etCategoryD.setOnClickListener(this);
         etLocationD.setOnClickListener(this);
+        etSubCategory.setOnClickListener(this);
         btnSubmit.setOnClickListener(this);
         llBack.setOnClickListener(this);
         ivBanner.setOnClickListener(this);
@@ -247,8 +275,43 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                 etCategoryD.setText(item);
                 paramsUpdate.put(Consts.CATEGORY_ID, id);
                 tvText.setText(getResources().getString(R.string.commis_msg) + categoryDTOS.get(position).getCurrency_type() + categoryDTOS.get(position).getPrice());
+                etSubCategory.setText("");
+                try {
+                    subCategoryDTO.clear();
+                    JSONArray data = new JSONArray(subCategory);
+                    for (int x = 0; x < data.length(); x++) {
+                        if(data.getJSONObject(x).getString("id").equals(id)){
+                            JSONArray subcat = data.getJSONObject(x).getJSONArray("subcategories");
+                            for (int i = 0; i < subcat.length(); i++) {
+                                JSONObject sc = subcat.getJSONObject(i);
+                                subCategoryDTO.add(new SubCategoryDTO(
+                                        sc.getString("id"),
+                                        sc.getString("category_id"),
+                                        sc.getString("name"),
+                                        false));
+                            }
+                        }
+                    }
+                    spinnerDialogSub = new SpinnerDialogSub((Activity) mContext, subCategoryDTO, getResources().getString(R.string.select_cate));
+                    spinnerDialogSub.bindOnSpinerListener(new OnSpinerItemClick() {
+                        @Override
+                        public void onClick(String item, String id, int position) {
+                            etSubCategory.setText(item);
+                            paramsUpdate.put(Consts.CATEGORY_ID, id);
+                        }
+                    });
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
-
+        spinnerDialogSub = new SpinnerDialogSub((Activity) mContext, subCategoryDTO, getResources().getString(R.string.select_cate));// With 	Animation
+        spinnerDialogSub.bindOnSpinerListener(new OnSpinerItemClick() {
+            @Override
+            public void onClick(String item, String id, int position) {
+                etCategoryD.setText(item);
+                paramsUpdate.put("sub_categories", id);
             }
         });
 
@@ -314,18 +377,50 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
         }
 
         spinnerDialogCate = new SpinnerDialog((Activity) mContext, categoryDTOS, getResources().getString(R.string.select_cate));// With 	Animation
-        spinnerDialogCate.bindOnSpinerListener(new OnSpinerItemClick() {
-            @Override
-            public void onClick(String item, String id, int position) {
-                etCategoryD.setText(item);
-                paramsUpdate.put(Consts.CATEGORY_ID, id);
-                tvText.setText(getResources().getString(R.string.commis_msg) + categoryDTOS.get(position).getCurrency_type() + categoryDTOS.get(position).getPrice());
-
-
+        spinnerDialogCate.bindOnSpinerListener((item, id, position) -> {
+            etCategoryD.setText(item);
+            paramsUpdate.put(Consts.CATEGORY_ID, id);
+            tvText.setText(getResources().getString(R.string.commis_msg) + categoryDTOS.get(position).getCurrency_type() + categoryDTOS.get(position).getPrice());
+            etSubCategory.setText("");
+            try {
+                subCategoryDTO.clear();
+                JSONArray data = new JSONArray(subCategory);
+                for (int x = 0; x < data.length(); x++) {
+                    if(data.getJSONObject(x).getString("id").equals(id)){
+                        JSONArray subcat = data.getJSONObject(x).getJSONArray("subcategories");
+                        for (int i = 0; i < subcat.length(); i++) {
+                            JSONObject sc = subcat.getJSONObject(i);
+                            subCategoryDTO.add(new SubCategoryDTO(
+                                    sc.getString("id"),
+                                    sc.getString("category_id"),
+                                    sc.getString("name"),
+                                    false));
+                        }
+                    }
+                }
+                spinnerDialogSub = new SpinnerDialogSub((Activity) mContext, subCategoryDTO, getResources().getString(R.string.select_cate));
+                spinnerDialogSub.bindOnSpinerListener(new OnSpinerItemClick() {
+                    @Override
+                    public void onClick(String item, String id, int position) {
+                        etSubCategory.setText(item);
+                        paramsUpdate.put(Consts.CATEGORY_ID, id);
+                    }
+                });
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
         });
+
+        spinnerDialogSub = new SpinnerDialogSub((Activity) mContext, subCategoryDTO, getResources().getString(R.string.select_cate));
+        spinnerDialogSub.bindOnSpinerListener((item, id, position) -> {
+            etSubCategory.setText(item);
+            paramsUpdate.put("sub_categories", id);
+        });
+
         etCategoryD.setText(artistDetailsDTO.getCategory_name());
-        etNameD.setText(artistDetailsDTO.getName());
+        String[] parts = artistDetailsDTO.getName().split(" ");
+        etNameD.setText( parts[0]);
+        etLastNameD.setText( parts[1]);
         etBioD.setText(artistDetailsDTO.getBio());
         etAboutD.setText(artistDetailsDTO.getAbout_us());
         etCityD.setText(artistDetailsDTO.getCity());
@@ -351,10 +446,20 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                 if (NetworkManager.isConnectToInternet(mContext)) {
                     if (categoryDTOS.size() > 0)
                         spinnerDialogCate.showSpinerDialog();
+
                 } else {
                     ProjectUtils.showToast(mContext, getResources().getString(R.string.internet_concation));
                 }
-
+                break;
+            case R.id.etSubCategory:
+                if (NetworkManager.isConnectToInternet(mContext)) {
+                    if (subCategoryDTO.size() > 0)
+                        spinnerDialogSub.showSpinerDialog();
+                    else
+                        Toast.makeText(mContext, "No sub-categories", Toast.LENGTH_SHORT).show();
+                } else {
+                    ProjectUtils.showToast(mContext, getResources().getString(R.string.internet_concation));
+                }
                 break;
             case R.id.etLocationD:
                 if (NetworkManager.isConnectToInternet(mContext)) {
@@ -501,6 +606,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     private void findPlace() {
         Intent locationPickerIntent = new LocationPickerActivity.Builder()
                 .withGooglePlacesEnabled()
+                .withSearchZone("es_KE")
                 //.withLocation(41.4036299, 2.1743558)
                 .build(mContext);
 
@@ -541,7 +647,11 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     public void submitPersonalProfile() {
         if (!validation(etCategoryD, getResources().getString(R.string.val_cat_sele))) {
             return;
+        } else if (!validation(etSubCategory, getResources().getString(R.string.val_sub_cat_sele))) {
+            return;
         } else if (!validation(etNameD, getResources().getString(R.string.val_name))) {
+            return;
+        }else if (!validation(etLastNameD, getResources().getString(R.string.val_last_name))) {
             return;
         } else if (!validation(etBioD, getResources().getString(R.string.val_bio))) {
             return;
@@ -559,7 +669,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
             if (NetworkManager.isConnectToInternet(mContext)) {
 
                 paramsUpdate.put(Consts.USER_ID, userDTO.getUser_id());
-                paramsUpdate.put(Consts.NAME, ProjectUtils.getEditTextValue(etNameD));
+                paramsUpdate.put(Consts.NAME, ProjectUtils.getEditTextValue(etNameD) + " " + ProjectUtils.getEditTextValue(etLastNameD));
                 paramsUpdate.put(Consts.BIO, ProjectUtils.getEditTextValue(etBioD));
                 paramsUpdate.put(Consts.ABOUT_US, ProjectUtils.getEditTextValue(etAboutD));
                 paramsUpdate.put(Consts.CITY, ProjectUtils.getEditTextValue(etCityD));
@@ -572,7 +682,6 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
 
                 if (longs != 0)
                     paramsUpdate.put(Consts.LONGITUDE, String.valueOf(longs));
-
 
                 updateProfile();
             } else {
@@ -611,8 +720,6 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                 } else {
                     ProjectUtils.showToast(mContext, msg);
                 }
-
-
             }
         });
     }

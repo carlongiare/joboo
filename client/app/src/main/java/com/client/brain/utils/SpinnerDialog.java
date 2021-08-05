@@ -93,8 +93,6 @@ public class SpinnerDialog {
     }
 
 
-
-
     public class MyAdapterRadio extends BaseAdapter {
 
         ArrayList<CategoryDTO> arrayList;

@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb62594d11585739bb2d34b53f8ebf5a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb62594d11585739bb2d34b53f8ebf5a/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cb62594d11585739bb2d34b53f8ebf5a/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12d8e558df6525ec514f3a743396ee22/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12d8e558df6525ec514f3a743396ee22/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12d8e558df6525ec514f3a743396ee22/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19d10d489c6e3e25b198507a0acd74d4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19d10d489c6e3e25b198507a0acd74d4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19d10d489c6e3e25b198507a0acd74d4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32dbc4a68775b5d1662f8c20839cd100/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32dbc4a68775b5d1662f8c20839cd100/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32dbc4a68775b5d1662f8c20839cd100/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/590e57653d231012f2aa512d4d581aaa/cursoradapter-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/590e57653d231012f2aa512d4d581aaa/cursoradapter-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/590e57653d231012f2aa512d4d581aaa/cursoradapter-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -34,7 +34,7 @@
                     android:layout_weight="0.5"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="@string/all_jobs"
+                    android:text="Posted jobs"
                     android:textColor="@color/white" />
 
                 <com.expert.utils.CustomTextView

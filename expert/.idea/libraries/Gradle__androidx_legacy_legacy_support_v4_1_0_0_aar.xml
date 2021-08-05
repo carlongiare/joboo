@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ba2edbb823e833c52f4c99835af35bf/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ba2edbb823e833c52f4c99835af35bf/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ba2edbb823e833c52f4c99835af35bf/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9e10eac414ee4152eaca1b716cbbde6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9e10eac414ee4152eaca1b716cbbde6/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9e10eac414ee4152eaca1b716cbbde6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/05d5f23b3a3c0b0fc6ed6ac3d517aca6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/05d5f23b3a3c0b0fc6ed6ac3d517aca6/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/05d5f23b3a3c0b0fc6ed6ac3d517aca6/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/805c16603f1cfef8620a7aeb4f4b6165/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/805c16603f1cfef8620a7aeb4f4b6165/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/805c16603f1cfef8620a7aeb4f4b6165/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f998f244adbb97dbf0853109b3393713/legacy-support-v4-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f998f244adbb97dbf0853109b3393713/legacy-support-v4-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f998f244adbb97dbf0853109b3393713/legacy-support-v4-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

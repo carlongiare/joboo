@@ -65,6 +65,7 @@
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -93,5 +94,32 @@
 
             </LinearLayout>
         </LinearLayout>
+
+
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlOnline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/llProfileClick">
+
+        <com.expert.utils.CustomTextViewBold
+            android:id="@+id/tvOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online status"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+
+        <Switch
+            android:id="@+id/swOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
 </RelativeLayout>

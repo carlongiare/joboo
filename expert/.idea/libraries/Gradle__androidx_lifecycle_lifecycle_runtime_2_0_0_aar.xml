@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-runtime:2.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99b36176718e252389e1106238423c2f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99b36176718e252389e1106238423c2f/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/99b36176718e252389e1106238423c2f/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4d7cad8a25fde871156dab2822a0765/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4d7cad8a25fde871156dab2822a0765/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c4d7cad8a25fde871156dab2822a0765/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce7cccfe58e22644d93ce2b49f9671e3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce7cccfe58e22644d93ce2b49f9671e3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce7cccfe58e22644d93ce2b49f9671e3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95a573ef816a805ee79f074dffa30e0b/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95a573ef816a805ee79f074dffa30e0b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95a573ef816a805ee79f074dffa30e0b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/537d9e99d1ffb69d57330ba29c3a9c17/lifecycle-runtime-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/537d9e99d1ffb69d57330ba29c3a9c17/lifecycle-runtime-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/537d9e99d1ffb69d57330ba29c3a9c17/lifecycle-runtime-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

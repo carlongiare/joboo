@@ -3,7 +3,11 @@ package com.expert.ui.adapter;
  * Created by VARUN on 01/01/19.
  */
 import android.content.Context;
+
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.PagerAdapter;
+
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -136,6 +136,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     public void clickForSubmit() {
         if (!validation(binding.CETfirstname, getResources().getString(R.string.val_name))) {
             return;
+
+        } else if (!validation(binding.CETlastname, getResources().getString(R.string.val_lname))) {
+            return;
         } else if (!ProjectUtils.isEmailValid(binding.CETemailadd.getText().toString().trim())) {
             showSickbar(getResources().getString(R.string.val_email));
         } else if (!ProjectUtils.isPasswordValid(binding.CETenterpassword.getText().toString().trim())) {
@@ -180,7 +183,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     public HashMap<String, String> getparm() {
         HashMap<String, String> parms = new HashMap<>();
-        parms.put(Consts.NAME, ProjectUtils.getEditTextValue(binding.CETfirstname));
+        parms.put(Consts.NAME, ProjectUtils.getEditTextValue(binding.CETfirstname) + " "
+                + ProjectUtils.getEditTextValue(binding.CETlastname));
         parms.put(Consts.EMAIL_ID, ProjectUtils.getEditTextValue(binding.CETemailadd));
         parms.put(Consts.PASSWORD, ProjectUtils.getEditTextValue(binding.CETenterpassword));
         parms.put(Consts.ROLE, "2");

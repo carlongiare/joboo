@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.cardview:cardview:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/440caabc90290659619c9274bbccc688/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/440caabc90290659619c9274bbccc688/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/440caabc90290659619c9274bbccc688/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9dd007286313edca9968a6c6850be268/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9dd007286313edca9968a6c6850be268/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9dd007286313edca9968a6c6850be268/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4adc2b55a298a5af8fafd86dcb1341a6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4adc2b55a298a5af8fafd86dcb1341a6/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4adc2b55a298a5af8fafd86dcb1341a6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc168bc61f907aff31827da9bf412927/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc168bc61f907aff31827da9bf412927/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc168bc61f907aff31827da9bf412927/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73c39e5090f0a3891644fd25ec7c0845/cardview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73c39e5090f0a3891644fd25ec7c0845/cardview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/73c39e5090f0a3891644fd25ec7c0845/cardview-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

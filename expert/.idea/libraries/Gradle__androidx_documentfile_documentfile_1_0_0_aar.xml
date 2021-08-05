@@ -1,18 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.documentfile:documentfile:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/37704fd29f2ca862409d052c703213ac/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/37704fd29f2ca862409d052c703213ac/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/37704fd29f2ca862409d052c703213ac/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6337dfb2aa2a2ba04b3c05f81f957c7e/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6337dfb2aa2a2ba04b3c05f81f957c7e/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6337dfb2aa2a2ba04b3c05f81f957c7e/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52a9af2bab2aec72c97c928d0b260f28/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52a9af2bab2aec72c97c928d0b260f28/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52a9af2bab2aec72c97c928d0b260f28/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e615544e065020271401460883f65eb5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e615544e065020271401460883f65eb5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e615544e065020271401460883f65eb5/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9ea0e2a3ce932776509a7a22536e232/documentfile-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9ea0e2a3ce932776509a7a22536e232/documentfile-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9ea0e2a3ce932776509a7a22536e232/documentfile-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
