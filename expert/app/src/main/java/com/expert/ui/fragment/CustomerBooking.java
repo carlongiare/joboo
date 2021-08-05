@@ -3,6 +3,7 @@ package com.expert.ui.fragment;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.expert.ui.activity.WriteReview;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -271,6 +273,7 @@ public class CustomerBooking extends Fragment implements View.OnClickListener {
                             // For zooming automatically to the location of the marker
                             CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(14).build();
                             googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                            getReviewParameters();
                         }
                     });
 
@@ -466,6 +469,21 @@ public class CustomerBooking extends Fragment implements View.OnClickListener {
                 }
             }
         });
+    }
+
+    private void getReviewParameters() {
+        String userId = artistBooking.getUser_id();
+        String bookingId = artistBooking.getId();
+        String artistId = artistBooking.getArtist_id();
+
+        Bundle extras = new Bundle();
+        extras.putString(Consts.CLIENT_ID, userId);
+        extras.putString(Consts.BOOKING_ID, bookingId);
+        extras.putString(Consts.EXPERT_ID, artistId);
+
+        Intent intent = new Intent(getActivity(), WriteReview.class);
+        intent.putExtras(extras);
+        startActivity(intent);
     }
 
     public void decline() {

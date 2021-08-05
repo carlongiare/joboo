@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.kyleduo.switchbutton:library:1.4.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11d674d574d1cd5ce640f0144e734d58/jetified-library-1.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11d674d574d1cd5ce640f0144e734d58/jetified-library-1.4.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11d674d574d1cd5ce640f0144e734d58/jetified-library-1.4.5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90ef202f4cc47b51350db877db7fd252/jetified-library-1.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90ef202f4cc47b51350db877db7fd252/jetified-library-1.4.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90ef202f4cc47b51350db877db7fd252/jetified-library-1.4.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5426febe82f0f7d18ebebda494c0f70b/jetified-library-1.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5426febe82f0f7d18ebebda494c0f70b/jetified-library-1.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5426febe82f0f7d18ebebda494c0f70b/jetified-library-1.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kyleduo.switchbutton/library/1.4.5/6f206c1477104c022a558aa376ae98d8c899ec08/library-1.4.5-javadoc.jar!/" />

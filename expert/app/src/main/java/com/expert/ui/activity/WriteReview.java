@@ -57,14 +57,13 @@ public class WriteReview extends AppCompatActivity implements View.OnClickListen
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        String artistId = extras.getString(Consts.EXPERT_ID);
         String clientId = extras.getString(Consts.CLIENT_ID);
         String bookingId = extras.getString(Consts.BOOKING_ID);
-        Log.d(TAG, "ArtistID: " + artistId + "ClientID: " + clientId + "BookingID" + bookingId);
+        String artistId = extras.getString(Consts.EXPERT_ID);
 
-        parms.put(Consts.ARTIST_ID, artistId);
-        parms.put(Consts.USER_ID, clientId);
+        parms.put(Consts.CLIENT_ID, clientId);
         parms.put(Consts.BOOKING_ID, bookingId);
+        parms.put(Consts.ARTIST_ID, artistId);
         init();
     }
 
@@ -115,7 +114,7 @@ public class WriteReview extends AppCompatActivity implements View.OnClickListen
         if (!validateReview()) {
             return;
         } else {
-//            sendReview();
+            sendReview();
         }
     }
 
@@ -160,22 +159,21 @@ public class WriteReview extends AppCompatActivity implements View.OnClickListen
      *
      */
 
-//    public void sendReview() {
-//        parms.put(Consts.RATING, String.valueOf(myrating));
-//        parms.put(Consts.REVIEW, ProjectUtils.getEditTextValue(yourReviewET));
-//        new HttpsRequest(Consts.RATE_CLIENT, parms, mContext).stringPost(TAG, new Helper() {
-//            @Override
-//            public void backResponse(boolean flag, String msg, JSONObject response) {
-//                if (flag) {
-//                    ProjectUtils.showLong(mContext, msg);
-//                    finish();
-//                } else {
-//                    ProjectUtils.showLong(mContext, msg);
-//                }
-//            }
-//        });
-//    }
-
+    public void sendReview() {
+        parms.put(Consts.RATING, String.valueOf(myrating));
+        parms.put(Consts.REVIEW, ProjectUtils.getEditTextValue(yourReviewET));
+        new HttpsRequest(Consts.RATE_CLIENT, parms, mContext).stringPost(TAG, new Helper() {
+            @Override
+            public void backResponse(boolean flag, String msg, JSONObject response) {
+                if (flag) {
+                    ProjectUtils.showLong(mContext, msg);
+                    finish();
+                } else {
+                    ProjectUtils.showLong(mContext, msg);
+                }
+            }
+        });
+    }
 
     @Override
     public void onBackPressed() {
