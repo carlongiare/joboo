@@ -9,6 +9,7 @@ public class AllAtristListDTO implements Serializable {
     String name = "";
     String category_id = "";
     String description = "";
+    String sub_categories = "";
     String about_us = "";
     String skills = "";
     String image = "";
@@ -87,6 +88,14 @@ public class AllAtristListDTO implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getSub_categories() {
+        return sub_categories;
+    }
+
+    public void setSub_categories(String sub_categories) {
+        this.sub_categories = sub_categories;
     }
 
     public String getAbout_us() {

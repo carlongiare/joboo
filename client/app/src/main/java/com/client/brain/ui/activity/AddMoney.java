@@ -8,14 +8,20 @@ import androidx.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.toolbox.StringRequest;
 import com.client.brain.DTO.UserDTO;
 import com.client.brain.R;
 import com.client.brain.databinding.ActivityAddMoneyBinding;
@@ -28,15 +34,17 @@ import com.client.brain.mpesa.API;
 import com.client.brain.mpesa.ApiInstance;
 import com.client.brain.mpesa.LNMResult;
 import com.client.brain.network.NetworkManager;
+import com.client.brain.network.Singleton;
 import com.client.brain.preferences.SharedPrefrence;
 import com.client.brain.utils.DecimalDigitsInputFilter;
-import com.client.brain.utils.ProgressDialogFragment;
 import com.client.brain.utils.ProjectUtils;
-import com.google.android.gms.common.api.Api;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -53,18 +61,27 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
     private UserDTO userDTO;
     private String amt = "";
     private String currency = "";
+    ProgressDialog progressDialog;
     private Dialog dialog;
     private ActivityAddMoneyBinding binding;
+    String initialbal;
+    boolean firstbal = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_add_money);
         mContext = AddMoney.this;
+
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Initializing Mpesa...");
+        progressDialog.setCanceledOnTouchOutside(false);
+
         prefrence = SharedPrefrence.getInstance(mContext);
         userDTO = prefrence.getParentUser(Consts.USER_DTO);
         parmas.put(Consts.USER_ID, userDTO.getUser_id());
         setUiAction();
+        checkBal();
     }
 
     public void setUiAction() {
@@ -208,16 +225,54 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
         final DailogPaymentOptionBinding binding1 = DataBindingUtil.inflate(LayoutInflater.from(mContext), R.layout.dailog_payment_option, null, false);
         dialog.setContentView(binding1.getRoot());
         ///dialog.getWindow().setBackgroundDrawableResource(R.color.black);
+        Log.d(TAG, "dialogPayment: " + userDTO.getMobile() );
+        binding1.edmpesanumber.setText(userDTO.getMobile());
 
-        dialog.show();
         dialog.setCancelable(false);
+        dialog.show();
+        AtomicBoolean twice = new AtomicBoolean(false);
         binding1.llCancel.setOnClickListener(v -> {
             String amountPay = ProjectUtils.getEditTextValue(binding.etAddMoney);
             String phone = ProjectUtils.getEditTextValue(binding1.edmpesanumber);
             String userId = userDTO.getUser_id();
-            stkpush(amountPay,phone, userId);
-            dialog.dismiss();
+            TextView tv_phone_error = binding1.getRoot().findViewById(R.id.tv_phone_error);
+            if(phone.equals("")){
+                tv_phone_error.setVisibility(View.VISIBLE);
+            }else if(twice.get()){
+                finish();
+            }else {
+                twice.set(true);
+                binding1.tvclick.setText("Pause");
+                binding1.edmpesanumber.setVisibility(View.GONE);
+                binding1.pbdialog.setVisibility(View.VISIBLE);
+                StringRequest sRequest = new StringRequest(Request.Method.GET, "http://api.joboo.co.ke/payments/?txn_key=wl7sKS6AhHoo9hfaoGoIrNyU4MAonsG0qIauZtVr" +
+                        "&txn_amount="+amountPay+"&mpesa_number="+phone+"&user_id="+userId,
+                        response -> {
+                            Log.i("mpesa", "onResponse: " + response);
+                            try {
+                                JSONObject jobject = new JSONObject(response);
+                                Toast.makeText(AddMoney.this, jobject.getString("ServerMessage"), Toast.LENGTH_SHORT).show();
+                                checkBal();
+                                timerHandler.postDelayed(timerRunnable, 0);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        },
+                        error -> {
+                            Log.i("mpesa", "error: " + error);
+                            Toast.makeText(this, "Failed to initialize transaction", Toast.LENGTH_SHORT).show();
+                        });
+                sRequest.setRetryPolicy(new DefaultRetryPolicy(
+                        0,
+                        DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                        DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+                Singleton.getmInstance(AddMoney.this).addToRequestQueue(sRequest);
+
+//                stkpush(amountPay,phone, userId);
+                //dialog.dismiss();
+            }
         });
+
         binding1.llPaypall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -229,6 +284,7 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
 
             }
         });
+
         binding1.llStripe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -281,6 +337,61 @@ public class AddMoney extends AppCompatActivity implements View.OnClickListener 
         });
     }
 
+    Handler timerHandler = new Handler();
+    int timeout = 40000;
+    Runnable timerRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if(timeout > 0){
+                timerHandler.postDelayed(this, 5000);
+                checkBal();
+                timeout -= 5000;
+            }else{
+                Toast.makeText(AddMoney.this, "Timeout", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        }
+    };
 
+    private void checkBal(){
+        StringRequest sRequest = new StringRequest(Request.Method.POST, "https://backend.joboo.co.ke/Webservice/getWallet",
+                response -> {
+                    Log.e("walletcheck", "onResponse: " + response);
+                    try {
+                        JSONObject jobject = new JSONObject(response);
+                        binding.tvWallet.setText(currency + " " + jobject.getJSONObject("data").getString("amount"));
+                        if(firstbal){
+                            initialbal = jobject.getJSONObject("data").getString("amount");
+                            firstbal = false;
+                        }
+                        //Toast.makeText(AddMoney.this, jobject.getString("status"), Toast.LENGTH_SHORT).show();
+                        if(!jobject.getJSONObject("data").getString("amount").equals(initialbal))
+                            finish();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                },
+                error -> {
+                    Log.e("walletcheck", "error: " + error);
+                    Toast.makeText(this, "Failed to check status", Toast.LENGTH_SHORT).show();
+                    //finish();
+                })
+        {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                params.put(Consts.USER_ID, userDTO.getUser_id());
+
+                return params;
+            }
+        };
+        Singleton.getmInstance(AddMoney.this).addToRequestQueue(sRequest);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        timerHandler.removeCallbacks(timerRunnable);
+    }
 
 }

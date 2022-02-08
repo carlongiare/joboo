@@ -45,7 +45,8 @@
                 android:singleLine="true"
                 android:text="@string/new_request_found"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="12sp"
+                android:visibility="invisible"/>
 
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -313,8 +314,7 @@
         android:id="@+id/cardNoRequest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"

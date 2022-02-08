@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -164,10 +167,16 @@ public class AppliedJobAdapter extends RecyclerView.Adapter<AppliedJobAdapter.My
         holder.icChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(appliedJob, OneTwoOneChat.class);
-                in.putExtra(Consts.ARTIST_ID, objects.get(position).getArtist_id());
-                in.putExtra(Consts.ARTIST_NAME, objects.get(position).getArtist_name());
-                appliedJob.startActivity(in);
+                if(objects.get(position).getArtist_mobile().equals("")){
+                    Toast.makeText(appliedJob, "no number available", Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + objects.get(position).getArtist_mobile()));
+                    appliedJob.startActivity(intent);
+                }
+//                Intent in = new Intent(appliedJob, OneTwoOneChat.class);
+//                in.putExtra(Consts.ARTIST_ID, objects.get(position).getArtist_id());
+//                in.putExtra(Consts.ARTIST_NAME, objects.get(position).getArtist_name());
+//                appliedJob.startActivity(in);
             }
         });
     }

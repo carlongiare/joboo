@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="10dp">
 
             <com.client.brain.utils.CustomTextView
@@ -93,12 +93,28 @@
                 android:layout_height="wrap_content"
                 android:hint="Mpesa Number"/>
 
+            <ProgressBar
+                android:id="@+id/pbdialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
+            <TextView
+                android:id="@+id/tv_phone_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone cannot be empty"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
 
         <View
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="35dp"
@@ -112,15 +128,33 @@
             android:gravity="center"
             android:orientation="horizontal">
 
+<!--            <com.client.brain.utils.CustomTextView-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Cancel"-->
+<!--                android:background="@color/colorPrimary"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@android:color/white" />-->
+
             <com.client.brain.utils.CustomTextView
+                android:id="@+id/tvclick"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/mpesa_pay"
                 android:background="@color/colorPrimary"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
+
 
 
         </LinearLayout>

@@ -57,7 +57,7 @@ public class PreviousworkPagerAdapter extends RecyclerView.Adapter<PreviousworkP
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.IVartist);
         holder.ratingbar.setRating(Float.parseFloat(artistBookingDTOList.get(position).getRating()));
-        holder.CTVBprevioususer.setText(artistBookingDTOList.get(position).getUsername());
+        holder.CTVBprevioususer.setText(artistBookingDTOList.get(position).getRating());
         holder.CTVprice.setText(artistBookingDTOList.get(position).getCurrency_type() + artistBookingDTOList.get(position).getPrice());
     }
 

@@ -37,21 +37,46 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <com.client.brain.utils.InputOpenFieldView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
+                android:orientation="horizontal"
+                android:weightSum="100">
 
-                <com.client.brain.utils.CustomEditText
-                    android:id="@+id/etNameD"
-                    android:layout_width="match_parent"
+                <com.client.brain.utils.InputOpenFieldView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:hint="@string/full_name"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:text="" />
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="50">
 
-            </com.client.brain.utils.InputOpenFieldView>
+                    <com.client.brain.utils.CustomEditText
+                        android:id="@+id/etNameD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/full_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </com.client.brain.utils.InputOpenFieldView>
+
+                <com.client.brain.utils.InputOpenFieldView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="50">
+
+                    <com.client.brain.utils.CustomEditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </com.client.brain.utils.InputOpenFieldView>
+            </LinearLayout>
 
             <com.client.brain.utils.InputFieldView
                 android:layout_width="match_parent"

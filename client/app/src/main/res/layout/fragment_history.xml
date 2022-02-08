@@ -29,22 +29,22 @@
                 android:layout_height="wrap_content">
 
                 <com.client.brain.utils.CustomTextView
+                    android:id="@+id/tvUnPaid"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/unpaid" />
+
+                <com.client.brain.utils.CustomTextView
                     android:id="@+id/tvPaid"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="0.5"
-                    android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="@string/paid"
-                    android:textColor="@color/white" />
-
-                <com.client.brain.utils.CustomTextView
-                    android:id="@+id/tvUnPaid"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.5"
-                    android:gravity="center"
-                    android:text="@string/unpaid" />
+                    android:text="@string/paid" />
 
             </LinearLayout>
 

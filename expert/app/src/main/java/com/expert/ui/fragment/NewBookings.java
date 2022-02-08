@@ -135,6 +135,11 @@ public class NewBookings extends Fragment implements SwipeRefreshLayout.OnRefres
         });
 
         // Set material sheet item click listeners
+        binding.tvPendingJobs.setOnClickListener(this);
+        binding.tvAcceptedJobs.setOnClickListener(this);
+        binding.tvRejectedJobs.setOnClickListener(this);
+        binding.tvCompletedJobs.setOnClickListener(this);
+
         binding.tvPendings.setOnClickListener(this);
         binding.tvAccepted.setOnClickListener(this);
         binding.tvRejected.setOnClickListener(this);
@@ -192,23 +197,55 @@ public class NewBookings extends Fragment implements SwipeRefreshLayout.OnRefres
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.tvPendings:
-                binding.tvStatus.setText(getResources().getString(R.string.pending));
+            case R.id.tvPendingJobs:
+                binding.tvPendingJobs.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                binding.tvPendingJobs.setTextColor(getResources().getColor(R.color.white));
+                binding.tvAcceptedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvAcceptedJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvRejectedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvRejectedJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvCompletedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvCompletedJobs.setTextColor(getResources().getColor(R.color.gray));
+                //binding.tvStatus.setText(getResources().getString(R.string.pending));
                 parms.put(Consts.BOOKING_FLAG, "0");
                 getBookings();
                 break;
-            case R.id.tvAccepted:
-                binding.tvStatus.setText(getResources().getString(R.string.acc));
+            case R.id.tvAcceptedJobs:
+                binding.tvPendingJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvPendingJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvAcceptedJobs.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                binding.tvAcceptedJobs.setTextColor(getResources().getColor(R.color.white));
+                binding.tvRejectedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvRejectedJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvCompletedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvCompletedJobs.setTextColor(getResources().getColor(R.color.gray));
+                //binding.tvStatus.setText(getResources().getString(R.string.acc));
                 parms.put(Consts.BOOKING_FLAG, "1");
                 getBookings();
                 break;
-            case R.id.tvRejected:
-                binding.tvStatus.setText(getResources().getString(R.string.rej));
+            case R.id.tvRejectedJobs:
+                binding.tvPendingJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvPendingJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvAcceptedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvAcceptedJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvRejectedJobs.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                binding.tvRejectedJobs.setTextColor(getResources().getColor(R.color.white));
+                binding.tvCompletedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvCompletedJobs.setTextColor(getResources().getColor(R.color.gray));
+                //binding.tvStatus.setText(getResources().getString(R.string.rej));
                 parms.put(Consts.BOOKING_FLAG, "2");
                 getBookings();
                 break;
-            case R.id.tvCompleted:
-                binding.tvStatus.setText(getResources().getString(R.string.com));
+            case R.id.tvCompletedJobs:
+                binding.tvPendingJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvPendingJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvAcceptedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvAcceptedJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvRejectedJobs.setBackgroundColor(getResources().getColor(R.color.white));
+                binding.tvRejectedJobs.setTextColor(getResources().getColor(R.color.gray));
+                binding.tvCompletedJobs.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                binding.tvCompletedJobs.setTextColor(getResources().getColor(R.color.white));
+                //binding.tvStatus.setText(getResources().getString(R.string.com));
                 parms.put(Consts.BOOKING_FLAG, "4");
                 getBookings();
                 break;

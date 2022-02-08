@@ -1,26 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.cocosw:bottomsheet:1.4.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/575a9a99b8c445a356a2f80bc3a3a16a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/575a9a99b8c445a356a2f80bc3a3a16a/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/575a9a99b8c445a356a2f80bc3a3a16a/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a24b6e47826999fc146cc644ebf2e846/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a24b6e47826999fc146cc644ebf2e846/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a24b6e47826999fc146cc644ebf2e846/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/64a1100fcbf9c4fbabb1250d4a9d4eef/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/64a1100fcbf9c4fbabb1250d4a9d4eef/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/64a1100fcbf9c4fbabb1250d4a9d4eef/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6d445c3ac61d8455a074b19d23e782/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6d445c3ac61d8455a074b19d23e782/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da6d445c3ac61d8455a074b19d23e782/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a3a0771bd135074559e90671229ac41/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a3a0771bd135074559e90671229ac41/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a3a0771bd135074559e90671229ac41/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19afb2c507c665bb3ca987a43dafa19f/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19afb2c507c665bb3ca987a43dafa19f/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19afb2c507c665bb3ca987a43dafa19f/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e566c995514c856f8bc90f2840f8c232/jetified-bottomsheet-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e566c995514c856f8bc90f2840f8c232/jetified-bottomsheet-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e566c995514c856f8bc90f2840f8c232/jetified-bottomsheet-1.4.0/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cocosw/bottomsheet/1.4.0/f0aa57d775079890381379d75fea4a8d7f0270ed/bottomsheet-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cocosw/bottomsheet/1.4.0/4ea253df3baf2a09ad0c2bdcf16b75bed6150103/bottomsheet-1.4.0-sources.jar!/" />
     </SOURCES>

@@ -2,6 +2,7 @@ package com.client.brain.ui.activity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,13 +11,19 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.client.brain.DTO.WalletHistory;
+import com.client.brain.databinding.DailogPaymentOptionBinding;
+import com.client.brain.network.NetworkManager;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.app.ActivityCompat;
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.core.content.ContextCompat;
@@ -27,15 +34,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TextAppearanceSpan;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
+import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -72,9 +84,13 @@ import com.client.brain.utils.CustomTextViewBold;
 import com.client.brain.utils.CustomTypeFaceSpan;
 import com.client.brain.utils.FontCache;
 import com.client.brain.utils.ProjectUtils;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -163,7 +179,6 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
         tvOther = navHeader.findViewById(R.id.tvOther);
         tvOther = navHeader.findViewById(R.id.tvOther);
         llProfileClick = navHeader.findViewById(R.id.llProfileClick);
-
 
         llProfileClick.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -318,6 +333,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
     }
+
 
     public void changeColorItem(Menu menu, int id) {
         MenuItem tools = menu.findItem(id);

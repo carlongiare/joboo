@@ -34,7 +34,7 @@ public class HistoryFragment extends Fragment implements View.OnClickListener {
         tvPaid.setOnClickListener(this);
         tvUnPaid.setOnClickListener(this);
 
-        fragmentManager.beginTransaction().add(R.id.frame, paidFrag).commit();
+        fragmentManager.beginTransaction().add(R.id.frame, unPaidFrag).commit();
         return view;
     }
 

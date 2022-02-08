@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@+id/IVartist"
-            android:text="@string/job_done_for"
+            android:text="Job Done On"
             android:textSize="12sp" />
 
         <com.client.brain.utils.CustomTextViewBold

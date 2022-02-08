@@ -335,7 +335,7 @@ public class ArtistProfile extends AppCompatActivity implements View.OnClickList
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(persnoalInfo, "Info");
         adapter.addFragment(previousWork, "Works");
-        adapter.addFragment(imageGallery, "Gallery");
+        //adapter.addFragment(imageGallery, "Gallery");
         adapter.addFragment(reviews, "Reviews");
         viewPager.setAdapter(adapter);
     }

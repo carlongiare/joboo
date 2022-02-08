@@ -34,7 +34,7 @@ import java.util.HashMap;
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Context mContext;
-    private CustomEditText CETfirstname, CETemailadd, CETenterpassword, CETenterpassagain, etReferal;
+    private CustomEditText CETfirstname,CETlastname, CETemailadd, CETenterpassword, CETenterpassagain, etReferal;
     private CustomButton CBsignup;
     private CustomTextView CTVsignin;
     private String TAG = SignUpActivity.class.getSimpleName();
@@ -63,6 +63,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         termsCB = (CheckBox) findViewById(R.id.termsCB);
         etReferal = findViewById(R.id.etReferal);
         CETfirstname = findViewById(R.id.CETfirstname);
+        CETlastname = findViewById(R.id.CETlastname);
         CETemailadd = findViewById(R.id.CETemailadd);
         CETenterpassword = findViewById(R.id.CETenterpassword);
         CETenterpassagain = findViewById(R.id.CETenterpassagain);
@@ -157,6 +158,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     public void clickForSubmit() {
         if (!validation(CETfirstname, getResources().getString(R.string.val_name))) {
             return;
+        } else if (!validation(CETlastname, getResources().getString(R.string.val_name))) {
+            return;
         } else if (!ProjectUtils.isEmailValid(CETemailadd.getText().toString().trim())) {
             showSickbar(getResources().getString(R.string.val_email));
         } else if (!ProjectUtils.isPasswordValid(CETenterpassword.getText().toString().trim())) {
@@ -201,7 +204,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     public HashMap<String, String> getparm() {
         HashMap<String, String> parms = new HashMap<>();
-        parms.put(Consts.NAME, ProjectUtils.getEditTextValue(CETfirstname));
+        parms.put(Consts.NAME, ProjectUtils.getEditTextValue(CETfirstname) +  ProjectUtils.getEditTextValue(CETlastname));
         parms.put(Consts.EMAIL_ID, ProjectUtils.getEditTextValue(CETemailadd));
         parms.put(Consts.PASSWORD, ProjectUtils.getEditTextValue(CETenterpassword));
         parms.put(Consts.REFERRAL_CODE, ProjectUtils.getEditTextValue(etReferal));

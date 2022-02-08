@@ -14,6 +14,8 @@ import android.location.Location;
 import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.expert.DTO.ArtistDetailsDTO;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
@@ -36,6 +38,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -93,6 +97,8 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
         LocationListener {
     private String TAG = BaseActivity.class.getSimpleName();
     HashMap<String, String> parms = new HashMap<>();
+    HashMap<String, String> artistParms = new HashMap<>();
+    private Bundle bundle;
     private FrameLayout frame;
     private View contentView;
     public NavigationView navigationView;
@@ -135,8 +141,13 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
     private LinearLayout llProfileClick;
     String type = "";
     private HashMap<String, String> parmsCategory = new HashMap<>();
+    private HashMap<String, String> paramsUpdate = new HashMap<>();
     private HashMap<String, String> parmsApprove = new HashMap<>();
     private ArrayList<CategoryDTO> categoryDTOS = new ArrayList<>();
+
+    private Switch onlineswitch;
+    private TextView tvOnOff;
+    private ArtistDetailsDTO artistDetailsDTO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,7 +182,28 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
         tvEnglish = navHeader.findViewById(R.id.tvEnglish);
         tvOther = navHeader.findViewById(R.id.tvOther);
         llProfileClick = navHeader.findViewById(R.id.llProfileClick);
+        onlineswitch = navHeader.findViewById(R.id.swOnOff);
+        tvOnOff = navHeader.findViewById(R.id.tvOnOff);
 
+        onlineswitch.setOnClickListener(view -> {
+            if (artistDetailsDTO != null) {
+                if (NetworkManager.isConnectToInternet(this)) {
+                    paramsUpdate = new HashMap<>();
+                    paramsUpdate.put(Consts.USER_ID, userDTO.getUser_id());
+                    if (artistDetailsDTO.getIs_online().equalsIgnoreCase("1")) {
+                        paramsUpdate.put(Consts.IS_ONLINE, "0");
+                        isOnline();
+                    } else {
+                        paramsUpdate.put(Consts.IS_ONLINE, "1");
+                        isOnline();
+                    }
+                } else {
+                    ProjectUtils.showToast(this, getResources().getString(R.string.internet_concation));
+                }
+            } else {
+                ProjectUtils.showToast(this, getResources().getString(R.string.incomplete_profile_msg));
+            }
+        });
 
         tvEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,6 +226,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
                 drawer.closeDrawers();
             }
         });
+
         tvOther.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -211,6 +244,8 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
         tvEmail.setText(userDTO.getEmail_id());
         tvName.setText(userDTO.getName());
 
+        artistParms.put(Consts.ARTIST_ID, userDTO.getUser_id());
+        artistParms.put(Consts.USER_ID, userDTO.getUser_id());
 
         if (savedInstanceState == null) {
             if (type != null) {
@@ -347,6 +382,8 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
             }
 
         }
+
+        getArtist();
     }
 
     @Override
@@ -873,5 +910,47 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
                 .show();
     }
 
+    public void getArtist() {
+        new HttpsRequest(Consts.GET_ARTIST_BY_ID_API, artistParms, this).stringPost(TAG, new Helper() {
+            @Override
+            public void backResponse(boolean flag, String msg, JSONObject response) {
+                if (flag) {
+                    try {
 
+                        artistDetailsDTO = new Gson().fromJson(response.getJSONObject("data").toString(), ArtistDetailsDTO.class);
+
+                        bundle = new Bundle();
+                        bundle.putSerializable(Consts.ARTIST_DTO, artistDetailsDTO);
+
+                        if (artistDetailsDTO.getIs_online().equalsIgnoreCase("1")) {
+                            tvOnOff.setText(getResources().getString(R.string.online));
+                            onlineswitch.setChecked(true);
+
+                        } else {
+                            tvOnOff.setText(getResources().getString(R.string.offline));
+                            onlineswitch.setChecked(false);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                }
+            }
+        });
+    }
+
+    public void isOnline() {
+        new HttpsRequest(Consts.ONLINE_OFFLINE_API, paramsUpdate, this).stringPost(TAG, new Helper() {
+            @Override
+            public void backResponse(boolean flag, String msg, JSONObject response) {
+                if (flag) {
+                    ProjectUtils.showToast(BaseActivity.this, msg);
+                    getArtist();
+
+                } else {
+                    ProjectUtils.showToast(BaseActivity.this, msg);
+                }
+            }
+        });
+    }
 }

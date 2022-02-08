@@ -2,10 +2,16 @@ package com.client.brain.ui.activity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -16,17 +22,24 @@ import android.provider.MediaStore;
 import androidx.core.content.FileProvider;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.client.brain.ui.fragment.Wallet;
 import com.cocosw.bottomsheet.BottomSheet;
+import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.github.florent37.singledateandtimepicker.dialog.SingleDateAndTimePickerDialog;
+import com.google.android.gms.location.places.AutocompleteFilter;
 import com.google.android.gms.location.places.Place;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -47,13 +60,18 @@ import com.client.brain.utils.ProjectUtils;
 import com.client.brain.utils.SpinnerDialog;
 import com.schibstedspain.leku.LocationPickerActivity;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Type;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -88,6 +106,7 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
     private Place place;
     private SpinnerDialog spinnerDialogCate;
     SimpleDateFormat sdf1, timeZone;
+    private String imageFilePath,amt = "0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,8 +121,28 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
         parmsadd.put(Consts.USER_ID, userDTO.getUser_id());
         parmsCategory.put(Consts.USER_ID, userDTO.getUser_id());
         setUiAction();
+
+        getBalance();
     }
 
+
+    public void getBalance() {
+        HashMap<String,String> getHistparam = new HashMap<>();
+        getHistparam.put(Consts.USER_ID, userDTO.getUser_id());
+        new HttpsRequest(Consts.GET_WALLET_API, getHistparam, this).stringPost(TAG, new Helper() {
+            @Override
+            public void backResponse(boolean flag, String msg, JSONObject response) {
+                if(flag) {
+                    try {
+                        amt = response.getJSONObject("data").getString("amount");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+    }
 
     public void setUiAction() {
         ivBack = findViewById(R.id.ivBack);
@@ -120,6 +159,7 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
         llPicture = findViewById(R.id.llPicture);
         llPost = findViewById(R.id.llPost);
 
+
         etDate.setOnClickListener(this);
         tvCategory.setOnClickListener(this);
         etAddress.setOnClickListener(this);
@@ -127,6 +167,7 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
         llPost.setOnClickListener(this);
         builder = new BottomSheet.Builder(PostJob.this).sheet(R.menu.menu_cards);
         builder.title(getResources().getString(R.string.take_image));
+
         builder.listener(new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -153,11 +194,10 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                                     } else {
                                         picUri = Uri.fromFile(file); // create
                                     }
-
-
                                     prefrence.setValue(Consts.IMAGE_URI_CAMERA, picUri.toString());
                                     intent.putExtra(MediaStore.EXTRA_OUTPUT, picUri); // set the image file
                                     startActivityForResult(intent, PICK_FROM_CAMERA);
+
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -169,22 +209,27 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                     case R.id.gallery_cards:
                         if (ProjectUtils.hasPermissionInManifest(PostJob.this, PICK_FROM_CAMERA, Manifest.permission.CAMERA)) {
                             if (ProjectUtils.hasPermissionInManifest(PostJob.this, PICK_FROM_GALLERY, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-
-                                File file = getOutputMediaFile(1);
-                                if (!file.exists()) {
-                                    try {
-                                        file.createNewFile();
-                                    } catch (IOException e) {
-                                        e.printStackTrace();
+                                try {
+                                    File file = getOutputMediaFile(1);
+                                    if (!file.exists()) {
+                                        try {
+                                            file.createNewFile();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
                                     }
+                                    picUri = Uri.fromFile(file);
+
+                                    Intent intent = new Intent();
+                                    intent.setType("image/*");
+                                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                                    startActivityForResult(Intent.createChooser(intent, getResources().getString(R.string.select_picture)), PICK_FROM_GALLERY);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
                                 }
-                                picUri = Uri.fromFile(file);
-
-                                Intent intent = new Intent();
-                                intent.setType("image/*");
-                                intent.setAction(Intent.ACTION_GET_CONTENT);
-                                startActivityForResult(Intent.createChooser(intent, getResources().getString(R.string.select_picture)), PICK_FROM_GALLERY);
-
+//                                Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
+//                                photoPickerIntent.setType("image/*");
+//                                startActivityForResult(photoPickerIntent, 500);
                             }
                         }
                         break;
@@ -265,7 +310,28 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
             return;
         } else {
             if (NetworkManager.isConnectToInternet(mContext)) {
-                addPost();
+                if (Math.round(Float.parseFloat(amt)) < 50) {
+                    final Dialog dialog = new Dialog(PostJob.this);
+                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    dialog.setCancelable(false);
+                    dialog.setContentView(R.layout.dailog_add_money);
+
+                    dialog.findViewById(R.id.tv_getbal_cancel).setOnClickListener(v -> dialog.dismiss());
+                    dialog.findViewById(R.id.tv_getbal_add).setOnClickListener(view -> {
+                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
+                                android.R.anim.fade_out);
+
+                        fragmentTransaction.replace(R.id.frame, new Wallet());
+                        fragmentTransaction.commitAllowingStateLoss();
+                        dialog.dismiss();
+                    });
+                    dialog.show();
+                }
+                else {
+                    addPost();
+                }
 
             } else {
                 ProjectUtils.showLong(mContext, getResources().getString(R.string.internet_concation));
@@ -282,15 +348,45 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                 .listener(new SingleDateAndTimePickerDialog.Listener() {
                     @Override
                     public void onDateSelected(Date date) {
-                        parmsadd.put(Consts.JOB_DATE, String.valueOf(sdf1.format(date).toString().toUpperCase()));
+
+                        try {
+                            Log.e("Time log",date.toString());
+
+                            String string1 = "06:00:00";
+                            Date time1 = new SimpleDateFormat("HH:mm:ss").parse(string1);
+                            Calendar calendar1 = Calendar.getInstance();
+                            calendar1.setTime(time1);
+                            calendar1.add(Calendar.DATE, 1);
 
 
-                        etDate.setText(String.valueOf(sdf1.format(date).toString().toUpperCase()));
+                            String string2 = "18:00:00";
+                            Date time2 = new SimpleDateFormat("HH:mm:ss").parse(string2);
+                            Calendar calendar2 = Calendar.getInstance();
+                            calendar2.setTime(time2);
+                            calendar2.add(Calendar.DATE, 1);
+
+
+                            Date d = new SimpleDateFormat("HH:mm:ss").parse(date.toString().substring(11,19));
+                            Calendar calendar3 = Calendar.getInstance();
+                            calendar3.setTime(d);
+                            calendar3.add(Calendar.DATE, 1);
+
+                            Date x = calendar3.getTime();
+                            if (x.after(calendar1.getTime()) && x.before(calendar2.getTime())) {
+                                parmsadd.put(Consts.JOB_DATE, String.valueOf(sdf1.format(date).toString().toUpperCase()));
+
+                                etDate.setText(String.valueOf(sdf1.format(date).toString().toUpperCase()));
+                            } else {
+                                Toast.makeText(mContext, "Choose a time between 06:00 and 18:00", Toast.LENGTH_SHORT).show();
+                            }
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+
                     }
                 })
                 .display();
     }
-
 
     private File getOutputMediaFile(int type) {
         String root = Environment.getExternalStorageDirectory().toString();
@@ -315,7 +411,6 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
 
         return mediaFile;
     }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -584,9 +679,11 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
     }
 
     public void getCategory() {
+        Log.e("Categories","sent" + parmsCategory.toString());
         new HttpsRequest(Consts.GET_ALL_CATEGORY_API, parmsCategory, mContext).stringPost(TAG, new Helper() {
             @Override
             public void backResponse(boolean flag, String msg, JSONObject response) {
+                Log.e("Categories",response.toString());
                 if (flag) {
                     try {
                         categoryDTOS = new ArrayList<>();
@@ -606,8 +703,6 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
-
                 } else {
                     ProjectUtils.showToast(mContext, msg);
                 }

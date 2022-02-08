@@ -22,8 +22,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@+id/ivArtist"
-            android:text="@string/review_by"
-            android:textSize="12sp" />
+            android:text="Review"
+            android:textSize="12sp"
+            android:visibility="gone"/>
 
         <com.client.brain.utils.CustomTextViewBold
             android:id="@+id/tvName"

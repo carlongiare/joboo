@@ -1,16 +1,21 @@
 package com.client.brain.ui.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.client.brain.R;
+import com.client.brain.network.NetworkManager;
 import com.client.brain.ui.activity.BaseActivity;
+import com.client.brain.ui.activity.PostJob;
 import com.client.brain.utils.CustomTextView;
+import com.client.brain.utils.ProjectUtils;
 
 
 public class Home extends Fragment implements View.OnClickListener{
@@ -29,6 +34,18 @@ public class Home extends Fragment implements View.OnClickListener{
         fragmentManager = getChildFragmentManager();
         CTVnearby = (CustomTextView) view.findViewById(R.id.CTVnearby);
         CTVdiscover = (CustomTextView) view.findViewById(R.id.CTVdiscover);
+        ImageView ivPosthome = view.findViewById(R.id.ivPosthome);
+
+        ivPosthome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (NetworkManager.isConnectToInternet(getActivity())) {
+                    startActivity(new Intent(getActivity(), PostJob.class));
+                } else {
+                    ProjectUtils.showToast(getActivity(), getResources().getString(R.string.internet_concation));
+                }
+            }
+        });
 
         CTVdiscover.setOnClickListener(this);
         CTVnearby.setOnClickListener(this);

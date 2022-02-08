@@ -1,26 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.kyleduo.switchbutton:library:1.4.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a09f160f0b9845108509c3de9af871c2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a09f160f0b9845108509c3de9af871c2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a09f160f0b9845108509c3de9af871c2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aeaf706f8652e9250a3f4ddf54089fc0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aeaf706f8652e9250a3f4ddf54089fc0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aeaf706f8652e9250a3f4ddf54089fc0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a23b5e60f27e55ce9c97e8e4bf4e732/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a23b5e60f27e55ce9c97e8e4bf4e732/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8a23b5e60f27e55ce9c97e8e4bf4e732/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccc441ca0e0c58d81c53cf43de89a8f6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccc441ca0e0c58d81c53cf43de89a8f6/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccc441ca0e0c58d81c53cf43de89a8f6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8f49f2164513ec77b7ead2908e8039fd/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8f49f2164513ec77b7ead2908e8039fd/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8f49f2164513ec77b7ead2908e8039fd/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2391e4ed80ca66b0caee442c7c9420b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2391e4ed80ca66b0caee442c7c9420b/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2391e4ed80ca66b0caee442c7c9420b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5426febe82f0f7d18ebebda494c0f70b/jetified-library-1.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5426febe82f0f7d18ebebda494c0f70b/jetified-library-1.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5426febe82f0f7d18ebebda494c0f70b/jetified-library-1.4.5/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kyleduo.switchbutton/library/1.4.5/6f206c1477104c022a558aa376ae98d8c899ec08/library-1.4.5-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kyleduo.switchbutton/library/1.4.5/8aadd1ba2389f3f8d7c21fdd0cd5dce052e2a555/library-1.4.5-sources.jar!/" />
     </SOURCES>

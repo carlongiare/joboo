@@ -200,9 +200,10 @@
                     android:layout_toRightOf="@+id/view2"
                     android:layout_weight="0.35"
                     android:layout_marginLeft="5dp"
-                    android:drawableLeft="@drawable/ic_appo_complete"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    android:drawableTint="@color/red"
                     android:gravity="center"
-                    android:text="@string/complete"
+                    android:text="Cancel"
                     android:textSize="14sp"/>
 
 
