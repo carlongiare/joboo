@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -42,7 +43,14 @@ public class SplashActivity extends AppCompatActivity {
         mContext = SplashActivity.this;
         prefference = SharedPrefrence.getInstance(SplashActivity.this);
 
-
+//        Intent appLinkIntent = getIntent();
+//        String appLinkAction = appLinkIntent.getAction();
+//        Uri appLinkData = appLinkIntent.getData();
+//
+//        Intent intent=new Intent();
+//        intent.putExtra("url",appLinkData.toString());
+//        startActivity(intent);
+//        finish();
 
     }
 
@@ -50,6 +58,7 @@ public class SplashActivity extends AppCompatActivity {
     Runnable mTask = new Runnable() {
         @Override
         public void run() {
+
             if (prefference.getBooleanValue(Consts.IS_REGISTERED)) {
                 Intent in = new Intent(mContext, BaseActivity.class);
                 startActivity(in);
