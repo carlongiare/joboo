@@ -15,6 +15,7 @@ import com.client.brain.interfacess.Consts;
 import com.client.brain.preferences.SharedPrefrence;
 import com.client.brain.ui.activity.AppIntro;
 import com.client.brain.ui.activity.BaseActivity;
+import com.client.brain.ui.activity.SignInActivity;
 import com.client.brain.utils.ProjectUtils;
 
 //import com.crashlytics.android.Crashlytics;
@@ -65,7 +66,7 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
                 overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
             }else {
-                startActivity(new Intent(SplashActivity.this, AppIntro.class));
+                startActivity(new Intent(SplashActivity.this, SignInActivity.class));
                 finish();
                 overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
             }
