@@ -202,7 +202,7 @@
                     android:drawableRight="@drawable/ic_dollar"
                     android:hint="@string/my_rate"
                     android:inputType="number"
-                    android:maxLength="4"
+                    android:maxLength="9"
                     android:singleLine="true"
                     android:text="" />
 
