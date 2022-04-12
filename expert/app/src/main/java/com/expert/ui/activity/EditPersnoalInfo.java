@@ -647,8 +647,9 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     public void submitPersonalProfile() {
         if (!validation(etCategoryD, getResources().getString(R.string.val_cat_sele))) {
             return;
-        } else if (!validation(etSubCategory, getResources().getString(R.string.val_sub_cat_sele))) {
-            return;
+//        }
+//        else if (!validation(etSubCategory, getResources().getString(R.string.val_sub_cat_sele))) {
+//            return;
         } else if (!validation(etNameD, getResources().getString(R.string.val_name))) {
             return;
         }else if (!validation(etLastNameD, getResources().getString(R.string.val_last_name))) {

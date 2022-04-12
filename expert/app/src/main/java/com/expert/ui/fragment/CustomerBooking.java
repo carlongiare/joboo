@@ -273,7 +273,7 @@ public class CustomerBooking extends Fragment implements View.OnClickListener {
                             // For zooming automatically to the location of the marker
                             CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(14).build();
                             googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-                            getReviewParameters();
+//                            getReviewParameters();
                         }
                     });
 
