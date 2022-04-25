@@ -39,9 +39,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/CTVartistwork"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/IVartist"
-                android:orientation="vertical"
-                android:layout_marginLeft="10dp">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:id="@+id/llName"
@@ -73,8 +73,8 @@
                     android:layout_height="wrap_content"
                     android:singleLine="true"
                     android:text=""
-                    android:textSize="11sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
 
             </LinearLayout>
 
@@ -95,6 +95,7 @@
                 android:layout_alignParentRight="true"
                 android:singleLine="true"
                 android:text=""
+                android:visibility="gone"
                 android:textColor="@color/colorPrimary" />
 
             <LinearLayout
