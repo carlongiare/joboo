@@ -127,7 +127,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                     }
 
                 } else {
-                    ProjectUtils.showToast(mContext, msg);
+                    ProjectUtils.showDialog(SignInActivity.this,"Error",msg,null,false);
                 }
 
 

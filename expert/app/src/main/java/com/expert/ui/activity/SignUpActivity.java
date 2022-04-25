@@ -147,7 +147,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     }
 
                 } else {
-                    ProjectUtils.showToast(mContext, msg);
+                    ProjectUtils.showDialog(SignUpActivity.this,"Error",msg,null,false);
                 }
 
 
