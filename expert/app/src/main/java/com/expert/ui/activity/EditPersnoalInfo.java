@@ -49,6 +49,7 @@ import com.expert.utils.ImageCompression;
 import com.expert.utils.MainFragment;
 import com.expert.utils.ProjectUtils;
 import com.expert.utils.SpinnerDialog;
+import com.google.gson.JsonObject;
 import com.schibstedspain.leku.LocationPickerActivity;
 
 import org.json.JSONArray;
@@ -102,6 +103,9 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     File file;
     Bitmap bitmap = null;
     private HashMap<String, File> paramsFile = new HashMap<>();
+    JSONObject catResponse=new JSONObject();
+    JSONObject subCat=new JSONObject();
+    String subCatArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +115,14 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
         prefrence = SharedPrefrence.getInstance(mContext);
         userDTO = prefrence.getParentUser(Consts.USER_DTO);
 
+        if (getIntent().hasExtra("catResponse")){
+            try {
+                catResponse=new JSONObject(getIntent().getStringExtra("catResponse"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
         if (getIntent().hasExtra(Consts.CATEGORY_list)) {
             categoryDTOS = (ArrayList<CategoryDTO>) getIntent().getSerializableExtra(Consts.CATEGORY_list);
             subCategory = getIntent().getStringExtra("subcat");
@@ -118,16 +130,31 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
         }
 
         try {
-            JSONArray data = new JSONArray(subCategory);
-            JSONArray subcat = data.getJSONObject(0).getJSONArray("subcategories");
-            for (int i = 0; i < subcat.length(); i++) {
-                JSONObject item = subcat.getJSONObject(i);
-                subCategoryDTO.add(new SubCategoryDTO(
-                        item.getString("id"),
-                        item.getString("category_id"),
-                        item.getString("name"),
-                        false));
+            JSONArray data=catResponse.getJSONArray("data");
+            Log.e("DATA",data.toString());
+
+            for (int i = 0; i < data.length(); i++) {
+                JSONObject item = data.getJSONObject(i);
+                Log.e("ITEM",item.get("subcategories").toString());
+                subCatArray=item.get("subcategories").toString();
+                JSONArray subcat = item.getJSONArray("subcategories");
+
+                for (int j = 0; j < subcat.length(); j++) {
+                    JSONObject sItem = subcat.getJSONObject(j);
+                    subCat.put("id",sItem.getString("id"));
+                    subCat.put("category_id",sItem.getString("category_id"));
+                    subCat.put("name",sItem.getString("name"));
+                    Log.e("SITEM",sItem.getString("name"));
+                    subCategoryDTO.add(new SubCategoryDTO(
+                            sItem.getString("id"),
+                            sItem.getString("category_id"),
+                            sItem.getString("name"),
+                            false));
+                }
+                break;
             }
+            Log.e("Subcategory",subCat.toString());
+            Log.e("SubcategoryS",subCatArray.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -278,7 +305,10 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                 etSubCategory.setText("");
                 try {
                     subCategoryDTO.clear();
-                    JSONArray data = new JSONArray(subCategory);
+//
+                    JSONArray data = catResponse.getJSONArray("data");
+//
+                    Log.e("Sdata",data.toString());
                     for (int x = 0; x < data.length(); x++) {
                         if(data.getJSONObject(x).getString("id").equals(id)){
                             JSONArray subcat = data.getJSONObject(x).getJSONArray("subcategories");

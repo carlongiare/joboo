@@ -29,6 +29,7 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TextAppearanceSpan;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
@@ -144,6 +145,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
     private HashMap<String, String> paramsUpdate = new HashMap<>();
     private HashMap<String, String> parmsApprove = new HashMap<>();
     private ArrayList<CategoryDTO> categoryDTOS = new ArrayList<>();
+    private JSONObject catResponse =new JSONObject();
 
     private Switch onlineswitch;
     private TextView tvOnOff;
@@ -160,6 +162,8 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
         userDTO = prefrence.getParentUser(Consts.USER_DTO);
         parmsCategory.put(Consts.USER_ID, userDTO.getUser_id());
         parmsApprove.put(Consts.USER_ID, userDTO.getUser_id());
+
+        Log.e("USERDTO",userDTO.toString());
 
         if (getIntent().hasExtra(Consts.SCREEN_TAG)) {
             type = getIntent().getStringExtra(Consts.SCREEN_TAG);
@@ -201,6 +205,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
                     ProjectUtils.showToast(this, getResources().getString(R.string.internet_concation));
                 }
             } else {
+                checkProfileCompletion();
                 ProjectUtils.showToast(this, getResources().getString(R.string.incomplete_profile_msg));
             }
         });
@@ -248,6 +253,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
         artistParms.put(Consts.USER_ID, userDTO.getUser_id());
 
         if (savedInstanceState == null) {
+            checkProfileCompletion();
             if (type != null) {
                 if (type.equalsIgnoreCase(Consts.CHAT_NOTIFICATION)) {
                     ivSearch.setVisibility(View.GONE);
@@ -621,34 +627,43 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
     }
 
     public void clickProfile() {
-        new AlertDialog.Builder(this)
-                .setIcon(R.mipmap.ic_launcher)
-                .setTitle(getResources().getString(R.string.incomplete_profile))
-                .setMessage(getResources().getString(R.string.incomplete_profile_msg))
-                .setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        if (NetworkManager.isConnectToInternet(mContext)) {
-                            Intent intent = new Intent(mContext, EditPersnoalInfo.class);
-                            intent.putExtra(Consts.CATEGORY_list, categoryDTOS);
-                            startActivity(intent);
-                            overridePendingTransition(R.anim.slide_up, R.anim.stay);
-                        } else {
-                            ProjectUtils.showToast(mContext, getResources().getString(R.string.internet_concation));
-                        }
 
-                        dialog.dismiss();
+        Intent intent = new Intent(mContext, ProfileAlertActivity.class);
+        intent.putExtra(Consts.CATEGORY_list, categoryDTOS);
+        intent.putExtra("catResponse", catResponse.toString());
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_up, R.anim.stay);
 
-                    }
-                })
-                .setNegativeButton(getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                })
-                .setCancelable(false)
-                .show();
+//        new AlertDialog.Builder(this)
+//                .setIcon(R.mipmap.ic_launcher)
+//                .setTitle(getResources().getString(R.string.incomplete_profile))
+//                .setMessage(getResources().getString(R.string.incomplete_profile_msg))
+//                .setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        if (NetworkManager.isConnectToInternet(mContext)) {
+//                            Log.e("categoryDTOS",catResponse.toString());
+//                            Intent intent = new Intent(mContext, EditPersnoalInfo.class);
+//                            intent.putExtra(Consts.CATEGORY_list, categoryDTOS);
+//                            intent.putExtra("catResponse", catResponse.toString());
+//                            startActivity(intent);
+//                            overridePendingTransition(R.anim.slide_up, R.anim.stay);
+//                        } else {
+//                            ProjectUtils.showToast(mContext, getResources().getString(R.string.internet_concation));
+//                        }
+//
+//                        dialog.dismiss();
+//
+//                    }
+//                })
+//                .setNegativeButton(getResources().getString(R.string.no), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        dialog.dismiss();
+//                    }
+//                })
+//                .setCancelable(false)
+//                .show();
     }
 
     private void getMyLocation() {
@@ -845,6 +860,7 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
             public void backResponse(boolean flag, String msg, JSONObject response) {
                 if (flag) {
                     try {
+                        catResponse=response;
                         categoryDTOS = new ArrayList<>();
                         Type getpetDTO = new TypeToken<List<CategoryDTO>>() {
                         }.getType();
@@ -953,4 +969,34 @@ public class BaseActivity extends AppCompatActivity implements GoogleApiClient.C
             }
         });
     }
+
+    private void checkProfileCompletion(){
+        if (userDTO.getIs_profile() == 0) {
+            if (NetworkManager.isConnectToInternet(mContext)) {
+                getCategory();
+            } else {
+                ProjectUtils.showToast(mContext, getResources().getString(R.string.internet_concation));
+            }
+
+        }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        checkProfileCompletion();
+    }
+
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if (userDTO.getIs_profile() == 0) {
+//            if (NetworkManager.isConnectToInternet(mContext)) {
+//                getCategory();
+//            } else {
+//                ProjectUtils.showToast(mContext, getResources().getString(R.string.internet_concation));
+//            }
+//
+//        }
+//    }
 }
