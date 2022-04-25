@@ -191,6 +191,7 @@
             </com.expert.utils.InputFieldView>
 
             <com.expert.utils.InputOpenFieldView
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
@@ -204,7 +205,7 @@
                     android:inputType="number"
                     android:maxLength="9"
                     android:singleLine="true"
-                    android:text="" />
+                    android:text="0" />
 
             </com.expert.utils.InputOpenFieldView>
 
