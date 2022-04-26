@@ -41,6 +41,30 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:supportsRtl,android:allowBackup">
         <activity
+            android:name=".ui.activity.WebActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="backend.joboo.co.ke" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="backend.joboo.co.ke" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.activity.ProfileAlertActivity"
             android:exported="false" />
         <activity
