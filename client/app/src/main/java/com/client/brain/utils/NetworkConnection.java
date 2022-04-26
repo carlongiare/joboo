@@ -16,15 +16,10 @@ import androidx.lifecycle.LiveData;
 public class NetworkConnection extends LiveData<Boolean> {
 
     Context context;
+    ConnectivityManager connectivityManager;
 
     public NetworkConnection(Context context) {
         this.context = context;
-    }
-
-    ConnectivityManager connectivityManager;
-
-    {
-        assert false;
         connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
     }
 

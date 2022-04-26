@@ -17,8 +17,10 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import com.client.brain.R;
+import com.client.brain.SplashActivity;
 import com.client.brain.databinding.ActivityWebBinding;
 import com.client.brain.utils.NetworkConnection;
 
@@ -29,9 +31,12 @@ public class WebActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_web);
         binding.webViewJoboo.animate();
+
+        Intent appLinkIntent = getIntent();
+        String appLinkAction = appLinkIntent.getAction();
+        Uri appLinkData = appLinkIntent.getData();
 
         WebSettings webSettings = binding.webViewJoboo.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -89,20 +94,35 @@ public class WebActivity extends AppCompatActivity {
             }
         });
 
-
-        // ATTENTION: This was auto-generated to handle app links.
-//        Intent appLinkIntent = getIntent();
-//        String appLinkAction = appLinkIntent.getAction();
-//        Uri appLinkData = appLinkIntent.getData();
-
         NetworkConnection networkConnection = new NetworkConnection(this);
         networkConnection.observe(this, new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean isConnected) {
                 if (isConnected) {
-                    binding.webViewJoboo.loadUrl(getIntent().getStringExtra("url"));
+                    binding.webViewJoboo.loadUrl(appLinkData.toString());
                 }
             }
         });
+
+        binding.toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_action_back));
+        binding.toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(WebActivity.this, SplashActivity.class);
+                startActivity(in);
+                finish();
+                overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
+            }
+        });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent in = new Intent(WebActivity.this, SplashActivity.class);
+        startActivity(in);
+        finish();
+        overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left);
     }
 }
