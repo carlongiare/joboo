@@ -1,0 +1,19 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.client.brain",
+    "sha256_cert_fingerprints":
+    ["E8:59:85:79:79:6B:61:86:1A:8F:A8:05:BE:9C:00:34:22:43:3E:D7:47:CC:FE:4A:DC:39:B0:5D:77:CC:7C:A1"]
+  }
+},
+
+{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.expert",
+    "sha256_cert_fingerprints":
+    ["5D:5B:38:66:53:00:FD:EE:B4:BB:89:29:A7:4C:A6:FC:B2:5B:65:5B:7A:01:F6:90:18:00:15:6B:82:AD:94:AA"]
+  }
+}]
