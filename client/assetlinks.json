@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.client.brain",
+    "sha256_cert_fingerprints":
+    ["E8:59:85:79:79:6B:61:86:1A:8F:A8:05:BE:9C:00:34:22:43:3E:D7:47:CC:FE:4A:DC:39:B0:5D:77:CC:7C:A1"]
+  }
+}]
