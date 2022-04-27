@@ -113,7 +113,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -163,7 +164,8 @@
             android:label="@string/leku_title_activity_location_picker"
             android:parentActivityName=".ui.activity.BaseActivity"
             android:theme="@style/AppTheme.Map"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -175,7 +177,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.expert.ui.activity.BaseActivity" />
         </activity> <!-- [START firebase_service] -->
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name=".MyFirebaseMessagingService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
