@@ -1,12 +1,14 @@
 package com.expert.ui.fragment;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 
 import com.expert.R;
 import com.expert.ui.activity.BaseActivity;
@@ -48,14 +50,23 @@ public class JobsFrag extends Fragment implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.tvAllJobs:
                 setSelected(true, false);
+                hideKeyboardFrom(this.getContext(), v);
                 fragmentManager.beginTransaction().replace(R.id.frame, allJobsFrag).commit();
+                baseActivity.ivSearch.setImageResource(R.drawable.ic_search_white);
                 break;
             case R.id.tvAppliedJobs:
                 setSelected(false, true);
+                hideKeyboardFrom(this.getContext(), v);
                 fragmentManager.beginTransaction().replace(R.id.frame, appliedJobsFrag).commit();
+                baseActivity.ivSearch.setImageResource(R.drawable.ic_search_white);
                 break;
         }
 
+    }
+
+    public static void hideKeyboardFrom(Context context, View view) {
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
     public void setSelected(boolean firstBTN, boolean secondBTN) {

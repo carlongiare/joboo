@@ -75,6 +75,7 @@ public class AllJobsFrag extends Fragment implements SwipeRefreshLayout.OnRefres
         mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         RVhistorylist.setLayoutManager(mLayoutManager);
 
+
         svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -120,8 +121,9 @@ public class AllJobsFrag extends Fragment implements SwipeRefreshLayout.OnRefres
                     if (rlSearch.getVisibility() == View.VISIBLE) {
                         baseActivity.ivSearch.setImageResource(R.drawable.ic_search_white);
                         rlSearch.setVisibility(View.GONE);
+                        getjobs();
                     } else {
-
+                        svSearch.setQuery("", false);
                         baseActivity.ivSearch.setImageResource(R.drawable.ic_close_circle);
                         rlSearch.setVisibility(View.VISIBLE);
 
@@ -181,6 +183,7 @@ public class AllJobsFrag extends Fragment implements SwipeRefreshLayout.OnRefres
 
     @Override
     public void onRefresh() {
+        baseActivity.ivSearch.setImageResource(R.drawable.ic_search_white);
         getjobs();
         rlSearch.setVisibility(View.GONE);
     }

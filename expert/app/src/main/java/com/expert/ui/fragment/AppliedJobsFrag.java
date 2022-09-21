@@ -124,8 +124,9 @@ public class AppliedJobsFrag extends Fragment implements SwipeRefreshLayout.OnRe
                     if (rlSearch.getVisibility() == View.VISIBLE) {
                         baseActivity.ivSearch.setImageResource(R.drawable.ic_search_white);
                         rlSearch.setVisibility(View.GONE);
+                        getjobs();
                     } else {
-
+                        svSearch.setQuery("", false);
                         baseActivity.ivSearch.setImageResource(R.drawable.ic_close_circle);
                         rlSearch.setVisibility(View.VISIBLE);
 
@@ -188,6 +189,7 @@ public class AppliedJobsFrag extends Fragment implements SwipeRefreshLayout.OnRe
     @Override
     public void onRefresh() {
         Log.e("ONREFREST_Firls", "FIRS");
+        baseActivity.ivSearch.setImageResource(R.drawable.ic_search_white);
         getjobs();
         rlSearch.setVisibility(View.GONE);
     }
