@@ -28,6 +28,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.cocosw.bottomsheet.BottomSheet;
 import com.expert.DTO.SubCategoryDTO;
+import com.expert.SplashActivity;
 import com.expert.utils.SpinnerDialogSub;
 import com.google.android.gms.location.places.Place;
 import com.google.gson.Gson;
@@ -83,6 +84,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
     private SpinnerDialog spinnerDialogCate;
     private SpinnerDialogSub spinnerDialogSub;
     private ArtistDetailsDTO artistDetailsDTO;
+    private ArtistDetailsDTO initArtistDetailsDTO;
     private Place place;
     private double lats = 0;
     private double longs = 0;
@@ -127,6 +129,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
             categoryDTOS = (ArrayList<CategoryDTO>) getIntent().getSerializableExtra(Consts.CATEGORY_list);
             subCategory = getIntent().getStringExtra("subcat");
             artistDetailsDTO = (ArtistDetailsDTO) getIntent().getSerializableExtra(Consts.ARTIST_DTO);
+            initArtistDetailsDTO = artistDetailsDTO;
         }
 
         try {
@@ -743,8 +746,14 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                         artistDetailsDTO = new Gson().fromJson(response.getJSONObject("data").toString(), ArtistDetailsDTO.class);
                         userDTO.setIs_profile(1);
                         prefrence.setParentUser(userDTO, Consts.USER_DTO);
-                        finish();
-                        overridePendingTransition(R.anim.stay, R.anim.slide_down);
+                        if (initArtistDetailsDTO != null) {
+                            finish();
+                            overridePendingTransition(R.anim.stay, R.anim.slide_down);
+                        } else {
+                            startActivity(new Intent(EditPersnoalInfo.this, BaseActivity.class));
+                            finish();
+                            overridePendingTransition(R.anim.stay, R.anim.slide_down);
+                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
