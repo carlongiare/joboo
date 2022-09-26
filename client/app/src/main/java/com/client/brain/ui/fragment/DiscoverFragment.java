@@ -108,6 +108,7 @@ public class DiscoverFragment extends Fragment implements View.OnClickListener, 
                                         if (NetworkManager.isConnectToInternet(getActivity())) {
                                             swipeRefreshLayout.setRefreshing(true);
                                             parms.put(Consts.CATEGORY_ID, "");
+                                            tvFilter.setText(getResources().getString(R.string.all_category));
                                             getArtist();
 
                                         } else {
