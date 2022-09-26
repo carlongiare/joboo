@@ -319,13 +319,17 @@ public class PostJob extends AppCompatActivity implements View.OnClickListener {
 
                     dialog.findViewById(R.id.tv_getbal_cancel).setOnClickListener(v -> dialog.dismiss());
                     dialog.findViewById(R.id.tv_getbal_add).setOnClickListener(view -> {
-                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                                android.R.anim.fade_out);
-
-                        fragmentTransaction.replace(R.id.frame, new Wallet());
-                        fragmentTransaction.commitAllowingStateLoss();
                         dialog.dismiss();
+//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
+//                                android.R.anim.fade_out);
+//
+//                        fragmentTransaction.replace(R.id.frame, new Wallet());
+//                        fragmentTransaction.commitAllowingStateLoss();
+
+                        Intent intent = new Intent(this, BaseActivity.class);
+                        intent.putExtra(Consts.SCREEN_TAG, Consts.WALLET_NOTIFICATION);
+                        startActivity(intent);
                     });
                     dialog.show();
                 }
