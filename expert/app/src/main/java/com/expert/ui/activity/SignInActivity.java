@@ -124,9 +124,9 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                            ProjectUtils.showToast(mContext, msg);
                            Intent in = new Intent(mContext, BaseActivity.class);
                            startActivity(in);
-//                           finish();
-//                           overridePendingTransition(R.anim.anim_slide_in_left,
-//                                   R.anim.anim_slide_out_left);
+                           finish();
+                           overridePendingTransition(R.anim.anim_slide_in_left,
+                                   R.anim.anim_slide_out_left);
                        } else {
                            if (userDTO.getStatus().equals("0") && userDTO.getApproval_status() == 1){
                                ProjectUtils.showToast(mContext, "You haven't activated your account. Check email");
