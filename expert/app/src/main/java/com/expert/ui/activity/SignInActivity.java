@@ -110,18 +110,32 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                 ProjectUtils.pauseProgressDialog();
                 if (flag) {
                     try {
-                        ProjectUtils.showToast(mContext, msg);
+//                        ProjectUtils.showToast(mContext, msg);
 
                         userDTO = new Gson().fromJson(response.getJSONObject("data").toString(), UserDTO.class);
-                        prefrence.setParentUser(userDTO, Consts.USER_DTO);
 
-                        prefrence.setBooleanValue(Consts.IS_REGISTERED, true);
-                        ProjectUtils.showToast(mContext, msg);
-                        Intent in = new Intent(mContext, BaseActivity.class);
-                        startActivity(in);
-                        finish();
-                        overridePendingTransition(R.anim.anim_slide_in_left,
-                                R.anim.anim_slide_out_left);
+                        Log.d("status", userDTO.getStatus());
+                        Log.d(  "approval", String.valueOf(userDTO.getApproval_status()));
+                        // if approved and active then persist login and navigate to BaseActivity. Else, show
+                        // toast with message 'Your account is pending approval by Joboo' or 'You haven't activated your account. Check email'
+                       if (userDTO.getStatus().equals("1") && userDTO.getApproval_status() == 1) {
+                           prefrence.setParentUser(userDTO, Consts.USER_DTO);
+                           prefrence.setBooleanValue(Consts.IS_REGISTERED, true);
+                           ProjectUtils.showToast(mContext, msg);
+                           Intent in = new Intent(mContext, BaseActivity.class);
+                           startActivity(in);
+//                           finish();
+//                           overridePendingTransition(R.anim.anim_slide_in_left,
+//                                   R.anim.anim_slide_out_left);
+                       } else {
+                           if (userDTO.getStatus().equals("0") && userDTO.getApproval_status() == 1){
+                               ProjectUtils.showToast(mContext, "You haven't activated your account. Check email");
+                           } else if (userDTO.getStatus().equals("1") && userDTO.getApproval_status() == 0) {
+                               ProjectUtils.showToast(mContext, "Your account is pending approval by Joboo");
+                           } else if (userDTO.getStatus().equals("0") && userDTO.getApproval_status() == 0) {
+                               ProjectUtils.showToast(mContext, "You haven't activated your account. Check email");
+                           }
+                       }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
