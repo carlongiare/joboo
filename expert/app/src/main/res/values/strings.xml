@@ -10,9 +10,9 @@
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="hindi">Hindi</string>
-    <string name="intro_1">Search nearby Employers.</string>
-    <string name="intro_2">Make yourself more beautiful more than you think.</string>
-    <string name="intro_3">Hire the best Photographer &amp; create your moment.</string>
+    <string name="intro_1">Bid and win amongst a range of jobs.</string>
+    <string name="intro_2">Sell to ready customers.</string>
+    <string name="intro_3">Become more visible.</string>
     <string name="internet_concation">Please enable your internet connection.</string>
     <string name="server_error">Unable to connect server.</string>
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$)</string>
@@ -218,7 +218,7 @@
     <string name="my_rate">My Rate</string>
     <string name="accept">Accept</string>
     <string name="hour_rate">Hourly Rate</string>
-    <string name="get_your_best_service_from_us">Get your best service from us</string>
+    <string name="get_your_best_service_from_us">Tap into a new market</string>
     <string name="gallery">Gallery</string>
     <string name="wallet_balance">Wallet Balance</string>
     <string name="all">All</string>
