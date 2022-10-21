@@ -51,7 +51,7 @@ public interface Consts {
     String GET_APPOINTMENT_API = "getAppointment";
     String EDIT_APPOINTMENT_API = "edit_appointment";
     String APPOINTMENT_OPERATION_API = "appointment_operation";
-    String GET_ALL_CATEGORY_API = "getAllCaegory";
+    String GET_ALL_CATEGORY_API = "getAllCategory";
     String GET_ALL_JOB_USER_API = "get_all_job_user";
     String POST_JOB_API = "post_job_new";
     String GET_APPLIED_JOB_BY_ID_API = "get_applied_job_by_id";
