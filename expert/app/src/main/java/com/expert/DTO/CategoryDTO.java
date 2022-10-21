@@ -1,6 +1,8 @@
 package com.expert.DTO;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+
 /**
  * Created by VARUN on 01/01/19.
  */
@@ -12,7 +14,7 @@ public class CategoryDTO implements Serializable{
     String updated_at = "";
     String status = "";
     String currency_type = "";
-    String subCategories = "";
+    ArrayList<SubCategoryDTO> subCategories = new ArrayList<>();
     boolean isSelected;
 
 
@@ -84,11 +86,11 @@ public class CategoryDTO implements Serializable{
         this.currency_type = currency_type;
     }
 
-    public String getSubCategories() {
+    public ArrayList<SubCategoryDTO> getSubCategories() {
         return subCategories;
     }
 
-    public void setSubCategories(String subCategories) {
+    public void setSubCategories(ArrayList subCategories) {
         this.subCategories = subCategories;
     }
 }

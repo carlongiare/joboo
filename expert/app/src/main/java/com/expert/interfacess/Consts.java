@@ -32,7 +32,7 @@ public interface Consts {
     String GET_ARTIST_BY_ID_API = "getArtistByid";
     String UPDATE_PROFILE_API = "editPersonalInfo";
     String UPDATE_PROFILE_ARTIST_API = "artistPrsonalInfo";
-    String GET_ALL_CATEGORY_API = "getAllCaegory";
+    String GET_ALL_CATEGORY_API = "getAllCategory";
     String GET_ALL_SKILLS_BY_CAT_API = "getSkillsByCategory";
     String ADD_QUALIFICATION_API = "addQualification";
     String ADD_PRODUCT_API = "addProduct";
@@ -151,6 +151,7 @@ public interface Consts {
 
     /*Update Profile Artist*/
     String CATEGORY_ID = "category_id";
+    String SUB_CATEGORIES = "sub_categories";
     String BIO = "bio";
     String LOCATION = "location";
     String PRICE = "price";

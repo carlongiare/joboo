@@ -330,7 +330,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                         @Override
                         public void onClick(String item, String id, int position) {
                             etSubCategory.setText(item);
-                            paramsUpdate.put(Consts.CATEGORY_ID, id);
+                            paramsUpdate.put(Consts.SUB_CATEGORIES, id);
                         }
                     });
                 } catch (JSONException e) {
@@ -343,7 +343,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
         spinnerDialogSub.bindOnSpinerListener(new OnSpinerItemClick() {
             @Override
             public void onClick(String item, String id, int position) {
-                etCategoryD.setText(item);
+                etSubCategory.setText(item);
                 paramsUpdate.put("sub_categories", id);
             }
         });
@@ -405,7 +405,13 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                 etCategoryD.setText(categoryDTOS.get(j).getCat_name());
                 tvText.setText(getResources().getString(R.string.commis_msg) + categoryDTOS.get(j).getCurrency_type() + categoryDTOS.get(j).getPrice());
 
-
+                String subCatString = "";
+               if (artistDetailsDTO.getSubCategories() != null){
+                   for (int k = 0; k < artistDetailsDTO.getSubCategories().size(); k++){
+                       subCatString = subCatString + artistDetailsDTO.getSubCategories().get(k) + ',';
+                   }
+               }
+                etSubCategory.setText(subCatString);
             }
         }
 
@@ -436,7 +442,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
                     @Override
                     public void onClick(String item, String id, int position) {
                         etSubCategory.setText(item);
-                        paramsUpdate.put(Consts.CATEGORY_ID, id);
+                        paramsUpdate.put(Consts.SUB_CATEGORIES, id);
                     }
                 });
             } catch (JSONException e) {
@@ -735,6 +741,7 @@ public class EditPersnoalInfo extends AppCompatActivity implements View.OnClickL
 
     public void updateProfile() {
         ProjectUtils.showProgressDialog(mContext, true, getResources().getString(R.string.please_wait));
+        Log.e("PARAMS",paramsUpdate.toString());
         new HttpsRequest(Consts.UPDATE_PROFILE_ARTIST_API, paramsUpdate, paramsFile, mContext).imagePost(TAG, new Helper() {
             @Override
             public void backResponse(boolean flag, String msg, JSONObject response) {

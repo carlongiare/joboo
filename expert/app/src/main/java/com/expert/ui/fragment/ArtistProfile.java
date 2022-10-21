@@ -236,6 +236,7 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
     }
 
     public void getCategory() {
+        Log.e("PAC", parmsCategory.toString());
         new HttpsRequest(Consts.GET_ALL_CATEGORY_API, parmsCategory, getActivity()).stringPost(TAG, new Helper() {
             @Override
             public void backResponse(boolean flag, String msg, JSONObject response) {
@@ -259,9 +260,11 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
     }
 
     public void getArtist() {
+        Log.e("PAR", parms.toString());
         new HttpsRequest(Consts.GET_ARTIST_BY_ID_API, parms, getActivity()).stringPost(TAG, new Helper() {
             @Override
             public void backResponse(boolean flag, String msg, JSONObject response) {
+                Log.e("RES", response.toString());
                 if (flag) {
                     try {
 
@@ -333,6 +336,8 @@ public class ArtistProfile extends Fragment implements View.OnClickListener, App
         switch (v.getId()) {
             case R.id.ivEditPersonal:
                 if (NetworkManager.isConnectToInternet(getActivity())) {
+                    Log.e("CAT", categoryDTOS.toString());
+                    Log.e("ART", artistDetailsDTO.getCategory_name());
                     if (categoryDTOS.size() > 0) {
                         Intent intent = new Intent(getActivity(), EditPersnoalInfo.class);
                         intent.putExtra(Consts.ARTIST_DTO, artistDetailsDTO);

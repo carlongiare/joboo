@@ -36,6 +36,7 @@ public class ArtistDetailsDTO implements Serializable {
     ArrayList<GalleryDTO> gallery = new ArrayList<>();
     ArrayList<QualificationsDTO> qualifications = new ArrayList<>();
     ArrayList<ArtistBookingDTO> artist_booking = new ArrayList<>();
+    ArrayList<String> sub_categories = new ArrayList<>();
     String earning = "";
     String jobDone = "";
     String totalJob = "";
@@ -288,6 +289,14 @@ public class ArtistDetailsDTO implements Serializable {
 
     public void setProducts(ArrayList<ProductDTO> products) {
         this.products = products;
+    }
+
+    public ArrayList<String> getSubCategories() {
+        return sub_categories;
+    }
+
+    public void setSubCategories(ArrayList<String> subCategories) {
+        this.sub_categories = sub_categories;
     }
 
     public ArrayList<ReviewsDTO> getReviews() {
