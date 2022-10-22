@@ -1,9 +1,12 @@
 package com.expert.ui.activity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -69,9 +72,22 @@ public class PaymetWeb extends AppCompatActivity {
 
         @Override
         public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-            super.onReceivedSslError(view, handler, error);
-            // this will ignore the Ssl error and will go forward to your site
-            handler.proceed();
+            final AlertDialog.Builder builder = new AlertDialog.Builder(PaymetWeb.this);
+            builder.setMessage("SSL error has occured - no secure connection could be made");
+            builder.setPositiveButton("continue", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    handler.proceed();
+                }
+            });
+            builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    handler.cancel();
+                }
+            });
+            final AlertDialog dialog = builder.create();
+            dialog.show();
         }
 
         @Override
