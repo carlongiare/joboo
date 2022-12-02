@@ -112,7 +112,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -188,13 +189,15 @@
         <activity
             android:name=".ui.activity.AddMoney"
             android:screenOrientation="portrait" /> <!-- [START firebase_service] -->
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name=".MyFirebaseMessagingService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service> <!-- [END firebase_service] -->
         <!-- [START firebase_iid_service] -->
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service android:name=".MyFirebaseInstanceIDService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -206,6 +209,7 @@
         <activity
             android:name="com.schibstedspain.leku.LocationPickerActivity"
             android:label="@string/leku_title_activity_location_picker"
+            android:exported="true"
             android:parentActivityName=".ui.activity.BaseActivity"
             android:theme="@style/AppTheme.Map"
             android:windowSoftInputMode="adjustPan">
